@@ -9,12 +9,11 @@ import { ProductService } from './services/product.service';
 import { Routes, RouterModule} from '@angular/router';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 
-import { SearchComponent } from './components/search/search.component'; 
 import { AboutUsComponent } from './components/about-us/about-us.component'; 
 import { ContactUsComponent } from './components/contact-us/contact-us.component'; 
 import { HelpComponent } from './components/help/help.component'; 
-
 import { SearchComponent } from './components/search/search.component';
+
 import { ProductDetailsComponent } from './components/product-details/product-details.component'; 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -41,7 +40,7 @@ const routes: Routes = [
 
     AboutUsComponent,
     ContactUsComponent,
-    HelpComponent
+    HelpComponent,
 
     ProductDetailsComponent
   ],
