@@ -134,7 +134,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
  */
 
 .header-desktop{
-    background:#0da8e4;
+    background:#020212;
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
@@ -236,6 +236,65 @@ input.au-input.au-input-xl{
     -moz-transition:all .5s ease;
     transition:all .5s ease
 }
+
+.cart-area {
+    position: relative;
+  }
+  
+  .cart-link {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    text-decoration: none;
+    align-items: center; /* Center vertically */
+    color: #333; /* Adjust as needed */
+    background-color: #05020b; /* Updated background color */
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-link:hover {
+    background-color: #0963be; /* Adjust as needed */
+  }
+  
+  .cart-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text inside */
+    margin-right: 10px;
+    margin-left: -23px;
+  }
+  
+  .cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon i {
+    font-size: 24px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust spacing */
+    color: #fff; /* Updated icon color to white */
+  }
+  
+  .cart-quantity {
+    background-color: #fff; /* Updated background color for quantity */
+    color: #007bff; /* Updated text color for quantity */
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+  }
+  
+  .total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Updated text color for total price */
+    margin-left: 10px; /* Add some space between the icon and the price */
+  }
 
 .cart-area.d-n{
     display:block
@@ -1142,7 +1201,8 @@ footer ul li{
         margin-top:16px;
         color:#03a9f4;
         margin-left:15px
-    }
+    } 
+      
     .total span{
         display:inline-block;
         background:#fff;

@@ -5,12 +5,12 @@
 
         <h3>{{ product.name }}</h3>
         <div class="price">{{ product.itemPrice | currency:'EUR' }}</div>
-        <a href="#" class="primary-btn">Add to cart</a>
+        <button (click)="addItemToCart()" class="btn btn-primary btn-sm">Add to cart</button>
 
         <hr>
         <h4>Description</h4>
         <p>{{ product.description }}</p>
 
-        <a routerLink="/products" class="mt-5">Back to Product List</a>
+        <a routerLink="/products" class="btn btn-primary mt-5">Back to Product List</a>
     </div>
 </div>
