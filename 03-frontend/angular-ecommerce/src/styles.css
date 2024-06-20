@@ -969,6 +969,15 @@ footer ul li{
     padding:10px 20px
 }
 
+.trash-icon {
+    color: red; /* Make the icon red */
+    font-size: 1.5em; /* Adjust the icon size (1em is equivalent to the font size of the button) */
+  }
+  
+
+
+
+
 /* 
  * ----------------------------
  * Media Queries
@@ -1120,6 +1129,8 @@ footer ul li{
         justify-content:space-between
     }
 }
+
+
 
 
 @media (max-width:767px){
