@@ -74,4 +74,32 @@ export class CartService {
     console.log('----');
   }
 
+  decreaseQuantity(cartItem: CartBasket) {
+
+    cartItem.quantity--;
+
+    if(cartItem.quantity == 0)
+      {
+        this.remove(cartItem);
+      }
+      else
+      {
+        this.calculateCartTotals();
+      }
+    }
+
+  remove(cartItem: CartBasket) 
+  {
+    // get the index of the product in the array
+
+    const index = this.cartItems.findIndex( cartItem => cartItem.id === cartItem.id);
+
+    // once found removing it from the array
+    if(index > -1)
+      
+        this.cartItems.splice(index, 1)
+      
+        this.calculateCartTotals();
+  }
+
 }
