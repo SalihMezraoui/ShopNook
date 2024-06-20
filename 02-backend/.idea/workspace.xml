@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9607153-aebc-4e77-a393-a8ab06532758" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/app/components/search/search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/app/components/search/search.component.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +38,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Imad/Desktop/ONLINESTUDIUM/7.Semester/Teamprojekt/Projekt/ShopNook2/02-backend"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="SpringBootEcommerceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ShopNook.ecommerce.SpringBootEcommerceApplication" />
+      <module name="spring-boot-ecommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ShopNook.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8eb90544-4795-4179-b6f1-1ddfcd13c614" name="Changes" comment="" />
+      <changelist id="b9607153-aebc-4e77-a393-a8ab06532758" name="Changes" comment="" />
       <created>1718128906532</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
