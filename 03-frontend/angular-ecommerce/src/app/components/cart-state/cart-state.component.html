@@ -1,31 +1,11 @@
-<!-- <div class="cart-area d-n">
-    <a href="shopping-detail.html">
-      <div class="total">{{ totalPrice | currency: 'EUR'}} 
-        <span>{{totalQuantity}}</span> 
-      </div> 
-      <i class="fas fa-cart-plus" aria-hidden="true"></i>
-    </a>
-  </div> -->
-  
-  <div class="cart-area">
-    <a href="shopping-detail.html" class="cart-link">
-      <div class="cart-content">
-        <div class="cart-icon">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart-quantity">{{ totalQuantity }}</span>
-        </div>
-        <div class="total-price">{{ totalPrice | currency: 'EUR' }}</div>
+<div class="cart-area">
+  <a routerLink = "/cart-details" class="cart-link">
+    <div class="cart-content">
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-quantity">{{ totalQuantity }}</span>
       </div>
-    </a>
-  </div>
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
+      <div class="total-price">{{ totalPrice | currency: 'EUR' }}</div>
+    </div>
+  </a>
+</div>
