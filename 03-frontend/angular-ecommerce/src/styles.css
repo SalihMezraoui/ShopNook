@@ -141,7 +141,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
     position:fixed;
     top:0;
     right:0;
-    left:200px;
+    left:248px;
     height:75px;
     z-index:3
 }
@@ -337,34 +337,6 @@ input.au-input.au-input-xl{
     display:flex
 }
 
-.au-btn-submit{
-    position:relative;
-    right:0;
-    min-width:95px;
-    color:#fff;
-    border:1px solid #205b8d;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:43px;
-    background:#205b8d
-}
-
-.au-btn-submit:hover{
-    background:#05143f
-}
-
-.au-btn-submit>i{
-    font-size:20px;
-    color:#fff;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%,-50%);
-    -moz-transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-    -o-transform:translate(-50%,-50%);
-    transform:translate(-50%,-50%)
-}
 
 /* 
  * ----------------------------
@@ -373,7 +345,7 @@ input.au-input.au-input-xl{
  */
 /* Sidebar */
 .menu-sidebar {
-    width: 200px;
+    width: 247px;
     position: fixed;
     top: 0;
     left: 0;
@@ -387,7 +359,7 @@ input.au-input.au-input-xl{
 .menu-sidebar .logo {
     height: 100px;
     background: #fff;
-    padding: 0 35px;
+    padding: 0 60px;
     display: flex;
     align-items: center;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
@@ -827,7 +799,6 @@ table.table.table-bordered th{
 }
 
 /* product-box class represents each product item in your grid */
-
 .product-box {
     position: relative;
     margin-bottom: 30px;
@@ -840,9 +811,11 @@ table.table.table-bordered th{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  /* Ensure images fit the product boxes */
   .product-box img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Adjust to the width of the product box */
+    height: 100%; /* Adjust to the height of the product box */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
     transition: transform 0.3s ease-out;
   }
   
@@ -911,6 +884,7 @@ table.table.table-bordered th{
     background-color: transparent;
     color: #0da8e4;
   }
+  
   
 /**/
 
@@ -1271,8 +1245,6 @@ footer ul li{
 
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   box-sizing: border-box;
