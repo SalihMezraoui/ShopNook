@@ -11,9 +11,9 @@ body{
 .search-container{
   position: fixed;
   background: #fff;
-  top: 16px;
-  right: 250px;
-  height: 30px;
+  top: 18px;
+  right: 230px;
+  height: 40px;
   border-radius: 30px;
   padding: 10px 20px;
   display: flex;
@@ -22,28 +22,22 @@ body{
   cursor: pointer;
   transition: 0.8s;
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-  inset -4px -4px 6px 0 rgba(255,255,255,.2),
-  inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+               inset -4px -4px 6px 0 rgba(255,255,255,.2),
+               inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }
 
-.search-container:hover > .search-input{
-  width: 400px;
-}
-
+/* Set a fixed width for the input */
 .search-container .search-input{
   background: transparent;
   border: none;
   outline:none;
-  width: 0px;
+  width: 300px; /* Fixed width */
   font-weight: 500;
   font-size: 16px;
   transition: 0.8s;
-
 }
 
-.search-container .au-btn-submit .fas{
-  color: #f8f8f8;
+.search-container .search-btn .fas{
+  color: #5cbdbb;
 }
-
-
