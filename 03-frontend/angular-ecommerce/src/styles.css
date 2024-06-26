@@ -535,7 +535,7 @@ input.au-input.au-input-xl{
     background:#fff
 }
 .main-content.page-m{
-    padding:10% 15%!important
+    padding:10% 30% 10% 5%
 }
 
 /* 
@@ -634,6 +634,32 @@ input.au-input.au-input-xl{
  * Shopping Cart Checkout
  * ----------------------------
  */
+/* Center the checkout button and add some margin */
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the checkout button */
+.checkout-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline from link */
+}
+
+/* Hover effect for the button */
+.checkout-button:hover {
+    background-color: #0056b3; /* Darker shade of Bootstrap primary color */
+    text-decoration: none; /* Remove underline from link on hover */
+}
 
 .form-area{
     background:#e5e5e5;
@@ -742,6 +768,54 @@ option:first{
 select{
     color:#828482
 }
+
+.form-section {
+    margin-bottom: 3rem;
+  }
+  .custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  .custom-checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .checkbox-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  .checkbox-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  input:checked + .checkbox-slider {
+    background-color: #0da8e4;
+  }
+  input:checked + .checkbox-slider:before {
+    transform: translateX(16px);
+  }
+  .checkbox-label {
+    margin-left: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
 
 /* 
  * ----------------------------
