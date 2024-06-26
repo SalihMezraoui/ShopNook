@@ -65,8 +65,11 @@
                             <p>Total Quantity: {{ sumQuantity }}</p>
                             <p>Shipping: FREE</p>
                             <p>Total Price: {{ sumPrice | currency: 'EUR' }}</p>
+                            <div class="d-flex justify-content-end">
+                                <a routerLink="/checkout" class="btn btn-primary btn-lg mt-2">Proceed to checkout</a>
+                            </div>
                         </td>
-                    </tr>
+                    </tr>                    
 
                 </table>
 
