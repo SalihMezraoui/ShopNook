@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { ShopNookFormService } from 'src/app/services/shop-nook-form.service';
 
 @Component({
   selector: 'app-checkout',
@@ -13,7 +14,10 @@ export class CheckoutComponent implements OnInit {
   sumPrice: number = 0;
   sumQuantity: number = 0;
 
-  constructor(private formBuilder: FormBuilder) {}
+  creditCardYears: number[] = [];
+  creditCardMonths: number[] = [];
+
+  constructor(private formBuilder: FormBuilder, private shopNookFormService: ShopNookFormService) {}
 
   ngOnInit(): void 
   {
@@ -47,6 +51,53 @@ export class CheckoutComponent implements OnInit {
         expiryYear: ['']
       })
     });
+
+    // populate the months
+
+    const firstMonth: number = new Date().getMonth() + 1;
+    console.log("firstMonth: " + firstMonth);
+
+    this.shopNookFormService.fetchCreditCardMonths(firstMonth).subscribe(
+      data => {
+        console.log("fetching the months: " + JSON.stringify(data));
+        this.creditCardMonths = data;
+      }
+    );
+
+    // populate the years
+
+    this.shopNookFormService.fetchCreditCardYears().subscribe(
+      data => {
+        console.log("fetching the years: " + JSON.stringify(data));
+        this.creditCardYears = data;
+      }
+    );
+  }
+
+  manageYearsAndMonths()
+  {
+    const cardDetailsFormGroup = this.formGroupCheckout.get('cardDetails');
+
+    const currentYear: number = new Date().getFullYear();
+    const selectedYear: number = Number(cardDetailsFormGroup!.value.expiryYear);
+
+    // if the current year equals the selected year, then start with the current month
+
+    let firstMonth: number;
+
+    if (currentYear === selectedYear) {
+      firstMonth = new Date().getMonth() + 1;
+    }
+    else {
+      firstMonth = 1;
+    }
+
+    this.shopNookFormService.fetchCreditCardMonths(firstMonth).subscribe(
+      data => {
+        console.log("the fetched  months: " + JSON.stringify(data));
+        this.creditCardMonths = data;
+      }
+    );
   }
 
   copyDeliveryAddressToPaymentAddress(event: any): void {
