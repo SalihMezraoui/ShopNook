@@ -1,7 +1,6 @@
 package com.ShopNook.ecommerce.config;
 
-import com.ShopNook.ecommerce.entity.Product;
-import com.ShopNook.ecommerce.entity.ProductCategory;
+import com.ShopNook.ecommerce.entity.*;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.metamodel.EntityType;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,21 +30,27 @@ public class DataRestConfiguration implements RepositoryRestConfigurer
     {
         HttpMethod[] disallowedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE};
 
-        // Restricting HTTP methods for Product: PUT, POST, DELETE
-        config.getExposureConfiguration()
-                .forDomainType(Product.class)
-                .withItemExposure((metdata, httpMethods) -> httpMethods.disable(disallowedActions))
-                .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(disallowedActions));
+        // Restricting HTTP methods(PUT, POST, DELETE) for All Classes
+        restrictHttpMethods(Product.class, config, disallowedActions);
 
-        // Restricting HTTP methods for ProductCategory: PUT, POST, DELETE
-        config.getExposureConfiguration()
-                .forDomainType(ProductCategory.class)
-                .withItemExposure((metdata, httpMethods) -> httpMethods.disable(disallowedActions))
-                .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(disallowedActions));
+        restrictHttpMethods(ProductCategory.class, config, disallowedActions);
+
+        restrictHttpMethods(Country.class, config, disallowedActions);
+
+        restrictHttpMethods(State.class, config, disallowedActions);
+
 
         // calling internal helper method
         exposeIds(config);
     }
+
+    private static void restrictHttpMethods(Class myClass, RepositoryRestConfiguration config, HttpMethod[] disallowedActions) {
+        config.getExposureConfiguration()
+                .forDomainType(myClass)
+                .withItemExposure((metdata, httpMethods) -> httpMethods.disable(disallowedActions))
+                .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(disallowedActions));
+    }
+
     private void exposeIds(RepositoryRestConfiguration config)
     {
         // expose entity ids

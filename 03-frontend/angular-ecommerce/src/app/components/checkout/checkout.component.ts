@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ShopNookFormService } from 'src/app/services/shop-nook-form.service';
+import { Country } from 'src/app/utilities/country';
+import { State } from 'src/app/utilities/state';
 
 @Component({
   selector: 'app-checkout',
@@ -11,11 +13,16 @@ export class CheckoutComponent implements OnInit {
 
   formGroupCheckout!: FormGroup;
 
-  sumPrice: number = 0;
+  sumPrice: number = 0; 
   sumQuantity: number = 0;
 
   creditCardYears: number[] = [];
   creditCardMonths: number[] = [];
+
+  countries: Country[] = [];
+
+  deliveryAddressStates: State[] = [];
+  paymentAddressStates: State[] = [];
 
   constructor(private formBuilder: FormBuilder, private shopNookFormService: ShopNookFormService) {}
 
@@ -52,7 +59,7 @@ export class CheckoutComponent implements OnInit {
       })
     });
 
-    // populate the months
+    // populate the months (C)
 
     const firstMonth: number = new Date().getMonth() + 1;
     console.log("firstMonth: " + firstMonth);
@@ -64,12 +71,21 @@ export class CheckoutComponent implements OnInit {
       }
     );
 
-    // populate the years
+    // populate the years 
 
     this.shopNookFormService.fetchCreditCardYears().subscribe(
       data => {
         console.log("fetching the years: " + JSON.stringify(data));
         this.creditCardYears = data;
+      }
+    );
+
+    // populate countries
+
+    this.shopNookFormService.getCountriesList().subscribe(
+      data => {
+        console.log("fetched countries: " + JSON.stringify(data));
+        this.countries = data;
       }
     );
   }
@@ -81,7 +97,7 @@ export class CheckoutComponent implements OnInit {
     const currentYear: number = new Date().getFullYear();
     const selectedYear: number = Number(cardDetailsFormGroup!.value.expiryYear);
 
-    // if the current year equals the selected year, then start with the current month
+    // starting with the current month, if the current year is the same as the selected year. 
 
     let firstMonth: number;
 
@@ -104,8 +120,14 @@ export class CheckoutComponent implements OnInit {
     if (event.target.checked) {
       this.formGroupCheckout.controls['paymentAddress']
             .setValue(this.formGroupCheckout.controls['deliveryAddress'].value);
-    } else {
+      
+            this.paymentAddressStates = this.deliveryAddressStates;
+    } 
+    else
+    {
       this.formGroupCheckout.controls['paymentAddress'].reset();
+
+      this.paymentAddressStates = [];
     }
   }
 
@@ -114,8 +136,32 @@ export class CheckoutComponent implements OnInit {
     console.log("we are handling purchase submissison");
     console.log(this.formGroupCheckout!.get('customer')!.value);
     console.log("The email address is " + this.formGroupCheckout!.get('customer')!.value.email);
+  
+    console.log("The country of the delivery address is " + this.formGroupCheckout!.get('deliveryAddress')!.value.country.name);
+    console.log("The state of the delivery address is " + this.formGroupCheckout!.get('deliveryAddress')!.value.state.name);
+
   }
 
+  getStatesList(formSectionName: string) {
+    const formGroup = this.formGroupCheckout.get(formSectionName)!; // non-null assertion
   
-
+    const countryCode = formGroup.value.country.code;
+    const countryName = formGroup.value.country.name;
+  
+    console.log(`${formSectionName} country code: ${countryCode}`);
+    console.log(`${formSectionName} country name: ${countryName}`);
+  
+    this.shopNookFormService.getStatesList(countryCode).subscribe(
+      data => {
+        if (formSectionName === 'deliveryAddress') {
+          this.deliveryAddressStates = data; 
+        } else {
+          this.paymentAddressStates = data;
+        }
+  
+        // select first item by default, optional chaining to safely set the value
+        formGroup.get('state')?.setValue(data[0]);
+      }
+    );
+  }
 }
