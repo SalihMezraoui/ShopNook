@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9607153-aebc-4e77-a393-a8ab06532758" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-ecommerce/src/main/java/com/ShopNook/ecommerce/dao/ProductCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-ecommerce/src/main/java/com/ShopNook/ecommerce/dao/ProductCategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/app/components/search/search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/app/components/search/search.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
