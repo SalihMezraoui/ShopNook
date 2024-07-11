@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { CartService } from 'src/app/services/cart.service';
 import { ShopNookFormService } from 'src/app/services/shop-nook-form.service';
 import { Country } from 'src/app/utilities/country';
 import { State } from 'src/app/utilities/state';
@@ -25,9 +26,13 @@ export class CheckoutComponent implements OnInit {
   deliveryAddressStates: State[] = [];
   paymentAddressStates: State[] = [];
 
-  constructor(private formBuilder: FormBuilder, private shopNookFormService: ShopNookFormService) { }
+  constructor(private formBuilder: FormBuilder, private shopNookFormService: ShopNookFormService,
+    private cartService: CartService) { }
 
   ngOnInit(): void {
+
+    this.summaryCartDetails();
+
     this.formGroupCheckout = this.formBuilder.group({
       customer: this.formBuilder.group({
         firstName: new FormControl('',
@@ -123,6 +128,18 @@ export class CheckoutComponent implements OnInit {
       }
     );
   }
+  summaryCartDetails() {
+
+    // sumQuantity cartService subscription
+    this.cartService.sumQuantity.subscribe(
+      sumQuantity => this.sumQuantity = sumQuantity
+    );
+
+    // sumPrice cartService subscription
+    this.cartService.sumPrice.subscribe(
+      sumPrice => this.sumPrice = sumPrice
+    );
+  }
 
   // Getters for the customer section
   get firstName() {
@@ -186,10 +203,10 @@ export class CheckoutComponent implements OnInit {
   get creditCardVerificationCode() {
     return this.formGroupCheckout.get('cardDetails.CVV');
   }
-  get creditCardExpiryMonth(){
+  get creditCardExpiryMonth() {
     return this.formGroupCheckout.get('cardDetails.expiryMonth');
   }
-  get creditCardExpiryYear(){
+  get creditCardExpiryYear() {
     return this.formGroupCheckout.get('cardDetails.expiryYear');
   }
 
