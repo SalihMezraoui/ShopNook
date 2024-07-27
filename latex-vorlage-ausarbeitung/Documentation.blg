@@ -12,45 +12,46 @@ Database file #1: literatur.bib
 Warning--to sort, need author or key in HTML/CSS:2024
 Warning--to sort, need author or key in JavaScript:2024
 Warning--to sort, need author or key in GOOGLE:2024
-You've used 3 entries,
+Warning--to sort, need author or key in wiki:listing
+You've used 5 entries,
             2768 wiz_defined-function locations,
-            619 strings with 5394 characters,
-and the built_in function-call counts, 747 in all, are:
-= -- 78
-> -- 3
-< -- 0
-+ -- 0
-- -- 0
-* -- 41
-:= -- 97
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 9
-chr.to.int$ -- 3
-cite$ -- 9
-duplicate$ -- 33
-empty$ -- 88
-format.name$ -- 0
-if$ -- 179
+            630 strings with 5678 characters,
+and the built_in function-call counts, 1284 in all, are:
+= -- 135
+> -- 12
+< -- 1
++ -- 2
+- -- 2
+* -- 69
+:= -- 170
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 16
+chr.to.int$ -- 5
+cite$ -- 13
+duplicate$ -- 57
+empty$ -- 145
+format.name$ -- 4
+if$ -- 305
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 18
-num.names$ -- 0
-pop$ -- 24
+newline$ -- 28
+num.names$ -- 3
+pop$ -- 45
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 26
 quote$ -- 0
-skip$ -- 36
+skip$ -- 56
 stack$ -- 0
-substring$ -- 24
-swap$ -- 6
-text.length$ -- 0
-text.prefix$ -- 0
+substring$ -- 39
+swap$ -- 11
+text.length$ -- 1
+text.prefix$ -- 1
 top$ -- 0
-type$ -- 24
-warning$ -- 3
-while$ -- 0
-width$ -- 5
-write$ -- 38
-(There were 3 warnings)
+type$ -- 40
+warning$ -- 4
+while$ -- 2
+width$ -- 8
+write$ -- 62
+(There were 4 warnings)

@@ -21,19 +21,20 @@ import { CartStateComponent } from './components/cart-state/cart-state.component
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 const routes: Routes = [
-  {path: 'checkout', component: CheckoutComponent},
-  {path: 'cart-details', component: CartDetailsComponent},
-  {path: 'products/:id', component: ProductDetailsComponent},
-  {path: 'search/:keyword', component: ProductListComponent},
-  {path: 'category/:id', component: ProductListComponent},
-  {path: 'category', component: ProductListComponent},
-  {path: 'products', component: ProductListComponent},
-  {path: 'about-us', component: AboutUsComponent },
-  {path: 'contact-us', component: ContactUsComponent },
-  {path: 'help', component: HelpComponent },
-  {path: '', redirectTo: '/products', pathMatch: 'full'},
+  {path: 'checkout', component: CheckoutComponent, data: { breadcrumb: 'Checkout' }},
+  {path: 'cart-details', component: CartDetailsComponent, data: { breadcrumb: 'Cart Details' }},
+  {path: 'products/:id', component: ProductDetailsComponent, data: { breadcrumb: 'Product Details' }},
+  {path: 'search/:keyword', component: ProductListComponent, data: { breadcrumb: 'Search' }},
+  {path: 'category/:id', component: ProductListComponent, data: { breadcrumb: 'Category' }},
+  {path: 'category', component: ProductListComponent, data: { breadcrumb: 'Category' }},
+  {path: 'products', component: ProductListComponent, data: { breadcrumb: 'Products' }},
+  {path: 'about-us', component: AboutUsComponent, data: { breadcrumb: 'About Us' }},
+  {path: 'contact-us', component: ContactUsComponent, data: { breadcrumb: 'Contact Us' }},
+  {path: 'help', component: HelpComponent, data: { breadcrumb: 'Help' }},
+  {path: '', redirectTo: '/products', pathMatch: 'full', data: { breadcrumb: 'Home' }},
   {path: '**', redirectTo: '/products', pathMatch: 'full'}
 ];
 
@@ -51,7 +52,8 @@ const routes: Routes = [
     ProductDetailsComponent,
      CartStateComponent,
      CartDetailsComponent,
-     CheckoutComponent
+     CheckoutComponent,
+     BreadcrumbComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
