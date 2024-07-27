@@ -1,5 +1,11 @@
 \begin{thebibliography}{HTM24}
 
+\bibitem[Bel23]{UML:2023}
+{\sc Bell, Donald}: {\em {An introduction to the Unified Modeling Language}}.
+\newblock \url{https://developer.ibm.com/articles/an-introduction-to-uml/},
+  2023.
+\newblock Abgerufen am 26.07.2024.
+
 \bibitem[GOO24]{GOOGLE:2024}
 {\em {Google: Angular - Landing Page}}.
 \newblock \url{https://angular.io}, 2024.
@@ -14,5 +20,10 @@
 {\em {JavaScript}}.
 \newblock \url{https://en.wikipedia.org/wiki/JavaScript}, 2024.
 \newblock Abgerufen am 02.06.2024.
+
+\bibitem[wik]{wiki:listing}
+{\em {Wikipedia: Interoperability}}.
+\newblock \url{https://en.wikipedia.org/wiki/Interoperability}.
+\newblock Abgerufen am 27.07.2024.
 
 \end{thebibliography}

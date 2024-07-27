@@ -9,26 +9,30 @@
 \contentsline {chapter}{\numberline {2}Methodologie und Systementwurf }{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Entwurf und Konzeption}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}UML}{3}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Klassendiagramm}{3}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Use-Case Diagramme}{3}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Front-End Technologien}{3}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}HTML/CSS}{3}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.1.2}Klassendiagramm}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Use-Case Diagramme}{4}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Front-End Technologien}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}HTML/CSS}{4}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}JavaScript}{4}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Angular}{4}{subsection.2.2.3}%
-\contentsline {subsubsection}{Komponenten}{4}{section*.5}%
-\contentsline {subsubsection}{Document Object Model (DOM)}{4}{section*.6}%
-\contentsline {section}{\numberline {2.3}Back-End Technologien}{4}{section.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Komponenten}{5}{subsubsection.2.2.3.1}%
+\contentsline {section}{\numberline {2.3}Back-End Technologien}{5}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Java}{5}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}REST-API}{5}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Spring Boot}{5}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Datenbankstruktur}{5}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Entwicklungsumgebung und Versionskontrolle}{5}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Implementierung}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Startseite}{6}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Online-Shopping}{6}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Bezahlprozess}{7}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Ergebnisse und Analyse}{8}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{9}{chapter.5}%
-\contentsline {chapter}{Literaturverzeichnis}{10}{chapter*.7}%
-\contentsline {chapter}{Glossar}{11}{appendix.A}%
-\contentsline {chapter}{Selbstständigkeitserklärung}{12}{appendix.B}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Einführung in REST}{5}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Vorteile von REST-APIs}{6}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}Implementierung einer REST-API mit Spring Boot}{6}{subsubsection.2.3.2.3}%
+\contentsline {subsection}{\numberline {2.3.3}Spring Boot}{6}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Warum wurde Spring Boot ausgewählt ?}{6}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Wie funktionniert Spring Boot ?}{7}{subsubsection.2.3.3.2}%
+\contentsline {section}{\numberline {2.4}Datenbankstruktur}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Entwicklungsumgebung und Versionskontrolle}{7}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Implementierung}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Startseite}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Online-Shopping}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Bezahlprozess}{9}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Ergebnisse und Analyse}{10}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{11}{chapter.5}%
+\contentsline {chapter}{Literaturverzeichnis}{12}{chapter*.5}%
+\contentsline {chapter}{Glossar}{13}{appendix.A}%
+\contentsline {chapter}{Selbstständigkeitserklärung}{14}{appendix.B}%

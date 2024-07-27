@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="b9607153-aebc-4e77-a393-a8ab06532758" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-frontend/angular-ecommerce/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.blg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.lof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.log" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.lot" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.lot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.out" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/Documentation.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/chapters/Glossar.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/chapters/Glossar.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/chapters/Selbststaendigkeitserklaerung.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/chapters/Selbststaendigkeitserklaerung.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/chapters/WeitereKapitel.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/chapters/WeitereKapitel.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/literatur.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../latex-vorlage-ausarbeitung/literatur.bib" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
