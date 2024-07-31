@@ -12,7 +12,7 @@ body{
   position: fixed;
   background: #fff;
   top: 18px;
-  right: 230px;
+  left: 18px;
   height: 40px;
   border-radius: 30px;
   padding: 10px 20px;
@@ -32,7 +32,7 @@ body{
   background: transparent;
   border: none;
   outline:none;
-  width: 300px; /* Fixed width */
+  width: 600px; /* Fixed width */
   font-weight: 500;
   font-size: 16px;
   transition: 0.8s;

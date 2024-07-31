@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
+import { CheckoutService } from 'src/app/services/checkout.service';
 import { ShopNookFormService } from 'src/app/services/shop-nook-form.service';
 import { Country } from 'src/app/utilities/country';
+import { Order } from 'src/app/utilities/order';
+import { OrderItem } from 'src/app/utilities/order-item';
+import { Purchase } from 'src/app/utilities/purchase';
 import { State } from 'src/app/utilities/state';
 import { ShopNookValidators } from 'src/app/validators/shop-nook-validators';
 
@@ -27,7 +32,7 @@ export class CheckoutComponent implements OnInit {
   paymentAddressStates: State[] = [];
 
   constructor(private formBuilder: FormBuilder, private shopNookFormService: ShopNookFormService,
-    private cartService: CartService) { }
+    private cartService: CartService, private checkoutService: CheckoutService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -254,14 +259,71 @@ export class CheckoutComponent implements OnInit {
 
     if (this.formGroupCheckout.invalid) {
       this.formGroupCheckout.markAllAsTouched();
+      return;
     }
 
-    console.log(this.formGroupCheckout!.get('customer')!.value);
-    console.log("The email address is " + this.formGroupCheckout!.get('customer')!.value.email);
+    // Initialize the order info
+    let order = new Order();
+    order.sumPrice = this.sumPrice;
+    order.sumQuantity = this.sumQuantity;
 
-    console.log("The country of the delivery address is " + this.formGroupCheckout!.get('deliveryAddress')!.value.country.name);
-    console.log("The state of the delivery address is " + this.formGroupCheckout!.get('deliveryAddress')!.value.state.name);
+    // Retrieving the cart items
+    const cartItems = this.cartService.cartItems;
 
+    // Generate orderItems from cartItems
+    let orderItemSet: OrderItem[] = cartItems.map(tempCartItem => new OrderItem(tempCartItem));
+
+    // generate the purchase
+    let purchase = new Purchase();
+
+    // fill the purchase for the customer
+    purchase.customer = this.formGroupCheckout.controls['customer'].value;
+
+    // fill the purchase for the delivery address
+    purchase.deliveryAddress = this.formGroupCheckout.controls['deliveryAddress'].value;
+    const deliveryState: State = JSON.parse(JSON.stringify(purchase.deliveryAddress.state));
+    const deliveryCountry: Country = JSON.parse(JSON.stringify(purchase.deliveryAddress.country));
+    purchase.deliveryAddress.state = deliveryState.name;
+    purchase.deliveryAddress.country = deliveryCountry.name;
+
+    // fill the purchase for the payment address
+    purchase.paymentAddress = this.formGroupCheckout.controls['paymentAddress'].value;
+    const paymentState: State = JSON.parse(JSON.stringify(purchase.paymentAddress.state));
+    const paymentCountry: Country = JSON.parse(JSON.stringify(purchase.paymentAddress.country));
+    purchase.paymentAddress.state = paymentState.name;
+    purchase.paymentAddress.country = paymentCountry.name;
+
+     // filling the purchase for order and orderItemSet
+     purchase.order = order;
+     purchase.orderItemSet = orderItemSet;
+ 
+     // call REST-API through the CheckoutService
+     this.checkoutService.submitOrder(purchase).subscribe(
+      {
+         next: response => {
+           alert(`Your order has been successfully received.\nOrder tracking number: ${response.orderTrackingReference}`);
+ 
+           // clear the cart
+           this.clearCart();
+         },
+         error: err => {
+           alert(`There have been an error: ${err.message}`);
+         }
+       }
+     );
+  }
+
+  clearCart() {
+    // reset cart data
+    this.cartService.cartItems = [];
+    this.cartService.sumPrice.next(0);
+    this.cartService.sumQuantity.next(0);
+    
+    // reset the form
+    this.formGroupCheckout.reset();
+
+    // swing back to the main page of products
+    this.router.navigateByUrl("/products");
   }
 
   getStatesList(formSectionName: string) {
