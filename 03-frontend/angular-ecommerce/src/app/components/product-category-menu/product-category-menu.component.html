@@ -22,65 +22,19 @@
       </header>
     <nav class="sidebar-nav">
       <ul>
-        <li>
-            <a href="#"><i class="ion-ios-analytics-outline"></i> <span class="">Electronics</span></a>
-            <ul class="nav-flyout">
-                <li *ngFor="let category of productCategories">
-                    <a routerLink="/category/{{ category.id }}" routerLinkActive="active-link">
-                      {{ category.categoryName }}
-                    </a>
-                  </li>
-            </ul>
+        <li *ngFor="let category of predefinedCategories">
+          <a href="#"><i class="ion-ios-analytics-outline"></i> <span class="">{{ category.name }}</span></a>
+          <ul class="nav-flyout" *ngIf="category.subCategories.length > 0">
+            <li *ngFor="let subCategory of category.subCategories">
+              <a [routerLink]="['/category', subCategory.id]" routerLinkActive="active-link">{{ subCategory.name }}</a>
+              <ul class="nav-flyout-secondary" *ngIf="subCategory.subCategories && subCategory.subCategories.length > 0">
+                <li *ngFor="let subSubCategory of subCategory.subCategories">
+                  <a [routerLink]="['/category', subSubCategory.id]" routerLinkActive="active-link">{{ subSubCategory.name }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </li>
-        <li>
-            <a href="#"><i class="ion-ios-settings"></i> <span class="">Sports & Outdoors</span></a>
-            <ul class="nav-flyout">
-              <li>
-                <a href="#"><i class="ion-ios-alarm-outline"></i>Outdoor</a>
-              </li>
-              <li>
-                <a href="#"><i class="ion-ios-camera-outline"></i>Fitness</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><i class="ion-ios-paper-outline"></i> <span class="">Home & Kitchen</span></a>
-            <ul class="nav-flyout">
-              <li>
-                <a href="#"><i class="ion-ios-filing-outline"></i>Fourniture</a>
-              </li>
-              <li>
-                <a href="#"><i class="ion-ios-information-outline"></i>Decor</a>
-              </li>
-              <li>
-                <a href="#"><i class="ion-ios-paperplane-outline"></i>Planes</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><i class="ion-ios-navigate-outline"></i> <span class="">Fashion</span></a>
-            <ul class="nav-flyout">
-              <li>
-                <a href="#"><i class="ion-ios-flame-outline"></i>Women</a>
-                <ul class ="nav-flyout-secondary">
-                    <li>
-                        <a href="#"><i class="ion-ios-lightbulb-outline"></i>purses</a>
-                    </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><i class="ion-ios-lightbulb-outline"></i>Men</a>
-              </li>
-              <li>
-                <a href="#"><i class="ion-ios-location-outline"></i>Kids</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><i class="ion-ios-paper-outline"></i> <span class="">Books</span></a>
-
-          </li>
-
       </ul>
     </nav>
     </aside>
