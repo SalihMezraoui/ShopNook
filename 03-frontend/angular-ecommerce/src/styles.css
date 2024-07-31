@@ -776,7 +776,7 @@ select{
 .form-section {
     margin-bottom: 3rem;
   }
-  .custom-checkbox {
+  /* .custom-checkbox {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -786,7 +786,11 @@ select{
     opacity: 0;
     width: 0;
     height: 0;
-  }
+  } */
+  .auth-org-logo  {
+    width: 220px; /* Adjust this value to your preferred size */
+    height: 250px; /* Maintains the aspect ratio */
+}
   .checkbox-slider {
     position: absolute;
     cursor: pointer;
