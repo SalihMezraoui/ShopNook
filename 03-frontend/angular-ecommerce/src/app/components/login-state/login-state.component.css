@@ -19,7 +19,7 @@
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
     padding: 10px 20px; /* Add padding around the header */
-    margin-left: 950px; /* Add space inside the container on the left */
+    margin-left: 900px; /* Add space inside the container on the left */
     gap: 10px; /* Optional: Add space between elements */
 }
 
