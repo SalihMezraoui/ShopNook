@@ -32,7 +32,7 @@ public class DataRestConfiguration implements RepositoryRestConfigurer
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors)
     {
-        HttpMethod[] disallowedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE};
+        HttpMethod[] disallowedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE, HttpMethod.PATCH};
 
         // Restricting HTTP methods(PUT, POST, DELETE) for All Classes
         restrictHttpMethods(Product.class, config, disallowedActions);
