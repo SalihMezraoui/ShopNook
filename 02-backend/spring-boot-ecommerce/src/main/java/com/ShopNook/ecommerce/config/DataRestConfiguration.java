@@ -4,6 +4,7 @@ import com.ShopNook.ecommerce.entity.*;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.metamodel.EntityType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
@@ -16,6 +17,9 @@ import java.util.*;
 @Configuration
 public class DataRestConfiguration implements RepositoryRestConfigurer
 {
+    // Inject the allowed origins from the application properties
+    @Value("${allowed.origins}")
+    private String[] myAllowedOrigins;
 
     // Autowire JPA entity manager
     private EntityManager entityManager;
@@ -42,6 +46,9 @@ public class DataRestConfiguration implements RepositoryRestConfigurer
 
         // calling internal helper method
         exposeIds(config);
+
+        // cors mapping configuration
+        cors.addMapping(config.getBasePath() + "/**").allowedOrigins(myAllowedOrigins);
     }
 
     private static void restrictHttpMethods(Class myClass, RepositoryRestConfiguration config, HttpMethod[] disallowedActions) {
