@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
+import { Injector, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product.service';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, Router } from '@angular/router';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { AboutUsComponent } from './components/about-us/about-us.component'; 
 import { ContactUsComponent } from './components/contact-us/contact-us.component'; 
@@ -22,15 +22,29 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import {
   OktaAuthModule,
   OktaCallbackComponent,
-  OKTA_CONFIG 
+  OKTA_CONFIG, 
+  OktaAuthGuard
 } from '@okta/okta-angular';
 import { OktaAuth } from '@okta/okta-auth-js';
 import appEnvConfig from './config/app-env-config';
+import { OnlyMembersPageComponent } from './components/only-members-page/only-members-page.component';
 
 const oktaConfig = appEnvConfig.oidc;
 const oktaAuth = new OktaAuth(oktaConfig);
 
+
+function sendToLoginPage(oktaAuth: OktaAuth, injector: Injector)
+{
+  // Get the Router instance from the Injector
+  const router = injector.get(Router);
+
+  // Navigate to the login page
+  router.navigate(['/login']);
+}
+
 const routes: Routes = [
+  {path: 'members', component: OnlyMembersPageComponent, canActivate: [OktaAuthGuard], 
+    data: {onAuthRequired: sendToLoginPage}},
   {path: 'login/callback', component: OktaCallbackComponent},
   {path: 'login', component: LoginComponent},
   {path: 'checkout', component: CheckoutComponent, data: { breadcrumb: 'Checkout' }},
@@ -62,7 +76,8 @@ const routes: Routes = [
     CheckoutComponent,
     LoginComponent,
     LoginStateComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    OnlyMembersPageComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
