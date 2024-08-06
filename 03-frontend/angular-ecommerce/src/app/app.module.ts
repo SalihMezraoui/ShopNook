@@ -2,7 +2,7 @@ import { Injector, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product.service';
 import { Routes, RouterModule, Router } from '@angular/router';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
@@ -29,6 +29,7 @@ import { OktaAuth } from '@okta/okta-auth-js';
 import appEnvConfig from './config/app-env-config';
 import { OnlyMembersPageComponent } from './components/only-members-page/only-members-page.component';
 import { OrderLogComponent } from './components/order-log/order-log.component';
+import { TokenInterceptorService } from './services/token-interceptor.service';
 
 const oktaConfig = appEnvConfig.oidc;
 const oktaAuth = new OktaAuth(oktaConfig);
@@ -91,7 +92,8 @@ const routes: Routes = [
     ReactiveFormsModule,
     OktaAuthModule
   ],
-  providers: [ProductService, { provide: OKTA_CONFIG, useValue: { oktaAuth }}],
+  providers: [ProductService, { provide: OKTA_CONFIG, useValue: { oktaAuth }}, 
+    {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
