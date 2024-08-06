@@ -28,6 +28,7 @@ import {
 import { OktaAuth } from '@okta/okta-auth-js';
 import appEnvConfig from './config/app-env-config';
 import { OnlyMembersPageComponent } from './components/only-members-page/only-members-page.component';
+import { OrderLogComponent } from './components/order-log/order-log.component';
 
 const oktaConfig = appEnvConfig.oidc;
 const oktaAuth = new OktaAuth(oktaConfig);
@@ -43,6 +44,8 @@ function sendToLoginPage(oktaAuth: OktaAuth, injector: Injector)
 }
 
 const routes: Routes = [
+  {path: 'order-log', component: OrderLogComponent, canActivate: [OktaAuthGuard], 
+    data: {onAuthRequired: sendToLoginPage}},
   {path: 'members', component: OnlyMembersPageComponent, canActivate: [OktaAuthGuard], 
     data: {onAuthRequired: sendToLoginPage}},
   {path: 'login/callback', component: OktaCallbackComponent},
@@ -77,7 +80,8 @@ const routes: Routes = [
     LoginComponent,
     LoginStateComponent,
     BreadcrumbComponent,
-    OnlyMembersPageComponent
+    OnlyMembersPageComponent,
+    OrderLogComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

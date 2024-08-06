@@ -43,6 +43,9 @@ public class DataRestConfiguration implements RepositoryRestConfigurer
 
         restrictHttpMethods(State.class, config, disallowedActions);
 
+        restrictHttpMethods(Order.class, config, disallowedActions);
+
+
 
         // calling internal helper method
         exposeIds(config);
