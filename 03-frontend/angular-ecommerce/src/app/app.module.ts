@@ -56,6 +56,7 @@ const routes: Routes = [
   {path: 'products/:id', component: ProductDetailsComponent, data: { breadcrumb: 'Product Details' }},
   {path: 'search/:keyword', component: ProductListComponent, data: { breadcrumb: 'Search' }},
   {path: 'category/:id', component: ProductListComponent, data: { breadcrumb: 'Category' }},
+  {path: 'category/:categoryId/product/:productId', component: ProductDetailsComponent, data: { breadcrumb: 'Product' }},
   {path: 'category', component: ProductListComponent, data: { breadcrumb: 'Category' }},
   {path: 'products', component: ProductListComponent, data: { breadcrumb: 'Products' }},
   {path: 'about-us', component: AboutUsComponent, data: { breadcrumb: 'About Us' }},
