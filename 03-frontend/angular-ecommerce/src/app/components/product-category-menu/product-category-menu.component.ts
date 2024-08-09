@@ -17,7 +17,6 @@ export class ProductCategoryMenuComponent implements OnInit {
         { id: 7, name: 'Accessories' },
         { id: 8, name: 'Camera and photo' },
         { id: 9, name: 'Music Production' },
-        { id: 10, name: 'CDs & DVDs' },
         { id: 1, name: 'Iphone Cases' },
       ]
     },
@@ -30,7 +29,7 @@ export class ProductCategoryMenuComponent implements OnInit {
       ]
     },
     {
-      name: 'Home & Kitchen',
+      name: 'Home & Decor',
       subCategories: [
         { id: 15, name: 'Fourniture' },
         { id: 16, name: 'Decor' },
@@ -38,18 +37,30 @@ export class ProductCategoryMenuComponent implements OnInit {
       ]
     },
     {
-      name: 'Fashion',
+      name: 'Women',
       subCategories: [
-        {
-          id: 19, name: 'Women', subCategories: [
-            { id: 4, name: 'Purses' }
-          ]
-        },
-        { id: 21, name: 'Men' },
-        { id: 22, name: 'Kids' }
+        { id: 24, name: 'Pants' },
+        { id: 25, name: 'Shirts' },
+        { id: 4, name: 'Purses' },
+        { id: 26, name: 'Shoes' },
       ]
     },
-    { name: 'Books', subCategories: [] }
+    {
+      name: 'Men',
+      subCategories: [
+        { id: 27, name: 'Pants' },
+        { id: 28, name: 'Shirts' },
+        { id: 29, name: 'Shoes' }
+      ]
+    },
+    {
+      name: 'Kids',
+      subCategories: [
+        { id: 30, name: 'Pants' },
+        { id: 31, name: 'Shirts' },
+        { id: 32, name: 'Shoes' }
+      ]
+    }
   ];
 
   productCategories: ProductCategory[] = [];

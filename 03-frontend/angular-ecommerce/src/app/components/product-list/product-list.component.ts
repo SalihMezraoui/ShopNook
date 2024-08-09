@@ -20,7 +20,7 @@ export class ProductListComponent implements OnInit {
 
   // Pagination properties
   pageNumber: number = 1;
-  pageSize: number = 5;
+  pageSize: number = 8;
   totalItems: number = 0;
 
   formerKeyword: string = "";

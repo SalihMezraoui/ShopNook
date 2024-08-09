@@ -546,34 +546,39 @@ input.au-input.au-input-xl{
 
 /* product-list.css */
 /* Styling for product boxes */
+/* Set the basic structure for the product box */
 .product-box {
-    margin-bottom: 40px; /* Decreased margin for smaller spacing */
-    border: 1px solid #ddd;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease;
-    max-width: 300px; /* Set maximum width to control box size */
-    margin: 0 auto; /* Center the box horizontally */
+  position: relative;
+  margin-bottom: 30px;
+  background-color: #f7f8f9;
+  transition: all 0.3s;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .product-box:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.product-box img {
-    width: 100%; /* Ensure images fill the container */
-    border-radius: 8px;
-    display: block;
-    margin-bottom: 20px; /* Reduced margin for smaller gap */
+/* Ensure all images within the product box are uniform */
+.product-product-box img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Crop to fit the box */
+    border-radius: 4px;
+    transition: transform 0.3s ease-out;
 }
 
 .product-box h1 {
     font-size: 22px; /* Slightly smaller font size */
     font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     color: #333;
 }
 
@@ -887,6 +892,8 @@ table.table.table-bordered th{
     overflow: hidden;
     background-color: #f7f8f9;
     transition: all 0.3s;
+    width: 300px; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
   }
   
   .product-box:hover {
