@@ -31,12 +31,18 @@ export class CheckoutComponent implements OnInit {
   deliveryAddressStates: State[] = [];
   paymentAddressStates: State[] = [];
 
+  dataStorage: Storage = sessionStorage;
+  
+
   constructor(private formBuilder: FormBuilder, private shopNookFormService: ShopNookFormService,
     private cartService: CartService, private checkoutService: CheckoutService, private router: Router) { }
 
   ngOnInit(): void {
 
     this.summaryCartDetails();
+
+    // retrieve the customer's  email address from the session storage
+    const storedEmail = JSON.parse(this.dataStorage.getItem('userEmail')!);
 
     this.formGroupCheckout = this.formBuilder.group({
       customer: this.formBuilder.group({
@@ -54,7 +60,7 @@ export class CheckoutComponent implements OnInit {
           [Validators.required,
           Validators.pattern('^\\+[0-9]{1,15}$')]), // Ensure a plus sign followed by 1-15 digits
 
-        email: new FormControl('',
+        email: new FormControl(storedEmail,
           [Validators.required,
           Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')])
       }),
