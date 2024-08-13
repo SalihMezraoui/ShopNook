@@ -4,15 +4,16 @@ import { Product } from '../utilities/product';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ProductCategory } from '../utilities/product-category';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  private apiUrl = 'http://localhost:8080/api/products';
+  private apiUrl = environment.shopnookApiUrl + '/products';
 
-  private categoryUrl = 'http://localhost:8080/api/product-category';
+  private categoryUrl = environment.shopnookApiUrl + '/product-category';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -29,6 +30,7 @@ export class ProductService {
     const resultUrl = `${this.apiUrl}/search/findByCategoryId?id=${theCategoryId}`
       + `&page=${myPage}&size=${myPageSize}`;
 
+    console.log(`retrieving products from: ${resultUrl}`);
     return this.httpClient.get<GetProductsResponse>(resultUrl);
 
   }
