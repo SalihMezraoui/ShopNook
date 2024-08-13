@@ -1,12 +1,18 @@
 package com.ShopNook.ecommerce.service;
 
 import com.ShopNook.ecommerce.dao.CustomerRepository;
+import com.ShopNook.ecommerce.dto.PaymentInformation;
 import com.ShopNook.ecommerce.dto.Purchase;
 import com.ShopNook.ecommerce.dto.PurchaseResult;
 import com.ShopNook.ecommerce.entity.*;
+import com.stripe.Stripe;
+import com.stripe.exception.StripeException;
+import com.stripe.model.PaymentIntent;
 import jakarta.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.util.*;
 import java.util.Set;
 import java.util.UUID;
 
@@ -15,9 +21,13 @@ public class CheckoutServiceImplementation implements  CheckoutService
 {
     private CustomerRepository customerRepository;
 
-    public CheckoutServiceImplementation(CustomerRepository customerRepository)
+    public CheckoutServiceImplementation(CustomerRepository customerRepository,
+                                         @Value("${stripe.key.secret}") String stripeSecretKey)
     {
         this.customerRepository = customerRepository;
+
+        // Configure Stripe with the provided secret key
+        Stripe.apiKey = stripeSecretKey;
     }
 
     @Override
@@ -60,6 +70,21 @@ public class CheckoutServiceImplementation implements  CheckoutService
 
         // return a response
         return new PurchaseResult(orderTrackingReference);
+    }
+
+    @Override
+    public PaymentIntent generatePaymentIntent(PaymentInformation paymentInformation) throws StripeException {
+        List<String> paymentMethods = new ArrayList<>();
+        paymentMethods.add("card");
+
+        Map<String, Object> params = new HashMap<>();
+        params.put("billAmount", paymentInformation.getBillAmount());
+        params.put("currency", paymentInformation.getCurrency());
+        params.put("payment_methods", paymentMethods);
+        // params.put("description", "Shopnook purchase");
+        // params.put("receipt_email", paymentInformation.getB);
+
+        return PaymentIntent.create(params);
     }
 
     private String generateOrderTrackingReference()

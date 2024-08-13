@@ -1,8 +1,13 @@
 package com.ShopNook.ecommerce.controller;
 
+import com.ShopNook.ecommerce.dto.PaymentInformation;
 import com.ShopNook.ecommerce.dto.Purchase;
 import com.ShopNook.ecommerce.dto.PurchaseResult;
 import com.ShopNook.ecommerce.service.CheckoutService;
+import com.stripe.exception.StripeException;
+import com.stripe.model.PaymentIntent;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin("http://localhost:4200")
@@ -21,6 +26,16 @@ public class CheckoutController
     public PurchaseResult submitOrder(@RequestBody Purchase purchase)
     {
         return checkoutService.submitOrder(purchase);
+    }
+
+    @PostMapping("/payment-intent")
+    public ResponseEntity<String> generatePaymentIntent(@RequestBody PaymentInformation paymentInformation) throws StripeException {
+
+        PaymentIntent paymentIntent = checkoutService.generatePaymentIntent(paymentInformation);
+
+        String paymentString = paymentIntent.toJson();
+
+        return new ResponseEntity<>(paymentString, HttpStatus.OK);
     }
 
 }
