@@ -4,7 +4,6 @@ import { Observable, of } from 'rxjs';
 import { Country } from '../utilities/country';
 import { map } from 'rxjs/operators';
 import { State } from '../utilities/state';
-import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -12,8 +11,8 @@ import { environment } from 'src/environments/environment';
 })
 export class ShopNookFormService {
 
-  private countriesApiUrl = environment.shopnookApiUrl + '/countries';
-  private statesApiUrl = environment.shopnookApiUrl + '/states';
+  private countriesApiUrl = 'http://localhost:8080/api/countries';
+  private statesApiUrl = 'http://localhost:8080/api/states';
 
 
   constructor(private httpClient: HttpClient) { }

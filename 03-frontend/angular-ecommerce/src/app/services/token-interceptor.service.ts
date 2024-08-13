@@ -3,7 +3,6 @@ import { Inject, Injectable } from '@angular/core';
 import { OKTA_AUTH } from '@okta/okta-angular';
 import { OktaAuth } from '@okta/okta-auth-js';
 import { from, lastValueFrom, Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -20,8 +19,7 @@ export class TokenInterceptorService implements HttpInterceptor {
   private async manageAccess(request: HttpRequest<any>, next: HttpHandler): Promise<HttpEvent<any>> 
   {
      // Apply access token only to specific secured API endpoints
-     const endpoints = environment.shopnookApiUrl + '/orders';
-     const protectedEndpoints = [endpoints];
+     const protectedEndpoints = ['http://localhost:8080/api/orders'];
 
      if (protectedEndpoints.some(url => request.urlWithParams.includes(url))) 
       {

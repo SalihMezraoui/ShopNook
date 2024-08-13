@@ -2,14 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { OrderLog } from '../utilities/order-log';
-import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OrderLogService {
 
-  private orderLogUrl = environment.shopnookApiUrl + '/orders';
+  private orderLogUrl = 'http://localhost:8080/api/orders';
 
   constructor(private httpClient: HttpClient)
   {}
