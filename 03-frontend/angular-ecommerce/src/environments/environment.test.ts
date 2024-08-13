@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  shopnookApiUrl: "https://localhost:8443/api"
+  shopnookApiUrl: "https://localhost:9898/api"
 };
 
 /*
