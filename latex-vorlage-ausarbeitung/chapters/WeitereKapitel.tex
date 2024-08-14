@@ -143,7 +143,9 @@ public class SpringBootEcommerceApplication {
 	\item \textbf{Application Properties:} Spring Boot ermöglicht eine einfache Konfiguration durch application.properties-Datei. Dadurch wird die Konfiguration externalisiert, was die Verwaltung verschiedener Umgebungen erleichtert.
 	\begin{lstlisting}[language=Java, caption={Implementierung von Application.properties Datei}\label{Application.properties}]
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.url=jdbc:mysql://localhost:3306/full-stack-ecommerce?
+useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=
+true&serverTimezone=UTC
 spring.datasource.username=username
 spring.datasource.password=password
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
@@ -151,13 +153,91 @@ spring.data.rest.base-path=/api
 	\end{lstlisting}
 \end{enumerate}
 
+\subsubsection{Spring Security}
 
+Spring Security ist ein robustes und anpassungsfähiges Framework, das für die Authentifizierung und Zugriffskontrolle entwickelt wurde und sich zum Standard für die Absicherung von mit Spring erstellten Anwendungen entwickelt hat.
+
+Spring Security ist ein Framework, das sowohl die Authentifizierung als auch die Autorisierung von Java-Anwendungen übernimmt. Seine Stärke liegt in der Flexibilität, die es erlaubt, es leicht zu erweitern, um spezifische Anforderungen zu erfüllen.
+
+Das Framework bietet eine Reihe von Funktionen, darunter umfassende Unterstützung für Authentifizierung und Autorisierung, Schutz vor verschiedenen Angriffen wie Session Fixation, Clickjacking und Cross-Site Request Forgery, Integration mit der Servlet API und optionale Kompatibilität mit Spring Web MVC \cite{Spring-Security:o.J}.
+
+Wir haben Spring Security verwendet, um die Endpunkte von Kundenbestellungen zu schützen, indem wir OAuth2 für die Authentifizierung über JWT eingesetzt haben, um einen sicheren Zugriff zu gewährleisten. Die Einrichtung umfasste die Konfiguration von CORS zur Verwaltung von Herkunftsübergreifenden Anfragen und die Anpassung von Sicherheitseinstellungen wie die Deaktivierung des CSRF-Schutzes und die Handhabung der Inhaltsaushandlung. Dieser Ansatz gewährleistet robuste Sicherheit, während er verschiedene Inhaltstypen unterstützt und die gemeinsame Nutzung von Ressourcen über verschiedene Ursprünge hinweg effektiv handhabt.
 
 
 \section{Datenbankstruktur}\index{Datenbankstruktur}
+\subsection{Übersicht über relationale Datenbanken und Auswahl von MySQL}
+Die Daten in einer relationalen Datenbank sind in Tabellen mit Spalten und Zeilen organisiert, und auch die Primär- und Fremdschlüssel werden verwendet, um die Beziehungen zwischen den Tabellen herzustellen. Dieser Ansatz ist ideal für E-Commerce-Anwendungen, da er komplexe Abfragen und aussagekräftige Daten verarbeiten kann. Produktlieferungen, Auftragstransaktionen und Kundendaten werden alle ordnungsgemäß verwaltet. Die Möglichkeit, Tabellen zu verknüpfen, erleichtert umfassende Analysen, einschließlich der Nachverfolgung von Kaufdatensätzen und der Bestandskontrolle, während die Einhaltung von ACID-Eigenschaften eine zuverlässige Transaktionsverarbeitung gewährleistet, die für die Auftragsabwicklung und das Zahlungsmanagement entscheidend ist. Relationale Datenbanken wie MySQL bieten die Robustheit und Konsistenz, die für einen sicheren und produktiven Online-Shopping-Betrieb erforderlich sind \cite{IBM:o.J}.
 
+\subsection{Datenbankschemaentwurf mit Spring Data JPA}
+Ziel dieses Abschnitts ist es, zu erörtern, wie Spring Data JPA den Entwurf und die Verwaltung von Datenbankschemata vereinfacht. Es wird gezeigt, wie Spring Data JPA es Entwicklern ermöglicht, Entitäten und Beziehungen innerhalb eines Datenbankschemas abzubilden und zu verwalten, und wie es die Komplexität des Datenzugriffs durch seine Repository-Schicht abstrahiert.
+
+Spring Data JPA vereinfacht den Entwurf von Datenbankschemata, indem es Entwicklern ermöglicht, Java-Klassen mithilfe von Annotationen wie @Entity, @Id und @OneToMany auf Datenbanktabellen abzubilden. Diese Annotationen übernehmen automatisch die Schemaerstellung und -verwaltung und stellen sicher, dass die Datenbankstruktur mit dem Domänenmodell der Anwendung übereinstimmt \cite{Docs-Spring:o.J, Baeldung:o.J}.
+
+Die Repository-Schicht in Spring Data JPA abstrahiert die Komplexität des Datenzugriffs und bietet integrierte CRUD-Operationen über Schnittstellen wie JpaRepository. Dies macht manuelle SQL-Abfragen überflüssig und rationalisiert die Datenbankinteraktionen, so dass sich die Entwickler auf die Geschäftslogik konzentrieren können \cite{Docs-Spring-JPA-Repo:o.J, Docs-Spring-JPA-QueryMethods:o.J}.
+
+\subsection{Datenpersistenz und Transaktionen}
+In diesem Abschnitt wird erläutert, wie Spring Boot und Hibernate die Datenpersistenz handhaben. Der Schwerpunkt liegt dabei auf CRUD-Operationen, der Rolle des EntityManagers und der Interaktion des Hibernate ORM mit MySQL.
+
+CRUD-Operationen (Erstellen, Lesen, Aktualisieren, Löschen) werden mit Spring Boot und Hibernate verwaltet. Der EntityManager ist in diesem Prozess von zentraler Bedeutung und ermöglicht das Erstellen, Abrufen, Aktualisieren und Löschen von Entitäten. Er verwaltet auch den Lebenszyklus von Entitäten innerhalb von Transaktionen und stellt sicher, dass Änderungen bei Bedarf ordnungsgemäß übertragen oder zurückgenommen werden  \cite{Baeldung-EntityManager:2024}.
+
+
+Hibernate ORM wird verwendet, um Java-Objekte auf Datenbanktabellen abzubilden, was die Interaktion mit der MySQL-Datenbank vereinfacht. Dieses ORM-Framework macht manuelles SQL überflüssig und bietet einen objektorientierten Ansatz für Datenbankoperationen \cite{Hibernate:o.J}.
+
+
+\subsection{MySQL-Workbench und SQL}
+In diesem Abschnitt wird die MySQL Workbench als Werkzeug für den Entwurf und die Verwaltung von Datenbanken und SQL als Sprache für die Erstellung von Abfragen und die Verwaltung der Datenbank vorgestellt.
+
+MySQL Workbench wurde zur Visualisierung des Datenbankschemas eingesetzt und ermöglichte eine intuitive Gestaltung und Verwaltung der Datenbankstrukturen. Sie erleichterte die Erstellung und Änderung von Tabellen, Beziehungen und Indizes. Darüber hinaus wurde SQL verwendet, um Abfragen für Tests und die Datenbankverwaltung auszuführen, einschließlich Aufgaben wie Datenmanipulation und Schemaaktualisierungen \cite{mySQL:o.J}.
+
+\subsection{Datenbankverbindung und -konfiguration in Spring Boot}
+In diesem Abschnitt wird erläutert, wie die Datenbank innerhalb der Spring Boot-Anwendung verbunden und konfiguriert wird.
+
+Die Datenbankverbindung wird in der Datei \texttt{application.properties} konfiguriert. Zu den wichtigsten Eigenschaften gehören die JDBC-URL, der Name der Treiberklasse und die Anmeldeinformationen, wie in \hyperref[Application.properties]{Listing~2.2} dargestellt.
 
 
 \section{Entwicklungsumgebung und Versionskontrolle}\index{Entwicklungsumgebung und Versionskontrolle}
+
+\subsection{Entwicklungsumgebung}
+
+
+\subsubsection{IntelliJ IDEA}
+
+IntelliJ IDEA ist bekannt für seinen leistungsstarken Code-Editor, der sich durch eine umfassende Anfangsindizierung beim Verstehen und Verwalten von Code auszeichnet. Diese Funktion ermöglicht es ihm, Fehler in Echtzeit zu erkennen, kontextbezogene Vorschläge zur Code-Vervollständigung anzubieten und sicheres Code-Refactoring durchzuführen, neben anderen Funktionen. Es ist mit einer umfangreichen Suite integrierter Entwicklerwerkzeuge ausgestattet und bietet robuste Unterstützung für verschiedene Spring-Frameworks sowohl in Java als auch in Kotlin. Dazu gehören Spring MVC, Spring Boot, Spring Integration, Spring Security und Spring Cloud. Zu den bemerkenswerten Vorteilen gehören intelligente Codierungshilfe, sofortige Navigation innerhalb des Spring-Codes, integrierte Entwicklungswerkzeuge und erweiterte Visualisierungsfunktionen \cite{Jetbrains:o.J}.
+
+
+\subsubsection{Visual Studio Code}
+
+ Visual Studio Code ist ein vielseitiger und effizienter Quellcode-Editor, der mit Windows, macOS und Linux kompatibel ist. Er bietet native Unterstützung für JavaScript, TypeScript und Node.js und verfügt über eine breite Palette von Erweiterungen für weitere Sprachen und Plattformen \cite{visual-studio:o.J}.
+
+Da unsere Frontend-Entwicklung mit Angular erfolgt, das auf TypeScript basiert, haben wir uns für Visual Studio Code entschieden. Die robuste TypeScript-Unterstützung ermöglicht es uns, nahtlos an dem Projekt zu arbeiten, ohne dass wir zusätzliche Erweiterungen benötigen \cite{visualstudio-angular:o.J}.
+
+\subsection{Versionskontrolle}
+
+\subsubsection{Git}
+Git ist ein kostenloses und quelloffenes, verteiltes Versionskontrollsystem, das entwickelt wurde, um Projekte jeder Größe schnell und effizient zu verwalten. Es hat einen minimalen Platzbedarf und liefert eine außergewöhnlich schnelle Leistung. Git übertrifft herkömmliche SCM-Tools wie Subversion, CVS, Perforce und ClearCase mit Funktionen wie kostengünstiger lokaler Verzweigung, benutzerfreundlichen Staging-Bereichen und flexiblen Arbeitsabläufen.
+
+Eines der herausragenden Merkmale von Git ist sein Verzweigungsmodell, das es von fast allen anderen SCM-Tools unterscheidet. Git ermöglicht und fördert die Erstellung mehrerer lokaler Zweige, von denen jeder unabhängig funktionieren kann. Das Erstellen, Zusammenführen und Löschen von Zweigen geht schnell, nahtlos vonstatten und dauert oft nur Sekunden  \cite{git-scmr:o.J}.
+
+\subsubsection{GitHub}
+GitHub ist eine cloudbasierte Plattform zum Speichern, Freigeben und gemeinsamen Bearbeiten von Code. Die von Git unterstützten Kollaborationsfunktionen von GitHub ermöglichen es uns:
+
+\begin{itemize}
+	\item Projekte zu präsentieren oder zu verbreiten.
+	\item Verfolgen und Verwalten von Codeänderungen im Laufe der Zeit.
+	\item Andere einladen, den Code zu überprüfen und Verbesserungen vorzuschlagen.
+	\item Zusammenarbeit an Projekten ohne das Risiko, dass unbeabsichtigte Änderungen die Arbeit anderer beeinträchtigen, bis wir bereit sind, sie zusammenzuführen  \cite{github:o.J}.
+\end{itemize} 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
