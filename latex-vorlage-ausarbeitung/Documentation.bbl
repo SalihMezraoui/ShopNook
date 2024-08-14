@@ -1,5 +1,15 @@
 \begin{thebibliography}{HTM24}
 
+\bibitem[Bae]{Baeldung:o.J}
+{\sc Baeldung}: {\em {JPA Entities}}.
+\newblock \url{https://www.baeldung.com/jpa-entities/}.
+\newblock Abgerufen am 14.08.2024.
+
+\bibitem[Bae24]{Baeldung-EntityManager:2024}
+{\sc Baeldung}: {\em {EntityManager}}.
+\newblock \url{https://www.baeldung.com/hibernate-entitymanager/}, 2024.
+\newblock Abgerufen am 14.08.2024.
+
 \bibitem[Bel23]{UML:2023}
 {\sc Bell, Donald}: {\em {An introduction to the Unified Modeling Language}}.
 \newblock \url{https://developer.ibm.com/articles/an-introduction-to-uml/},
@@ -11,15 +21,78 @@
 \newblock \url{https://angular.io}, 2024.
 \newblock Abgerufen am 02.06.2024.
 
+\bibitem[Hib]{Hibernate:o.J}
+{\sc Hibernate}: {\em {Hibernate}}.
+\newblock \url{https://hibernate.org/orm/what-is-an-orm/}.
+\newblock Abgerufen am 14.08.2024.
+
 \bibitem[HTM24]{HTML/CSS:2024}
 {\em {HTML For Beginners}}.
 \newblock \url{https://html.com}, 2024.
 \newblock Abgerufen am 02.06.2024.
 
+\bibitem[IBM]{IBM:o.J}
+{\sc IBM}: {\em {What is a relational database?}}
+\newblock \url{https://www.ibm.com/topics/relational-databases/}.
+\newblock Abgerufen am 14.08.2024.
+
 \bibitem[Jav24]{JavaScript:2024}
 {\em {JavaScript}}.
 \newblock \url{https://en.wikipedia.org/wiki/JavaScript}, 2024.
 \newblock Abgerufen am 02.06.2024.
+
+\bibitem[Jet]{Jetbrains:o.J}
+{\sc Jetbrains}: {\em {The IDE for Spring developers}}.
+\newblock \url{https://www.jetbrains.com/idea/spring/}.
+\newblock Abgerufen am 14.08.2024.
+
+\bibitem[myS]{mySQL:o.J}
+{\sc mySQL}: {\em {MySQL Workbench Manual}}.
+\newblock \url{https://dev.mysql.com/doc/workbench/en/wb-intro.html}.
+\newblock Abgerufen am 14.08.2024.
+
+\bibitem[Spra]{Docs-Spring-JPA-QueryMethods:o.J}
+{\sc Spring}: {\em {JPA Query Methods}}.
+\newblock
+  \url{/https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html/}.
+\newblock Abgerufen am 14.08.2024.
+
+\bibitem[Sprb]{Docs-Spring-JPA-Repo:o.J}
+{\sc Spring}: {\em {JPA Repositories}}.
+\newblock
+  \url{https://docs.spring.io/spring-data/jpa/docs/1.6.0.RELEASE/reference/html/jpa.repositories.html/}.
+\newblock Abgerufen am 14.08.2024.
+
+\bibitem[Sprc]{Docs-Spring:o.J}
+{\sc Spring}: {\em {Spring Data JPA}}.
+\newblock \url{https://www.ibm.com/topics/relational-databases/}.
+\newblock Abgerufen am 14.08.2024.
+
+\bibitem[Sprd]{Spring-Security:o.J}
+{\sc Spring}: {\em Spring Security}.
+\newblock \url{https://spring.io/projects/spring-security}.
+\newblock Abgerufen am 14. August 2024.
+
+\bibitem[Teaa]{git-scmr:o.J}
+{\sc Team, Git}: {\em Git About}.
+\newblock \url{https://git-scm.com/about}.
+\newblock Abgerufen am 14. August 2024.
+
+\bibitem[Teab]{github:o.J}
+{\sc Team, GitHub}: {\em GitHub About}.
+\newblock
+  \url{https://docs.github.com/en/get-started/start-your-journey/about-github-and-git#about-github}.
+\newblock Abgerufen am 14. August 2024.
+
+\bibitem[Teac]{visualstudio-angular:o.J}
+{\sc Team, Visual~Studio}: {\em Using Angular in Visual Studio Code}.
+\newblock \url{https://code.visualstudio.com/docs/nodejs/angular-tutorial}.
+\newblock Abgerufen am 14. August 2024.
+
+\bibitem[Tead]{visual-studio:o.J}
+{\sc Team, Visual~Studio}: {\em Visual Studio Code Overview}.
+\newblock \url{https://code.visualstudio.com/docs}.
+\newblock Abgerufen am 14. August 2024.
 
 \bibitem[wik]{wiki:listing}
 {\em {Wikipedia: Interoperability}}.
