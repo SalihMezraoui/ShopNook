@@ -420,6 +420,7 @@ export class CheckoutComponent implements OnInit {
     this.cartService.cartItems = [];
     this.cartService.sumPrice.next(0);
     this.cartService.sumQuantity.next(0);
+    this.cartService.saveCartItems();
     
     // reset the form
     this.formGroupCheckout.reset();
