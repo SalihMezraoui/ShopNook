@@ -7,9 +7,11 @@ import { ShopNookFormService } from 'src/app/services/shop-nook-form.service';
 import { Country } from 'src/app/utilities/country';
 import { Order } from 'src/app/utilities/order';
 import { OrderItem } from 'src/app/utilities/order-item';
+import { PaymentInformation } from 'src/app/utilities/payment-information';
 import { Purchase } from 'src/app/utilities/purchase';
 import { State } from 'src/app/utilities/state';
 import { ShopNookValidators } from 'src/app/validators/shop-nook-validators';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-checkout',
@@ -32,12 +34,23 @@ export class CheckoutComponent implements OnInit {
   paymentAddressStates: State[] = [];
 
   dataStorage: Storage = sessionStorage;
+
+  // initialising the Stripe API
+  stripe = Stripe(environment.stripePublishableKey);
   
+  paymentInformation: PaymentInformation = new PaymentInformation();
+  displayError: any = "";
+  cardElement: any;
+
+  // isDisabled: boolean = false;
 
   constructor(private formBuilder: FormBuilder, private shopNookFormService: ShopNookFormService,
     private cartService: CartService, private checkoutService: CheckoutService, private router: Router) { }
 
   ngOnInit(): void {
+
+    // Initialize the Stripe payment processing form
+    this.initializeStripePaymentForm();
 
     this.summaryCartDetails();
 
@@ -97,38 +110,38 @@ export class CheckoutComponent implements OnInit {
           ShopNookValidators.notOnlyWhitespace])
       }),
       cardDetails: this.formBuilder.group({
-        cardType: new FormControl('', [Validators.required]),
-        cardHolderName: new FormControl('',
-          [Validators.required,
-          Validators.minLength(2),
-          ShopNookValidators.notOnlyWhitespace]),
-        cardNumber: new FormControl('', [Validators.required, Validators.pattern('[0-9]{16}')]),
-        CVV: new FormControl('', [Validators.required, Validators.pattern('[0-9]{3}')]),
-        expiryMonth: new FormControl('', [Validators.required]),
-        expiryYear: new FormControl('', [Validators.required])
+        // cardType: new FormControl('', [Validators.required]),
+        // cardHolderName: new FormControl('',
+        //   [Validators.required,
+        //   Validators.minLength(2),
+        //   ShopNookValidators.notOnlyWhitespace]),
+        // cardNumber: new FormControl('', [Validators.required, Validators.pattern('[0-9]{16}')]),
+        // CVV: new FormControl('', [Validators.required, Validators.pattern('[0-9]{3}')]),
+        // expiryMonth: new FormControl('', [Validators.required]),
+        // expiryYear: new FormControl('', [Validators.required])
       })
     });
 
     // populate the months (C)
 
-    const firstMonth: number = new Date().getMonth() + 1;
-    console.log("firstMonth: " + firstMonth);
+    // const firstMonth: number = new Date().getMonth() + 1;
+    // console.log("firstMonth: " + firstMonth);
 
-    this.shopNookFormService.fetchCreditCardMonths(firstMonth).subscribe(
-      data => {
-        console.log("fetching the months: " + JSON.stringify(data));
-        this.creditCardMonths = data;
-      }
-    );
+    // this.shopNookFormService.fetchCreditCardMonths(firstMonth).subscribe(
+    //   data => {
+    //     console.log("fetching the months: " + JSON.stringify(data));
+    //     this.creditCardMonths = data;
+    //   }
+    // );
 
-    // populate the years 
+    // // populate the years 
 
-    this.shopNookFormService.fetchCreditCardYears().subscribe(
-      data => {
-        console.log("fetching the years: " + JSON.stringify(data));
-        this.creditCardYears = data;
-      }
-    );
+    // this.shopNookFormService.fetchCreditCardYears().subscribe(
+    //   data => {
+    //     console.log("fetching the years: " + JSON.stringify(data));
+    //     this.creditCardYears = data;
+    //   }
+    // );
 
     // populate countries
 
@@ -138,6 +151,35 @@ export class CheckoutComponent implements OnInit {
         this.countries = data;
       }
     );
+  }
+  initializeStripePaymentForm() 
+  {
+    // Obtain a reference to the Stripe Elements instance
+    var elements = this.stripe.elements();
+
+    // Create a card input field without showing the postal code field
+    this.cardElement = elements.create('card', { hidePostalCode: true });
+
+    // Mount the card input component into the 'card-element' container
+    this.cardElement.mount('#card-element');
+
+    // Bind an event listener to handle changes in the card input field
+    this.cardElement.on('change', (event: any) => {
+
+      // card-errors element
+      this.displayError = document.getElementById('card-errors');
+
+      if (event.complete) 
+      {
+        this.displayError.textContent = "";
+      } 
+      else if (event.error) 
+      {
+        // Display validation errors to the customer
+        this.displayError.textContent = event.error.message;
+      }
+
+    });
   }
   summaryCartDetails() {
 
@@ -302,21 +344,75 @@ export class CheckoutComponent implements OnInit {
      // filling the purchase for order and orderItemSet
      purchase.order = order;
      purchase.orderItemSet = orderItemSet;
- 
-     // call REST-API through the CheckoutService
-     this.checkoutService.submitOrder(purchase).subscribe(
-      {
-         next: response => {
-           alert(`Your order has been successfully received.\nOrder tracking number: ${response.orderTrackingReference}`);
- 
-           // clear the cart
-           this.clearCart();
-         },
-         error: err => {
-           alert(`There have been an error: ${err.message}`);
-         }
-       }
-     );
+
+     // calculate the payment information
+     this.paymentInformation.amount = Math.round(this.sumPrice * 100);
+     this.paymentInformation.currency = "EUR";
+
+     console.log(`this.paymentInformation.amount:${this.paymentInformation.amount}`)
+
+    // If the form is valid:
+    // - Create a payment intent for processing
+    // - Confirm the payment using the provided card details
+    // - Finalize and place the order
+
+    if (!this.formGroupCheckout.invalid && this.displayError.textContent === "") {
+
+      // this.isDisabled = true;
+
+      this.checkoutService.generatePaymentIntent(this.paymentInformation).subscribe(
+        (paymentIntentResponse) => {
+          this.stripe.confirmCardPayment(paymentIntentResponse.client_secret,
+            {
+              payment_method: {
+                card: this.cardElement
+                // billing_details: {
+                //   email: purchase.customer.email,
+                //   name: `${purchase.customer.firstName} ${purchase.customer.lastName}`,
+                //   address: {
+                //     line1: purchase.paymentAddress.street,
+                //     city: purchase.paymentAddress.city,
+                //     state: purchase.paymentAddress.state,
+                //     postal_code: purchase.paymentAddress.zipCode,
+                //     country: this.paymentAddressCountry.value.code
+                //   }
+                // }
+              }
+            }, { handleActions: false })
+          .then((result: any) => {
+            if (result.error) 
+            {
+              // Oooops, alerting the customer that there was an error
+              alert(`There was an error: ${result.error.message}`);
+              // this.isDisabled = false;
+            } 
+            else
+            {
+              // Invoke REST API through CheckoutService
+              this.checkoutService.submitOrder(purchase).subscribe({
+                next: (response: any) => {
+                  alert(`Your order has been received.\nOrder tracking refrence: ${response.orderTrackingReference}`);
+
+                  // clear cart
+                  this.clearCart();
+                  // this.isDisabled = false;
+                },
+                error: (err: any) => {
+                  alert(`There was an error: ${err.message}`);
+                  // this.isDisabled = false;
+                }
+              })
+            }            
+          });
+        }
+      );
+    } 
+    else 
+    {
+      this.formGroupCheckout.markAllAsTouched();
+      return;
+    }
+
   }
 
   clearCart() {
