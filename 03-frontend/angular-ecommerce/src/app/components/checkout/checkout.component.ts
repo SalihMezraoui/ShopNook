@@ -365,18 +365,18 @@ export class CheckoutComponent implements OnInit {
           this.stripe.confirmCardPayment(paymentIntentResponse.client_secret,
             {
               payment_method: {
-                card: this.cardElement
-                // billing_details: {
-                //   email: purchase.customer.email,
-                //   name: `${purchase.customer.firstName} ${purchase.customer.lastName}`,
-                //   address: {
-                //     line1: purchase.paymentAddress.street,
-                //     city: purchase.paymentAddress.city,
-                //     state: purchase.paymentAddress.state,
-                //     postal_code: purchase.paymentAddress.zipCode,
-                //     country: this.paymentAddressCountry.value.code
-                //   }
-                // }
+                card: this.cardElement,
+                billing_details: {
+                  email: purchase.customer.email,
+                  name: `${purchase.customer.firstName} ${purchase.customer.lastName}`,
+                  address: {
+                    line1: purchase.paymentAddress.street,
+                    city: purchase.paymentAddress.city,
+                    state: purchase.paymentAddress.state,
+                    postal_code: purchase.paymentAddress.zipCode,
+                    country: this.paymentAddressCountry!.value.code
+                  }
+                }
               }
             }, { handleActions: false })
           .then((result: any) => {
