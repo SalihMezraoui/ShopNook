@@ -887,24 +887,27 @@ table.table.table-bordered th{
 
 /* product-box class represents each product item in your grid */
 .product-box {
-    position: relative;
-    margin-bottom: 30px;
-    overflow: hidden;
-    background-color: #f7f8f9;
-    transition: all 0.3s;
-    width: 300px; /* Set a fixed width */
-    height: 600px; /* Set a fixed height */
-  }
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: #f7f8f9;
+  transition: all 0.3s;
+  width: 300px; /* Set a fixed width */
+  height: 600px; /* Set a fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
   .product-box:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   /* Ensure images fit the product boxes */
-  .product-box img {
-    width: 100%; /* Adjust to the width of the product box */
-    height: 100%; /* Adjust to the height of the product box */
-    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+.product-box img {
+    width: 100%; /* Ensure the image fits within the product box width */
+    height: 100%; /* Ensure the image fits within the product box height */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio and is centered */
     transition: transform 0.3s ease-out;
   }
   

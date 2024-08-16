@@ -35,6 +35,14 @@ export class ProductService {
 
   }
 
+  getAllProductsPaginated(myPage: number, myPageSize: number): Observable<GetProductsResponse> {
+    // Building the URL without filtering by category
+    const resultUrl = `${this.apiUrl}?page=${myPage}&size=${myPageSize}`;
+  
+    console.log(`Retrieving all products from: ${resultUrl}`);
+    return this.httpClient.get<GetProductsResponse>(resultUrl);
+  }
+
   searchProducts(myKeyword: string): Observable<Product[]> {
 
     // building the url based on the given keyword

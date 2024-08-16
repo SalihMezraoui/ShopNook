@@ -13,8 +13,8 @@ import { Product } from 'src/app/utilities/product';
 export class ProductListComponent implements OnInit {
 
   products: Product[] = [];
-  currentCategoryId: number = 1;
-  previousCategoryId: number = 1;
+  currentCategoryId: number | null = null;
+  previousCategoryId: number | null = null;
 
   searchMethod: boolean = false;
 
@@ -70,37 +70,36 @@ export class ProductListComponent implements OnInit {
 
 
   manageProductList() {
-    // check if id is avialable
-    const hasCategoryId: Boolean = this.route.snapshot.paramMap.has('id')
-
+    // Check if category ID is available
+    const hasCategoryId: boolean = this.route.snapshot.paramMap.has('id');
+  
     if (hasCategoryId) {
-      // get the "id" param string. convert string to  number using the "+" symbol
+      // Get the "id" param string. Convert string to number using the "+" symbol
       this.currentCategoryId = +this.route.snapshot.paramMap.get('id')!;
+    } else {
+      // No category ID available, set to null to fetch all categories
+      this.currentCategoryId = null;
     }
-    else {
-      // no category id available => default to tcategory 1
-      this.currentCategoryId = 1;
-    }
-
-
-    // checking if the current category different from the previous one 
-    // => re-setiing pageNumber to 1
-
-    if (this.previousCategoryId != this.currentCategoryId) {
+  
+    // Reset page number if the category changes
+    if (this.previousCategoryId !== this.currentCategoryId) {
       this.pageNumber = 1;
     }
-
+  
     this.previousCategoryId = this.currentCategoryId;
-
-    console.log(`currentCategoryId=${this.currentCategoryId}, thePageNumber=${this.pageNumber}`);
-
-
-    // now get the products for the given category_id
-    this.productService.getProductListPaginated(this.pageNumber -1, 
-                                                this.pageSize, 
-                                                this.currentCategoryId)
-                                                .subscribe(this.processProductData());
+  
+    console.log(`currentCategoryId=${this.currentCategoryId}, pageNumber=${this.pageNumber}`);
+  
+    // Get products, fetch all categories if currentCategoryId is null
+    if (this.currentCategoryId !== null) {
+      this.productService.getProductListPaginated(this.pageNumber - 1, this.pageSize, this.currentCategoryId)
+        .subscribe(this.processProductData());
+    } else {
+      this.productService.getAllProductsPaginated(this.pageNumber - 1, this.pageSize)
+        .subscribe(this.processProductData());
+    }
   }
+  
 
   processProductData() {
     return (data: any) => {

@@ -21,18 +21,17 @@
         Menu
       </header>
     <nav class="sidebar-nav">
-      <ul>
-        <li *ngFor="let category of predefinedCategories">
-          <a href="#"><i class="ion-ios-analytics-outline"></i> <span class="">{{ category.name }}</span></a>
-          <ul class="nav-flyout" *ngIf="category.subCategories.length > 0">
-            <li *ngFor="let subCategory of category.subCategories">
-              <a [routerLink]="['/category', subCategory.id]" routerLinkActive="active-link">{{ subCategory.name }}</a>
-              <ul class="nav-flyout-secondary" *ngIf="subCategory">
-              </ul>
-            </li>
-          </ul>
+      <ul class="list-unstyled navbar-list">
+
+        <li *ngFor="let tempProductCategory of productCategories">
+
+            <a routerLink="/category/{{ tempProductCategory.id }}" routerLinkActive="active-link">
+                {{ tempProductCategory.categoryName }}
+            </a>
+            
         </li>
-      </ul>
+
+    </ul>
     </nav>
     </aside>
 </section>
