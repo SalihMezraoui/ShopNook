@@ -30,14 +30,14 @@
             <!-- footer-head -->
             <div class="footer-pagination">
                 <div class="row">
-                    <div class="col-md-6"></div>
+                    <div class="col-md-4"></div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-9" style="padding-left: 20%">
 
                                 <ngb-pagination [(page)]="pageNumber" [pageSize]="pageSize"
-                                    [collectionSize]="totalItems" [maxSize]="8"
+                                    [collectionSize]="totalItems" [maxSize]="3"
                                     [boundaryLinks]="true" (pageChange)="listProducts()">
 
                                 </ngb-pagination>

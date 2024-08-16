@@ -6,6 +6,7 @@
     color: #0c5460; /* Match the alert-info text color */
     border-radius: 5px;
     margin: 20px 0;
+    margin-top: 75px;
 }
 
 .member-special-title {
