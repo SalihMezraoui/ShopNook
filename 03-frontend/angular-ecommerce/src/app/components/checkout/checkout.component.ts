@@ -42,7 +42,7 @@ export class CheckoutComponent implements OnInit {
   displayError: any = "";
   cardElement: any;
 
-  // isDisabled: boolean = false;
+  isDisabled: boolean = false;
 
   constructor(private formBuilder: FormBuilder, private shopNookFormService: ShopNookFormService,
     private cartService: CartService, private checkoutService: CheckoutService, private router: Router) { }
@@ -348,6 +348,7 @@ export class CheckoutComponent implements OnInit {
      // calculate the payment information
      this.paymentInformation.amount = Math.round(this.sumPrice * 100);
      this.paymentInformation.currency = "EUR";
+     this.paymentInformation.receiptEmail = purchase.customer.email;
 
      console.log(`this.paymentInformation.amount:${this.paymentInformation.amount}`)
 
@@ -358,7 +359,7 @@ export class CheckoutComponent implements OnInit {
 
     if (!this.formGroupCheckout.invalid && this.displayError.textContent === "") {
 
-      // this.isDisabled = true;
+      this.isDisabled = true;
 
       this.checkoutService.generatePaymentIntent(this.paymentInformation).subscribe(
         (paymentIntentResponse) => {
@@ -384,7 +385,7 @@ export class CheckoutComponent implements OnInit {
             {
               // Oooops, alerting the customer that there was an error
               alert(`There was an error: ${result.error.message}`);
-              // this.isDisabled = false;
+              this.isDisabled = false;
             } 
             else
             {
@@ -395,14 +396,17 @@ export class CheckoutComponent implements OnInit {
 
                   // clear cart
                   this.clearCart();
-                  // this.isDisabled = false;
+                  this.isDisabled = false;
                 },
                 error: (err: any) => {
                   alert(`There was an error: ${err.message}`);
-                  // this.isDisabled = false;
+                  this.isDisabled = false;
                 }
               })
             }            
+          }).catch((error: any) => {
+            alert(`Unexpected error: ${error.message}`);
+            this.isDisabled = false;
           });
         }
       );

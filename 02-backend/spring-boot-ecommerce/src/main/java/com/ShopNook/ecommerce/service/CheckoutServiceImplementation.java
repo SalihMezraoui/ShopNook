@@ -74,15 +74,15 @@ public class CheckoutServiceImplementation implements  CheckoutService
 
     @Override
     public PaymentIntent generatePaymentIntent(PaymentInformation paymentInformation) throws StripeException {
-        List<String> paymentMethodTypes = new ArrayList<>();
-        paymentMethodTypes.add("card");
+        List<String> supportedPaymentMethods = new ArrayList<>();
+        supportedPaymentMethods.add("card");
 
         Map<String, Object> params = new HashMap<>();
         params.put("amount", paymentInformation.getAmount());
         params.put("currency", paymentInformation.getCurrency());
-        params.put("payment_method_types", paymentMethodTypes);
-        // params.put("description", "Shopnook purchase");
-        // params.put("receipt_email", paymentInformation.getB);
+        params.put("payment_method_types", supportedPaymentMethods);
+        params.put("description", "Shopnook purchase");
+        params.put("receipt_email", paymentInformation.getReceiptEmail());
 
         return PaymentIntent.create(params);
     }
