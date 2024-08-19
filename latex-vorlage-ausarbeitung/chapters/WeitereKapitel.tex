@@ -5,7 +5,7 @@ Hier werden über folgende Punkte diskutiert:
 \begin{itemize}
 	\item Die Entwicklungskonzeption, die wir während der Implementation der Anwendung benutzt haben, sowie die Tools, Technologien und Methodologien. 
 	\item Überblick über Spring Boot und seine wichtigste  Funktionalitäten, die auch in dem Projekt angewendet sein werden. 
-	\item Detaillierte Erklärung der Struktur und Design der Anwendung (Bsp: Anlyse-/Entwurfsdiagram) 
+	\item Detaillierte Erklärung der Struktur und Design der Anwendung (Bsp: Analyse-/Entwurfsdiagram) 
 	\item Datenbanken, UI-Design und unterschiedliche Komponenten des Systems. 
 	\item Wie Spring Boot die Entwicklung und Implementation der verschiedenen Module vereinfacht. 
 \end{itemize}
@@ -56,7 +56,7 @@ Komponenten sind die wichtigsten Bausteine für Angular-Anwendungen. Wie es in d
 
 \begin{figure} [h]
 	\centering
-	\includegraphics[scale=0.30]{images/Components.pdf}
+	\includegraphics[scale=0.25]{images/Components.pdf}
 	\caption{Beispielhafte Dateistruktur einer Angular-Anwendung mit verschiedenen Komponenten}
 	\label{a1}
 \end{figure}
@@ -116,20 +116,51 @@ REST-APIs sind also aufgrund ihrer Architektur und Funktionsweise weit verbreite
 
 Um die Sicherheit von REST-APIs in der ShopNook-Plattform weiter zu gewährleisten, spielt die Implementierung von HTTPS in Kombination mit SSL/TLS eine entscheidende Rolle, da diese Technologien eine sichere und verschlüsselte Kommunikation zwischen dem Client und dem Server ermöglichen.
 
-\subsection{HTTPS}
+\subsection{HTTPS und SSL/TLS}
 
 HTTPS ist die sichere Version von HTTP, dem Protokoll, über das die Daten zwischen dem Browser des Kunden und der Website, mit der er verbunden ist, gesendet werden. Das „S“ am Ende von HTTPS steht für „Secure“, was bedeutet, dass die gesamte Kommunikation zwischen dem Kunden und dem Server verschlüsselt ist \cite{HTTPS:2024}.\\
-Durch die Verwendung von HTTPS gewährleistet die Anwendung, dass die mit dem Server ausgetauschten Daten nicht von böswilligen Parteien abgefangen oder verändert werden können.
-
-\subsection{SSL/TLS}
-
-SSL/TLS sind Verschlüsselungsprotokolle, die eine sichere Kommunikation über ein Computernetz ermöglichen. SSL war das ursprüngliche Protokoll, aber es wurde zugunsten von TLS, das sicherer und effizienter ist, veraltet \cite{SSL/TLS:2023}.
+SSL/TLS sind allerdings Verschlüsselungsprotokolle, die eine sichere Kommunikation über ein Computernetz ermöglichen. SSL war das ursprüngliche Protokoll, aber es wurde zugunsten von TLS, das sicherer und effizienter ist, veraltet \cite{SSL/TLS:2023}. Diese Protokolle bieten mehrere wichtige Sicherheitsfunktionen, die im Folgenden näher erläutert werden:
 
 \begin{itemize}
 	\item \textbf{Verschlüsselung der Daten:} SSL und TLS verschlüsseln die zwischen dem Client und dem Server übertragenen Daten und stellt sicher, dass die Daten, selbst wenn sie abgefangen werden, nicht von Unbefugten gelesen werden können.
 	\item \textbf{Server-Authentifizierung:} Diese Protokolle überprüfen auch die Identität des Servers und stellen sicher, dass die Clients mit einem legitimen Server und nicht mit einem Betrüger kommunizieren.
 	\item \textbf{Datenintegrität:} Sie bieten auch Datenintegrität, indem es sicherstellt, dass die Daten während der Übertragung nicht manipuliert wurden.
 \end{itemize}
+In der Anwendung wurde eine HTTPS Konfiguration (siehe \ref{HTTPS-Config}) erstellt, um eine sichere Kommunikation zwischen Clients und dem Server zu gewährleisten. Dazu wurde der Server so eingestellt, dass er auf Port 8443 auf HTTPS-Datenverkehr wartet. Der Konfigurationsprozess beinhaltete die Aktivierung der SSL-Unterstützung, die für die Verschlüsselung der über das Netzwerk ausgetauschten Daten unerlässlich ist.\\
+Wir haben eine Keystore-Datei im PKCS12-Format \textbf{(shopnook-keystore.p12)} verwendet, in der die für die Verschlüsselung erforderlichen SSL/TLS-Zertifikate sicher gespeichert sind. Der Keystore ist durch ein Passwort geschützt \textbf{(server.ssl.key-store-password=secret)}, so dass der Zugriff auf die kryptografischen Schlüssel nur autorisierten Prozessen vorbehalten ist.\\
+Innerhalb des Schlüsselspeichers wird das Zertifikat durch den Alias \textbf{shopnook} identifiziert, auf den in der Konfiguration verwiesen wird, um die SSL-Vorgänge des Servers mit dem richtigen Zertifikat zu verknüpfen. Diese Einrichtung stellt sicher, dass alle zwischen dem Client und dem Server übertragenen Daten verschlüsselt werden, was einen robusten Schutz gegen Abhör- und Man-in-the-Middle-Angriffe bietet.\\
+Darüber hinaus ermöglicht die Konfiguration eine einfache Anpassung an unterschiedliche Umgebungen. So kann beispielsweise der Port der Anwendung je nach Einsatzumgebung geändert werden, indem die Eigenschaft \textbf{server.port} angepasst wird. Für die QA-Demo-Umgebung ist der Port auf \textbf{9898} eingestellt, der durch Umschalten der Kommentarzeilen aktiviert werden kann.\\
+Durch die sorgfältige Konfiguration dieser SSL-Einstellungen stellen wir sicher, dass ShopNook den Industriestandards für Sicherheit entspricht.\newpage
+
+\begin{lstlisting}[language=, caption={Implementierung von HTTPS und SSL Konfiguration}\label{HTTPS-Config}]
+#####
+#
+# HTTPS configuration
+#
+#####
+#Define the web server's listening port for HTTPS traffic
+server.port=8443 
+
+#QA Demo Port
+#server.port=9898
+
+#Activate SSL support to secure the application with HTTPS
+server.ssl.enabled=true
+
+#Specify the key alias used within the keystore for SSL
+server.ssl.key-alias=shopnook
+
+#Keystore path
+server.ssl.key-store=classpath:shopnook-keystore.p12
+
+#Password to unlock the keystore and access the SSL keys
+server.ssl.key-store-password=secret
+
+#format of the keystore file
+server.ssl.key-store-type=PKCS12
+\end{lstlisting}
+
+
 
 Durch die Implementierung von HTTPS mit SSL/TLS hält sich ShopNook an die Industriestandards für Datensicherheit, um seine Nutzer zu schützen und das Vertrauen zu erhalten. Dies ist ein entscheidender Aspekt des Backends der Anwendung, insbesondere für die Wahrung der Vertraulichkeit und Integrität sensibler Daten bei Transaktionen.
 
