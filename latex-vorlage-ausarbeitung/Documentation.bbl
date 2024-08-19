@@ -1,5 +1,20 @@
 \begin{thebibliography}{HTM24}
 
+\bibitem[Ang24a]{Angular:2024}
+{\em {Angular - Landing Page}}.
+\newblock \url{https://angular.io}, 2024.
+\newblock Abgerufen am 02.06.2024.
+
+\bibitem[Ang24b]{Angular2:2024}
+{\em {Angular components overview}}.
+\newblock \url{https://v17.angular.io/guide/component-overview}, 2024.
+\newblock Abgerufen am 18.08.2024.
+
+\bibitem[Ang24c]{Angular3:2024}
+{\em {Routing in single-page applications}}.
+\newblock \url{https://angular.dev/guide/routing/router-tutorial}, 2024.
+\newblock Abgerufen am 18.08.2024.
+
 \bibitem[Bae]{Baeldung:o.J}
 {\sc Baeldung}: {\em {JPA Entities}}.
 \newblock \url{https://www.baeldung.com/jpa-entities/}.
@@ -10,16 +25,17 @@
 \newblock \url{https://www.baeldung.com/hibernate-entitymanager/}, 2024.
 \newblock Abgerufen am 14.08.2024.
 
-\bibitem[Bel23]{UML:2023}
+\bibitem[Bel23a]{UML:2023}
 {\sc Bell, Donald}: {\em {An introduction to the Unified Modeling Language}}.
 \newblock \url{https://developer.ibm.com/articles/an-introduction-to-uml/},
   2023.
 \newblock Abgerufen am 26.07.2024.
 
-\bibitem[GOO24]{GOOGLE:2024}
-{\em {Google: Angular - Landing Page}}.
-\newblock \url{https://angular.io}, 2024.
-\newblock Abgerufen am 02.06.2024.
+\bibitem[Bel23b]{SSL/TLS:2023}
+{\sc Bell, Donald}: {\em {What is SSL/TLS: An In-Depth Guide}}.
+\newblock \url{https://www.ssl.com/article/what-is-ssl-tls-an-in-depth-guide/},
+  2023.
+\newblock Abgerufen am 19.08.2024.
 
 \bibitem[Hib]{Hibernate:o.J}
 {\sc Hibernate}: {\em {Hibernate}}.
@@ -31,15 +47,21 @@
 \newblock \url{https://html.com}, 2024.
 \newblock Abgerufen am 02.06.2024.
 
+\bibitem[HTT24]{HTTPS:2024}
+{\em {An overview of HTTP}}.
+\newblock \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview},
+  2024.
+\newblock Abgerufen am 19.08.2024.
+
 \bibitem[IBM]{IBM:o.J}
 {\sc IBM}: {\em {What is a relational database?}}
 \newblock \url{https://www.ibm.com/topics/relational-databases/}.
 \newblock Abgerufen am 14.08.2024.
 
-\bibitem[Jav24]{JavaScript:2024}
-{\em {JavaScript}}.
-\newblock \url{https://en.wikipedia.org/wiki/JavaScript}, 2024.
-\newblock Abgerufen am 02.06.2024.
+\bibitem[Jav24]{Java:2024}
+{\em {What is Java technology and why do I need it?}}
+\newblock \url{https://www.java.com/en/download/help/whatis_java.html}, 2024.
+\newblock Abgerufen am 19.08.2024.
 
 \bibitem[Jet]{Jetbrains:o.J}
 {\sc Jetbrains}: {\em {The IDE for Spring developers}}.
@@ -50,6 +72,16 @@
 {\sc mySQL}: {\em {MySQL Workbench Manual}}.
 \newblock \url{https://dev.mysql.com/doc/workbench/en/wb-intro.html}.
 \newblock Abgerufen am 14.08.2024.
+
+\bibitem[RES24]{REST:2024}
+{\em {What is REST?}}
+\newblock \url{https://www.codecademy.com/article/what-is-rest}, 2024.
+\newblock Abgerufen am 18.08.2024.
+
+\bibitem[Shu22]{Typescript:2024}
+{\sc Shubel, Meredith}: {\em {Typescript}}.
+\newblock \url{https://thenewstack.io/what-is-typescript/}, 2022.
+\newblock Abgerufen am 18.08.2024.
 
 \bibitem[Spra]{Docs-Spring-JPA-QueryMethods:o.J}
 {\sc Spring}: {\em {JPA Query Methods}}.
