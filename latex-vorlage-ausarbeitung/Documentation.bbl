@@ -25,17 +25,11 @@
 \newblock \url{https://www.baeldung.com/hibernate-entitymanager/}, 2024.
 \newblock Abgerufen am 14.08.2024.
 
-\bibitem[Bel23a]{UML:2023}
+\bibitem[Bel23]{UML:2023}
 {\sc Bell, Donald}: {\em {An introduction to the Unified Modeling Language}}.
 \newblock \url{https://developer.ibm.com/articles/an-introduction-to-uml/},
   2023.
 \newblock Abgerufen am 26.07.2024.
-
-\bibitem[Bel23b]{SSL/TLS:2023}
-{\sc Bell, Donald}: {\em {What is SSL/TLS: An In-Depth Guide}}.
-\newblock \url{https://www.ssl.com/article/what-is-ssl-tls-an-in-depth-guide/},
-  2023.
-\newblock Abgerufen am 19.08.2024.
 
 \bibitem[Hib]{Hibernate:o.J}
 {\sc Hibernate}: {\em {Hibernate}}.
@@ -104,6 +98,12 @@
 {\sc Spring}: {\em Spring Security}.
 \newblock \url{https://spring.io/projects/spring-security}.
 \newblock Abgerufen am 14. August 2024.
+
+\bibitem[SSL23]{SSL/TLS:2023}
+{\em {What is SSL/TLS: An In-Depth Guide}}.
+\newblock \url{https://www.ssl.com/article/what-is-ssl-tls-an-in-depth-guide/},
+  2023.
+\newblock Abgerufen am 19.08.2024.
 
 \bibitem[Teaa]{git-scmr:o.J}
 {\sc Team, Git}: {\em Git About}.
