@@ -3,7 +3,7 @@
 Hier werden über folgende Punkte diskutiert:
 
 \begin{itemize}
-	\item Die Entwicklungskonzeption, die wir während der Implementation der Anwendung benutzt haben, sowie die Tools, Technologien und Methodologien. 
+	\item Die Entwicklungskonzeption, die bei der Implementierung der Anwendung verwendet wurde, sowie die Tools, Technologien und Methodologien. 
 	\item Überblick über Spring Boot und seine wichtigste  Funktionalitäten, die auch in dem Projekt angewendet sein werden. 
 	\item Detaillierte Erklärung der Struktur und Design der Anwendung (Bsp: Anlyse-/Entwurfsdiagram) 
 	\item Datenbanken, UI-Design und unterschiedliche Komponenten des Systems. 
@@ -161,7 +161,7 @@ Spring Security ist ein Framework, das sowohl die Authentifizierung als auch die
 
 Das Framework bietet eine Reihe von Funktionen, darunter umfassende Unterstützung für Authentifizierung und Autorisierung, Schutz vor verschiedenen Angriffen wie Session Fixation, Clickjacking und Cross-Site Request Forgery, Integration mit der Servlet API und optionale Kompatibilität mit Spring Web MVC \cite{Spring-Security:o.J}.
 
-Wir haben Spring Security verwendet, um die Endpunkte von Kundenbestellungen zu schützen, indem wir OAuth2 für die Authentifizierung über JWT eingesetzt haben, um einen sicheren Zugriff zu gewährleisten. Die Einrichtung umfasste die Konfiguration von CORS zur Verwaltung von Herkunftsübergreifenden Anfragen und die Anpassung von Sicherheitseinstellungen wie die Deaktivierung des CSRF-Schutzes und die Handhabung der Inhaltsaushandlung. Dieser Ansatz gewährleistet robuste Sicherheit, während er verschiedene Inhaltstypen unterstützt und die gemeinsame Nutzung von Ressourcen über verschiedene Ursprünge hinweg effektiv handhabt.
+Zum Schutz der Endpunkte für Kundenbestellungen wurde Spring Security mit OAuth2-Authentifizierung implementiert, wobei JWT zur Gewährleistung eines sicheren Zugriffs verwendet wird. Die Einrichtung umfasste die Konfiguration von CORS zur Verwaltung von Herkunftsübergreifenden Anfragen und die Anpassung von Sicherheitseinstellungen wie die Deaktivierung des CSRF-Schutzes und die Handhabung der Inhaltsaushandlung. Dieser Ansatz gewährleistet robuste Sicherheit, während er verschiedene Inhaltstypen unterstützt und die gemeinsame Nutzung von Ressourcen über verschiedene Ursprünge hinweg effektiv handhabt.
 
 
 \section{Datenbankstruktur}\index{Datenbankstruktur}
@@ -209,7 +209,7 @@ IntelliJ IDEA ist bekannt für seinen leistungsstarken Code-Editor, der sich dur
 
  Visual Studio Code ist ein vielseitiger und effizienter Quellcode-Editor, der mit Windows, macOS und Linux kompatibel ist. Er bietet native Unterstützung für JavaScript, TypeScript und Node.js und verfügt über eine breite Palette von Erweiterungen für weitere Sprachen und Plattformen \cite{visual-studio:o.J}.
 
-Da unsere Frontend-Entwicklung mit Angular erfolgt, das auf TypeScript basiert, haben wir uns für Visual Studio Code entschieden. Die robuste TypeScript-Unterstützung ermöglicht es uns, nahtlos an dem Projekt zu arbeiten, ohne dass wir zusätzliche Erweiterungen benötigen \cite{visualstudio-angular:o.J}.
+Da die Front-End-Entwicklung Angular, ein auf TypeScript basierendes Framework, nutzt, wurde Visual Studio Code als Entwicklungsumgebung gewählt. Die starke native Unterstützung für TypeScript erleichtert die effiziente und optimierte Projektentwicklung und macht zusätzliche Erweiterungen überflüssig. \cite{visualstudio-angular:o.J}.
 
 \subsection{Versionskontrolle}
 
@@ -225,7 +225,7 @@ GitHub ist eine cloudbasierte Plattform zum Speichern, Freigeben und gemeinsamen
 	\item Projekte zu präsentieren oder zu verbreiten.
 	\item Verfolgen und Verwalten von Codeänderungen im Laufe der Zeit.
 	\item Andere einladen, den Code zu überprüfen und Verbesserungen vorzuschlagen.
-	\item Zusammenarbeit an Projekten ohne das Risiko, dass unbeabsichtigte Änderungen die Arbeit anderer beeinträchtigen, bis wir bereit sind, sie zusammenzuführen  \cite{github:o.J}.
+	\item Zusammenarbeit an Projekten ohne das Risiko, dass unbeabsichtigte Änderungen die Arbeit der anderen beeinträchtigen, bis die Änderungen integriert werden können.  \cite{github:o.J}.
 \end{itemize} 
 
 
