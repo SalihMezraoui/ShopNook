@@ -3,7 +3,7 @@
 Hier werden über folgende Punkte diskutiert:
 
 \begin{itemize}
-	\item Die Entwicklungskonzeption, die bei der Implementierung der Anwendung verwendet wurde, sowie die Tools, Technologien und Methodologien. 
+	\item Die Entwicklungskonzeption, die wir während der Implementation der Anwendung benutzt haben, sowie die Tools, Technologien und Methodologien. 
 	\item Überblick über Spring Boot und seine wichtigste  Funktionalitäten, die auch in dem Projekt angewendet sein werden. 
 	\item Detaillierte Erklärung der Struktur und Design der Anwendung (Bsp: Anlyse-/Entwurfsdiagram) 
 	\item Datenbanken, UI-Design und unterschiedliche Komponenten des Systems. 
@@ -28,50 +28,84 @@ Die Unified Modeling Language (UML) ist ein wesentliches Werkzeug im Bereich Ent
 
 \section{Front-End Technologien}\index{Front-End Technologien}
 
-Dieses Kapitel befasst sich mit Front-End-Technologien wie HTML, CSS, JavaScript und Angular, die für die Erstellung interaktiver, reaktionsfähiger und visuell ansprechender Benutzeroberflächen in unserer E-Commerce-Anwendung unerlässlich sind.
+Dieses Kapitel befasst sich mit Front-End-Technologien wie HTML, CSS, Typescript und Angular, die für die Erstellung interaktiver, reaktionsfähiger und visuell ansprechender Benutzeroberflächen in unserer E-Commerce-Anwendung unerlässlich sind.
 
 \subsection{HTML/CSS}\index{HTML/CSS}
 
 HTML\footnote{HyperText Markup Language} and CSS\footnote{Cascading Style Sheets} sind die grundlegenden Technologien zur Erstellung und Gestaltung von Webseiten. HTML liefert die Struktur und den Inhalt einer Webseite, während CSS für die visuelle Darstellung, Layout, Farben und Schriftarten, verwendet wird. Sie ermöglichen es optisch ansprechende und gut strukturierte Webseiten zu erstellen \cite{HTML/CSS:2024}.
 
-\subsection{JavaScript}\index{JavaScript}
+\subsection{Typescript}\index{Typescript}
 
-JavaScript\footnote{https://www.javascript.com} ist eine vielseitige High-Level-Programmiersprache, die häufig für die Webentwicklung verwendet wird. Ursprünglich entwickelt, um Webseiten interaktiv zu gestalten, hat sie sich zu einer leistungsstarken Sprache entwickelt, die sowohl für die clientseitige als auch für die serverseitige Entwicklung verwendet werden kann \cite{JavaScript:2024}.\\
-Die Programmiersprache ist auch für ihre dynamische Natur bekannt und ermöglicht es Entwicklern, interaktive Benutzeroberflächen und robuste serverseitige Anwendungen zu erstellen. Ihre Flexibilität und Ihre umfangreiches Ökosystem, zu dem Bibliotheken und Frameworks wie React, Angular und Node.js gehören, machen sie zu einem unverzichtbaren Werkzeug in der modernen Webentwicklung. 
+TypeScript\footnote{https://www.typescriptlang.org} ist eine stark typisierte Programmiersprache, die auf JavaScript aufbaut und statische Typdefinitionen hinzufügt. Sie soll die Entwicklung umfangreicher Anwendungen überschaubarer machen, indem sie es den Entwicklern ermöglicht, Fehler schon früh im Entwicklungsprozess zu erkennen, wodurch Fehler reduziert und die Codequalität verbessert werden. \cite{Typescript:2024}.\\
+Die wichtigsten Vorteile von TypeScript sind:
+\begin{itemize}
+	\item \textbf{Statische Typisierung:} Die statische Typisierung  ermöglicht es Entwicklern, Variablentypen explizit zu definieren, was zu einer besseren Tooling-Unterstützung führt, z. B. bei der Code-Vervollständigung und beim Refactoring. Es hilft auch bei der Identifizierung von typbezogenen Fehlern während der Kompilierungszeit und nicht zur Laufzeit.
+	\item \textbf{Wartbarkeit:} Durch die Hinzufügung von Typdefinitionen wird der Code selbstdokumentierender und leichter verständlich, was in großen Codebasen, in denen mehrere Entwickler zusammenarbeiten, entscheidend ist.
+\end{itemize}
+Durch die Wahl von TypeScript für das ShopNook-Projekt wurde es sichergestellt, dass das Frontend der Anwendung robust, wartbar und skalierbar ist und die hohen Anforderungen an eine professionelle E-Commerce-Plattform erfüllt.
 
 \subsection{Angular}\index{Angular}
 
-Angular\footnote{https://angular.io} ist ein Open-Source-Framework für Webanwendungen, das von Google entwickelt und gepflegt wird. Es wird für die Erstellung dynamischer, einseitiger Anwendungen (SPAs)\footnote{Single Page Application} mit TypeScript und HTML verwendet. Das Framework bietet eine robuste Plattform für die Entwicklung komplexer Anwendungen, indem es einen umfassenden Satz von Tools und Funktionen wie Datenbindung, Dependency Injection und eine modulare Architektur bietet \cite{GOOGLE:2024}.\\
+Angular\footnote{https://angular.io} ist ein Open-Source-Framework für Webanwendungen, das von Google entwickelt und gepflegt wird. Es wird für die Erstellung dynamischer, einseitiger Anwendungen (SPAs)\footnote{Single Page Application} mit TypeScript und HTML verwendet. Das Framework bietet eine robuste Plattform für die Entwicklung komplexer Anwendungen, indem es einen umfassenden Satz von Tools und Funktionen wie Datenbindung, Dependency Injection und eine modulare Architektur bietet \cite{Angular:2024}.\\
 Eine der Hauptstärken von Angular ist seine komponentenbasierte Struktur, die es Entwicklern ermöglicht, wiederverwendbare UI-Komponenten zu erstellen, die die Wartbarkeit und Skalierbarkeit verbessern. Darüber hinaus bietet Angular leistungsstarke Funktionen wie reaktive Programmierung mit RxJS\footnote{https://rxjs.dev}, Zustandsverwaltung und ein reichhaltiges Ökosystem von Bibliotheken, was es zu einer idealen Wahl für Anwendungen auf Unternehmensebene macht.
 
-\subsubsection{Komponenten}
+\subsubsection{Komponentenbasierte Architektur}
+
+Die komponentenbasierte Architektur von Angular gliedert die Anwendung in kleine, in sich geschlossene Einheiten, die als Komponenten bezeichnet werden. Jede Komponente kapselt einen bestimmten Teil der Benutzeroberfläche (UI) und die damit verbundene Logik \cite{Angular2:2024}.\\
+Komponenten sind die wichtigsten Bausteine für Angular-Anwendungen. Wie es in der Abbildung \ref{a1} bezeichnet wurde besteht jede Komponente aus: 
+
+\begin{figure} [h]
+	\centering
+	\includegraphics[scale=0.30]{images/Components.pdf}
+	\caption{Beispielhafte Dateistruktur einer Angular-Anwendung mit verschiedenen Komponenten}
+	\label{a1}
+\end{figure}
+
+\begin{itemize}
+	\item einer Komponentendatei \texttt{<component-name>.component.ts}
+	\item einer Vorlagedatei \texttt{<component-name>.component.html}
+	\item einer CSS-Datei \texttt{<component-name>.component.css}
+	\item Einer Datei mit Prüfvorschriften \texttt{<component-name>.component.spec.ts}
+\end{itemize}
+
+
+Dieser modulare Ansatz bringt mit sich mehrere Vorteile wie Wiederverwendbarkeit und Wartbarkeit.
+
+\subsubsection{Single Page Application (SPA)}
+
+Angular eignet sich besonders gut für die Erstellung von Single Page Applications (SPAs). In einer SPA lädt die gesamte Anwendung eine einzige HTML-Seite und aktualisiert den Inhalt dynamisch, wenn der Benutzer mit der Anwendung interagiert, ohne dass eine komplette Seite neu geladen werden muss \cite{Angular3:2024}. \\
+Dieser Ansatz bietet mehrere Vorteile:
+\begin{itemize}
+	\item \textbf{Verbesserte Benutzerfreundlichkeit:} SPAs bieten eine reibungslosere und schnellere Benutzererfahrung, da nur die notwendigen Teile der Seite aktualisiert werden, anstatt die gesamte Seite neu zu laden.
+	\item \textbf{Geringere Serverlast:} Sie entlasten den Server, da weniger Ganzseitenanfragen gestellt werden, was zu einer effizienteren Nutzung der Serverressourcen führt.
+\end{itemize}
+
+Durch die Nutzung der komponentenbasierten Architektur und der SPA-Funktionen von Angular kann die Anwendung ShopNook eine nahtlose und reaktionsschnelle Benutzererfahrung bieten, die für die Kundenbindung und -zufriedenheit entscheidend ist.
 
 
 %\subsubsection{Document Object Model (DOM)}
-
 \section{Back-End Technologien}\index{Back-End Technologien}
 
 In diesem Kapitel werden Back-End-Technologien untersucht, wobei der Schwerpunkt auf Spring Boot liegt, um robuste, skalierbare und sichere serverseitige Logik und APIs für unsere E-Commerce-Anwendung zu erstellen.
 
 \subsection{Java}\index{Java}
 
-Java ist eine weit verbreitete Programmiersprache, die für ihre Plattformunabhängigkeit, Stabilität und umfassende Bibliotheken bekannt ist. Aufgrund ihrer Vielseitigkeit und Leistung wird Java häufig für die Entwicklung von Back-End-Anwendungen verwendet. In der E-Commerce-Anwendung (Shop-Nook) wird Java genutzt, um eine robuste und skalierbare serverseitige Logik zu gewährleisten.
+Java ist eine weit verbreitete Programmiersprache, die für ihre Plattformunabhängigkeit, Stabilität und umfassende Bibliotheken bekannt ist. Aufgrund ihrer Vielseitigkeit und Leistung wird Java häufig für die Entwicklung von Back-End-Anwendungen verwendet \cite{Java:2024}. In der E-Commerce-Anwendung (ShopNook) wird Java genutzt, um eine robuste und skalierbare serverseitige Logik zu gewährleisten.
 
 \subsection{REST-API}\index{REST-API}
 
-REST\footnote{Representational State Transfer} ist ein Architekturstil für die Entwicklung vernetzter Anwendungen. Er basiert auf einem zustandslosen, Client-Server- und cachefähigen Kommunikationsprotokoll, und in fast allen Fällen wird das HTTP-Protokoll verwendet. REST-APIs sind so konzipiert, dass sie einfach, leichtgewichtig und skalierbar sind, was sie zu einer beliebten Wahl für Webdienste macht.
+REST\footnote{Representational State Transfer} ist ein Architekturstil für die Entwicklung vernetzter Anwendungen. Er basiert auf einem zustandslosen, Client-Server- und cachefähigen Kommunikationsprotokoll, und in fast allen Fällen wird das HTTP-Protokoll verwendet. REST-APIs sind so konzipiert, dass sie einfach, leichtgewichtig und skalierbar sind, was sie zu einer beliebten Wahl für Webdienste macht \cite{REST:2024}.
 
 \subsubsection{Einführung in REST}
-REST-APIs bieten eine Möglichkeit, über HTTP auf die Funktionalität und Daten einer Anwendung zuzugreifen. Sie folgen den Prinzipien von REST, die auf Ressourcen und deren Repräsentationen basieren. Jede Ressource wird durch eine eindeutige URI (Uniform Resource Identifier) identifiziert und kann durch standardisierte HTTP-Methoden manipuliert werden:
+Angelehnt an \cite{REST:2024} bieten REST-APIs eine Möglichkeit, über HTTP auf die Funktionalität und Daten einer Anwendung zuzugreifen. Sie folgen den Prinzipien von REST, die auf Ressourcen und deren Repräsentationen basieren. Jede Ressource wird durch eine eindeutige URI identifiziert und kann durch standardisierte HTTP-Methoden manipuliert werden:
 \begin{itemize}
 	\item GET: Abrufen von Ressourcen
 	\item POST: Erstellen neuer Ressourcen
 	\item PUT: Aktualisieren bestehender Ressourcen
 	\item DELETE: Löschen von Ressourcen
 \end{itemize}
-REST-APIs sind leichtgewichtig und nutzen JSON (JavaScript Object Notation) oder XML (Extensible Markup Language) als Datenformat für den Datenaustausch.
 
-\subsubsection{Vorteile von REST-APIs}
+REST-APIs sind also aufgrund ihrer Architektur und Funktionsweise weit verbreitet und bieten eine Reihe von Vorteilen:
 
 \begin{itemize}
 	\item \textbf{Skalierbarkeit:} Durch das stateless Design können REST-APIs leicht skaliert werden. Jeder HTTP-Request enthält alle notwendigen Informationen, um ihn zu verarbeiten, ohne dass der Server den vorherigen Zustand kennen muss.
@@ -80,33 +114,24 @@ REST-APIs sind leichtgewichtig und nutzen JSON (JavaScript Object Notation) oder
 	\item \textbf{Leichte Integration:} REST-APIs lassen sich leicht in bestehende Systeme integrieren, da sie auf bekannten Webstandards basieren.
 \end{itemize}
 
-\subsubsection{Implementierung einer REST-API mit Spring Boot}
-Spring Boot bietet umfassende Unterstützung für die Entwicklung von REST-APIs und vereinfacht deren Implementierung erheblich. Hier sind die wesentlichen Schritte zur Erstellung einer REST-API mit Spring Boot:
-%\begin{enumerate}
-%    \item \textbf{Projekt einrichten:} Spring Initializr wird verwendet, um ein neues Spring Boot-Projekt zu erstellen.
-%    \item \textbf{Controller erstellen:} Ein Controller für den Checkout wird definiert, um die Endpunkte der API zu verwalten. Die Annotationen wie @RestController und @RequestMapping definieren die Routen.
-%    \begin{lstlisting}[language=Java, caption={Controller-Implementierung für Checkout nach Bestellung in Java}\label{Controller.java}]
-	%    @RestController
-	%    @RequestMapping("/api/checkout")
-	%    public class CheckoutController
-	%    {
-		%        private CheckoutService checkoutService;    
-		%        public CheckoutController(CheckoutService checkoutService)
-		%        {
-			%            this.checkoutService = checkoutService;
-			%        }
-		%        @PostMapping("/purchase")
-		%        public PurchaseResult submitOrder(@RequestBody Purchase purchase)
-		%        {
-			%            return checkoutService.submitOrder(purchase);
-			%        }
-		%    }
-	%    \end{lstlisting}
-%    \item \textbf{Modelle und Datenzugriff:} Erstellen Sie die Modelle, die die Datenstruktur Ihrer Anwendung repräsentieren. Verwenden Sie JPA-Repositories, um den Datenzugriff zu vereinfachen.
-%\end{enumerate}
+Um die Sicherheit von REST-APIs in der ShopNook-Plattform weiter zu gewährleisten, spielt die Implementierung von HTTPS in Kombination mit SSL/TLS eine entscheidende Rolle, da diese Technologien eine sichere und verschlüsselte Kommunikation zwischen dem Client und dem Server ermöglichen.
 
+\subsection{HTTPS}
 
+HTTPS ist die sichere Version von HTTP, dem Protokoll, über das die Daten zwischen dem Browser des Kunden und der Website, mit der er verbunden ist, gesendet werden. Das „S“ am Ende von HTTPS steht für „Secure“, was bedeutet, dass die gesamte Kommunikation zwischen dem Kunden und dem Server verschlüsselt ist \cite{HTTPS:2024}.\\
+Durch die Verwendung von HTTPS gewährleistet die Anwendung, dass die mit dem Server ausgetauschten Daten nicht von böswilligen Parteien abgefangen oder verändert werden können.
 
+\subsection{SSL/TLS}
+
+SSL/TLS sind Verschlüsselungsprotokolle, die eine sichere Kommunikation über ein Computernetz ermöglichen. SSL war das ursprüngliche Protokoll, aber es wurde zugunsten von TLS, das sicherer und effizienter ist, veraltet \cite{SSL/TLS:2023}.
+
+\begin{itemize}
+	\item \textbf{Verschlüsselung der Daten:} SSL und TLS verschlüsseln die zwischen dem Client und dem Server übertragenen Daten und stellt sicher, dass die Daten, selbst wenn sie abgefangen werden, nicht von Unbefugten gelesen werden können.
+	\item \textbf{Server-Authentifizierung:} Diese Protokolle überprüfen auch die Identität des Servers und stellen sicher, dass die Clients mit einem legitimen Server und nicht mit einem Betrüger kommunizieren.
+	\item \textbf{Datenintegrität:} Sie bieten auch Datenintegrität, indem es sicherstellt, dass die Daten während der Übertragung nicht manipuliert wurden.
+\end{itemize}
+
+Durch die Implementierung von HTTPS mit SSL/TLS hält sich ShopNook an die Industriestandards für Datensicherheit, um seine Nutzer zu schützen und das Vertrauen zu erhalten. Dies ist ein entscheidender Aspekt des Backends der Anwendung, insbesondere für die Wahrung der Vertraulichkeit und Integrität sensibler Daten bei Transaktionen.
 
 \subsection{Spring Boot}\index{Spring Boot}
 
