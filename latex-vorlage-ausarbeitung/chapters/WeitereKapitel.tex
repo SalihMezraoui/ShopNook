@@ -165,6 +165,7 @@ Zum Schutz der Endpunkte für Kundenbestellungen wurde Spring Security mit OAuth
 
 
 \section{Datenbankstruktur}\index{Datenbankstruktur}
+In diesem Abschnitt wird die Datenbankstruktur der Webanwendung untersucht, um ein umfassendes Verständnis für die Organisation, den Zugriff und die Verwaltung der Daten zu vermitteln. Der Schwerpunkt liegt auf dem relationalen Datenbankmodell und den spezifischen Technologien und Frameworks, die zur Handhabung der Datenpersistenz und der Transaktionen verwendet werden. Dabei wird MySQL als das gewählte Datenbanksystem zusammen mit Spring Data JPA für eine nahtlose Dateninteraktion untersucht. In den folgenden Unterabschnitten werden diese Aspekte im Detail behandelt, wobei relationale Datenbanken, die Auswahl von MySQL, Datenpersistenz und Transaktionsmanagement sowie die Integration von MySQL mit Spring Boot behandelt werden.
 \subsection{Übersicht über relationale Datenbanken und Auswahl von MySQL}
 Die Daten in einer relationalen Datenbank sind in Tabellen mit Spalten und Zeilen organisiert, und auch die Primär- und Fremdschlüssel werden verwendet, um die Beziehungen zwischen den Tabellen herzustellen. Dieser Ansatz ist ideal für E-Commerce-Anwendungen, da er komplexe Abfragen und aussagekräftige Daten verarbeiten kann. Produktlieferungen, Auftragstransaktionen und Kundendaten werden alle ordnungsgemäß verwaltet. Die Möglichkeit, Tabellen zu verknüpfen, erleichtert umfassende Analysen, einschließlich der Nachverfolgung von Kaufdatensätzen und der Bestandskontrolle, während die Einhaltung von ACID-Eigenschaften eine zuverlässige Transaktionsverarbeitung gewährleistet, die für die Auftragsabwicklung und das Zahlungsmanagement entscheidend ist. Relationale Datenbanken wie MySQL bieten die Robustheit und Konsistenz, die für einen sicheren und produktiven Online-Shopping-Betrieb erforderlich sind \cite{IBM:o.J}.
 
@@ -178,7 +179,7 @@ Die Repository-Schicht in Spring Data JPA abstrahiert die Komplexität des Daten
 \subsection{Datenpersistenz und Transaktionen}
 In diesem Abschnitt wird erläutert, wie Spring Boot und Hibernate die Datenpersistenz handhaben. Der Schwerpunkt liegt dabei auf CRUD-Operationen, der Rolle des EntityManagers und der Interaktion des Hibernate ORM mit MySQL.
 
-CRUD-Operationen (Erstellen, Lesen, Aktualisieren, Löschen) werden mit Spring Boot und Hibernate verwaltet. Der EntityManager ist in diesem Prozess von zentraler Bedeutung und ermöglicht das Erstellen, Abrufen, Aktualisieren und Löschen von Entitäten. Er verwaltet auch den Lebenszyklus von Entitäten innerhalb von Transaktionen und stellt sicher, dass Änderungen bei Bedarf ordnungsgemäß übertragen oder zurückgenommen werden  \cite{Baeldung-EntityManager:2024}.
+CRUD-Operationen werden mit Spring Boot und Hibernate verwaltet. Der EntityManager ist in diesem Prozess von zentraler Bedeutung und ermöglicht das Erstellen, Abrufen, Aktualisieren und Löschen von Entitäten. Er verwaltet auch den Lebenszyklus von Entitäten innerhalb von Transaktionen und stellt sicher, dass Änderungen bei Bedarf ordnungsgemäß übertragen oder zurückgenommen werden  \cite{Baeldung-EntityManager:2024}.
 
 
 Hibernate ORM wird verwendet, um Java-Objekte auf Datenbanktabellen abzubilden, was die Interaktion mit der MySQL-Datenbank vereinfacht. Dieses ORM-Framework macht manuelles SQL überflüssig und bietet einen objektorientierten Ansatz für Datenbankoperationen \cite{Hibernate:o.J}.
@@ -196,9 +197,9 @@ Die Datenbankverbindung wird in der Datei \texttt{application.properties} konfig
 
 
 \section{Entwicklungsumgebung und Versionskontrolle}\index{Entwicklungsumgebung und Versionskontrolle}
-
+In diesem Abschnitt werden die integrierten Entwicklungsumgebungen (IDEs) und Versionskontrollsysteme beschrieben, die im Rahmen des Projekts eingesetzt wurden. Er bietet einen Überblick über die für die Entwicklung ausgewählten IDEs und die Versionskontrollwerkzeuge, die zur effektiven Verwaltung von Codeänderungen eingesetzt wurden.
 \subsection{Entwicklungsumgebung}
-
+Dieser Unterabschnitt beschreibt die im Projekt verwendeten Entwicklungsumgebungen, wobei der Schwerpunkt auf IntelliJ IDEA und Visual Studio Code (VS Code) liegt. Er hebt die Funktionen und Vorteile der einzelnen IDEs bei der Unterstützung des Entwicklungsprozesses und der Steigerung der Produktivität hervor.
 
 \subsubsection{IntelliJ IDEA}
 
@@ -212,7 +213,7 @@ IntelliJ IDEA ist bekannt für seinen leistungsstarken Code-Editor, der sich dur
 Da die Front-End-Entwicklung Angular, ein auf TypeScript basierendes Framework, nutzt, wurde Visual Studio Code als Entwicklungsumgebung gewählt. Die starke native Unterstützung für TypeScript erleichtert die effiziente und optimierte Projektentwicklung und macht zusätzliche Erweiterungen überflüssig. \cite{visualstudio-angular:o.J}.
 
 \subsection{Versionskontrolle}
-
+In diesem Unterabschnitt werden die im Projekt eingesetzten Versionskontrollsysteme beschrieben, wobei der Schwerpunkt auf Git und GitHub liegt. Es wird erläutert, wie diese Tools die Codeverwaltung, die Zusammenarbeit und die Verfolgung von Änderungen während des gesamten Entwicklungsprozesses erleichtert haben.
 \subsubsection{Git}
 Git ist ein kostenloses und quelloffenes, verteiltes Versionskontrollsystem, das entwickelt wurde, um Projekte jeder Größe schnell und effizient zu verwalten. Es hat einen minimalen Platzbedarf und liefert eine außergewöhnlich schnelle Leistung. Git übertrifft herkömmliche SCM-Tools wie Subversion, CVS, Perforce und ClearCase mit Funktionen wie kostengünstiger lokaler Verzweigung, benutzerfreundlichen Staging-Bereichen und flexiblen Arbeitsabläufen.
 

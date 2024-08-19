@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  19 AUG 2024 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  19 AUG 2024 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,14 +790,8 @@ Overfull \hbox (6.34164pt too wide) in paragraph at lines 147--148
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[7] [8]
-Overfull \hbox (6.43933pt too wide) in paragraph at lines 181--182
-[]\OT1/cmr/m/n/12 CRUD-Operationen (Er-stel-len, Le-sen, Ak-tua-li-sie-ren, L[]
-oschen) wer-den mit Spring
- []
-
-[9] [10]
-Overfull \hbox (6.0907pt too wide) in paragraph at lines 228--229
+[7] [8] [9] [10]
+Overfull \hbox (6.0907pt too wide) in paragraph at lines 229--230
 []\OT1/cmr/m/n/12 Zusammenarbeit an Pro-jek-ten oh-ne das Ri-si-ko, dass un-be-
 ab-sich-tig-te []Anderungen
  []
@@ -958,7 +952,7 @@ xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Documentation.pdf (25 pages, 600028 bytes).
+Output written on Documentation.pdf (25 pages, 601863 bytes).
 PDF statistics:
  522 PDF objects out of 1000 (max. 8388607)
  464 compressed objects within 5 object streams
