@@ -220,6 +220,28 @@ In diesem Abschnitt wird erläutert, wie die Datenbank innerhalb der Spring Boot
 
 Die Datenbankverbindung wird in der Datei \texttt{application.properties} konfiguriert. Zu den wichtigsten Eigenschaften gehören die JDBC-URL, der Name der Treiberklasse und die Anmeldeinformationen, wie in \hyperref[Application.properties]{Listing~2.2} dargestellt.
 
+\section{Authentifizierungs- und Autorisierungsprotokolle}\index{Authentifizierungs- und Autorisierungsprotokolle}
+
+In der modernen digitalen Landschaft ist die Gewährleistung eines sicheren Zugriffs auf Ressourcen von entscheidender Bedeutung. In diesem Abschnitt werden die wichtigsten Protokolle und Standards zur Verwaltung der Benutzerauthentifizierung und -autorisierung untersucht, darunter JWT, OAuth2 und OpenID Connect.
+
+\subsection{Okta}
+Okta verbindet Benutzer mit jeder Anwendung über alle Geräte hinweg. Es ist ein Cloud-basierter Identitätsmanagement-Service, der mit verschiedenen lokalen Systemen kompatibel ist. Okta bietet der IT-Abteilung die Möglichkeit, den Zugriff auf Anwendungen und Geräte über eine sichere, zuverlässige und gut geprüfte Cloud-Plattform zu verwalten, mit einer tiefen Integration in lokale Systeme und Verzeichnisse.
+
+Okta bietet Funktionen wie Provisioning, Single Sign-On (SSO), Active Directory (AD) und LDAP-Integration, zentrales Nutzer-Deprovisioning, Multi-Faktor-Authentifizierung (MFA), mobiles Identitätsmanagement und anpassbare Sicherheitsrichtlinien. Diese Funktionen werden durch das Okta Integration Network (OIN) vereinheitlicht, das umfangreiche Integrationsoptionen bietet und SSO für alle Anwendungen ermöglicht, die Ihre Benutzer benötigen\cite{Okta:o.J}.
+
+\subsection{JWT}
+
+JWT ist ein offener Standard (RFC 7519) für die sichere Übertragung von Informationen in Form eines JSON-Objekts. Diese Informationen sind aufgrund der digitalen Unterzeichnung überprüfbar und vertrauenswürdig. JWTs können mit einem geheimen Schlüssel mit HMAC oder mit einem öffentlichen/privaten Schlüsselpaar mit RSA oder ECDSA signiert werden. Hier sind einige Situationen, in denen JSON-Web-Token von Vorteil sind:
+
+\begin{itemize}
+	\item \textbf{Autorisierung:}  JWTs werden in der Regel zur Authentifizierung verwendet. Nach der Anmeldung enthält jede Anfrage das JWT, das den Zugriff auf autorisierte Routen, Dienste und Ressourcen ermöglicht.
+	\item \textbf{Informationsaustausch:} Mit JWTs werden Informationen sicher zwischen Parteien übertragen. Signierte JWTs bestätigen die Identität des Absenders und stellen sicher, dass der Inhalt unverändert bleibt, da die Signatur sowohl aus der Kopfzeile als auch aus der Nutzlast abgeleitet wird\cite{JWT:o.J}.
+\end{itemize}
+
+\subsection{OAuth2}
+\subsection{OpenID}
+\subsection{OpenID Connect}
+
 
 \section{Entwicklungsumgebung und Versionskontrolle}\index{Entwicklungsumgebung und Versionskontrolle}
 In diesem Abschnitt werden die integrierten Entwicklungsumgebungen (IDEs) und Versionskontrollsysteme beschrieben, die im Rahmen des Projekts eingesetzt wurden. Er bietet einen Überblick über die für die Entwicklung ausgewählten IDEs und die Versionskontrollwerkzeuge, die zur effektiven Verwaltung von Codeänderungen eingesetzt wurden.
