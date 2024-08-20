@@ -53,7 +53,14 @@
 \contentsline {section}{\numberline {3.2}Online-Shopping}{19}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Bezahlprozess}{20}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Ergebnisse und Analyse}{21}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{22}{chapter.5}%
-\contentsline {chapter}{Literaturverzeichnis}{23}{chapter*.6}%
-\contentsline {chapter}{Glossar}{25}{appendix.A}%
-\contentsline {chapter}{Selbstständigkeitserklärung}{26}{appendix.B}%
+\contentsline {section}{\numberline {4.1}Startseite}{21}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Linke Seite}{22}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Header}{22}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Hauptinhalt}{22}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Fußzeile}{23}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Warenkorb-Details}{23}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Checkout-Seite}{24}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{26}{chapter.5}%
+\contentsline {chapter}{Literaturverzeichnis}{27}{chapter*.9}%
+\contentsline {chapter}{Glossar}{29}{appendix.A}%
+\contentsline {chapter}{Selbstständigkeitserklärung}{30}{appendix.B}%
