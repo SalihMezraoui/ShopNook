@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.22)  19 AUG 2024 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.22)  19 AUG 2024 22:52
 entering extended mode
-restricted \write18 enabled.
-%&-line parsing enabled.
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **./Documentation.tex
 (Documentation.tex
 LaTeX2e <2023-11-01> patch level 1
@@ -738,7 +738,7 @@ bibgerm.sty: babel.sty detected
 
 pdfTeX warning: pdflatex.exe (file ./images/logo-fb-informatik.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/logo-fb-informatik.pdf, id=155, 811.81792pt x 157.11497pt>
+<images/logo-fb-informatik.pdf, id=159, 811.81792pt x 157.11497pt>
 File: images/logo-fb-informatik.pdf Graphic file (type pdf)
 <use images/logo-fb-informatik.pdf>
 Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 89.
@@ -806,11 +806,11 @@ Kapitel 2.
 
 pdfTeX warning: pdflatex.exe (file ./images/Components.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<images/Components.pdf, id=273, 845.07718pt x 597.55246pt>
+<images/Components.pdf, id=278, 845.07718pt x 597.55246pt>
 File: images/Components.pdf Graphic file (type pdf)
 <use images/Components.pdf>
 Package pdftex.def Info: images/Components.pdf  used on input line 59.
-(pdftex.def)             Requested size: 211.26877pt x 149.38774pt.
+(pdftex.def)             Requested size: 253.5251pt x 179.26712pt.
 [5 <./images/Components.pdf>]
 Overfull \hbox (18.97252pt too wide) in paragraph at lines 83--84
 []\OT1/cmr/m/n/12 Durch die Nut-zung der kom-po-nen-ten-ba-sier-ten Ar-chi-tek-
@@ -824,59 +824,47 @@ ver-sei-ti-ge Lo-gik zu gew[]ahrleisten.
  []
 
 [6] [7]
-Overfull \hbox (18.3682pt too wide) in paragraph at lines 129--133
-\OT1/cmr/m/n/12 war-tet. Der Kon-fi-gu-ra-ti-ons-pro-zess bein-hal-te-te die Ak
--ti-vie-rung der SSL-Unterst[]utzung,
- []
-
-
-Overfull \hbox (12.0067pt too wide) in paragraph at lines 129--133
-\OT1/cmr/m/n/12 cher ge-spei-chert sind. Der Key-sto-re ist durch ein Pass-wort
- gesch[]utzt \OT1/cmr/bx/n/12 (server.ssl.key-
- []
-
-[8]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 135.
-
-Overfull \hbox (19.30536pt too wide) in paragraph at lines 174--175
+Overfull \hbox (19.30536pt too wide) in paragraph at lines 143--144
 []\OT1/cmr/bx/n/12 Produktivit[]at: \OT1/cmr/m/n/12 Das Fra-me-work erm[]oglich
 t es auf das Schrei-ben von Gesch[]aftslogik
  []
 
 
-Overfull \hbox (18.08316pt too wide) in paragraph at lines 175--176
+Overfull \hbox (18.08316pt too wide) in paragraph at lines 144--145
 []\OT1/cmr/bx/n/12 Microservices: \OT1/cmr/m/n/12 Es eig-net sich her-vor-ra-ge
 nd f[]ur die Ent-wick-lung von Microservices-
  []
 
-[9]
+[8]
 (C:\Users\Imad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/03/11 1.10a listings language file
 )
-Overfull \hbox (6.34164pt too wide) in paragraph at lines 203--204
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 160.
+
+Overfull \hbox (6.34164pt too wide) in paragraph at lines 172--173
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[10] [11] [12] [13]
-Overfull \hbox (6.0907pt too wide) in paragraph at lines 285--286
+[9] [10] [11] [12]
+Overfull \hbox (6.0907pt too wide) in paragraph at lines 254--255
 []\OT1/cmr/m/n/12 Zusammenarbeit an Pro-jek-ten oh-ne das Ri-si-ko, dass un-be-
 ab-sich-tig-te []Anderungen
  []
 
-) (chapters/Bausteine.tex [14]
+) (chapters/Bausteine.tex [13]
 Kapitel 3.
-) (chapters/Beispiel.tex [15
+) (chapters/Beispiel.tex [14
 
 
-] [16]
+] [15]
 Kapitel 4.
-) (chapters/ZusammenfassungAusblick.tex [17
+) (chapters/ZusammenfassungAusblick.tex [16
 
 
 ]
 Kapitel 5.
-) [18
+) [17
 
 
 ] (Documentation.bbl
@@ -904,62 +892,56 @@ ction-[]to-[]uml/$[]\OT1/cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
 []\OT1/cmr/m/sc/12 Hibernate\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Hi-ber-na-te\OT1
 /cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / hibernate . org / orm /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 []\OT1/cmr/m/it/12 What is REST?  []$\OT1/cmtt/m/n/12 https : / / www . codecad
 emy . com / article /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 []\OT1/cmr/m/sc/12 Shubel, Me-re-dith\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Ty-pe-s
 -cript\OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / thenewstack . io /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
-[]\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 JPA Que-ry Me-thods
-\OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 /https : / / docs . spring . io /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
-\OT1/cmtt/m/n/12 spring-[]data / jpa / reference / jpa / query-[]methods . html
-/$[]\OT1/cmr/m/n/12 .  Ab-ge-
- []
-
-[19
+[18
 
 
 
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 87--91
+[]\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 JPA Que-ry Me-thods
+\OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 /https : / / docs . spring . io /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--91
+\OT1/cmtt/m/n/12 spring-[]data / jpa / reference / jpa / query-[]methods . html
+/$[]\OT1/cmr/m/n/12 .  Ab-ge-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
 \OT1/cmtt/m/n/12 jpa / docs / 1 . 6 . 0 . RELEASE / reference / html / jpa . re
 positories .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
 []\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Spring Da-ta JPA\OT
 1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / www . ibm . com / topics /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 []\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Spring Se-cu-ri-ty\
 OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / spring . io / projects /
- []
-
-
-Underfull \hbox (badness 1648) in paragraph at lines 103--107
-[]\OT1/cmr/m/it/12 What is SS-L/TLS: An In-Depth Gui-de\OT1/cmr/m/n/12 .  []$\O
-T1/cmtt/m/n/12 https : / / www . ssl . com /
  []
 
 
@@ -982,7 +964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
 )
 No file Documentation.ind.
-[20]
+[19]
 \openout2 = `chapters/Glossar.aux'.
 
  (chapters/Glossar.tex
@@ -995,20 +977,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--33
+)
+Underfull \hbox (badness 10000) in paragraph at lines 7--118
 
-[]
+ []
 
-[21
+[20
+
 
 
 ]
 \openout2 = `chapters/Selbststaendigkeitserklaerung.aux'.
 
-(chapters/Selbststaendigkeitserklaerung.tex
+ (chapters/Selbststaendigkeitserklaerung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
-[]
+ []
+
+) [21
 
 
 
@@ -1021,21 +1007,33 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
 Package rerunfilecheck Info: File `Documentation.out' has not changed.
-(rerunfilecheck)             Checksum: CA1FD795A1AAECFA3439C290CFED55A3;6285.
+(rerunfilecheck)             Checksum: F9AD2881139B6EA0C4CBBA0B73DEF8BD;6316.
  ) 
 Here is how much of TeX's memory you used:
- 17243 strings out of 474369
- 277103 string characters out of 5740986
- 1964754 words of memory out of 5000000
+ 17217 strings out of 474369
+ 276711 string characters out of 5740986
+ 1958754 words of memory out of 5000000
  39200 multiletter control sequences out of 15000+600000
  567744 words of font info for 73 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 63i,9n,67p,1014b,1305s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Imad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
- Output written on Documentation.pdf (28 pages, 686733 bytes).
- PDF statistics:
-  605 PDF objects out of 1000 (max. 8388607)
-  161 named destinations out of 1000 (max. 500000)
-  315 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 63i,9n,67p,1014b,1308s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Imad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
+200.pk><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmcsc10.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Imad/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Imad/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Imad/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Imad/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Imad/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Use
+rs/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+<C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb>
+Output written on Documentation.pdf (27 pages, 677734 bytes).
+PDF statistics:
+ 574 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 
