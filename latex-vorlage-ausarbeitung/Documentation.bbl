@@ -68,10 +68,21 @@
 \newblock \url{https://www.jetbrains.com/idea/spring/}.
 \newblock Abgerufen am 14.08.2024.
 
+\bibitem[JT]{JWT:o.J}
+{\sc JWT-Team}: {\em Introduction to JSON Web Tokens}.
+\newblock \url{https://jwt.io/introduction}.
+\newblock Abgerufen am 19. August 2024.
+
 \bibitem[myS]{mySQL:o.J}
 {\sc mySQL}: {\em {MySQL Workbench Manual}}.
 \newblock \url{https://dev.mysql.com/doc/workbench/en/wb-intro.html}.
 \newblock Abgerufen am 14.08.2024.
+
+\bibitem[OT]{Okta:o.J}
+{\sc Okta-Team}: {\em What is Okta and what does Okta do?}
+\newblock
+  \url{https://support.okta.com/help/s/article/what-is-okta?language=en_US}.
+\newblock Abgerufen am 19. August 2024.
 
 \bibitem[RES24]{REST:2024}
 {\em {What is REST?}}
