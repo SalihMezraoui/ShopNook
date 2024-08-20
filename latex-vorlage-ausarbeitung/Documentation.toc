@@ -37,21 +37,20 @@
 \contentsline {subsection}{\numberline {2.5.1}Okta}{12}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}JWT}{12}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}OAuth2}{13}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}OpenID}{13}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}OpenID Connect}{13}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.4}OpenID Connect}{13}{subsection.2.5.4}%
 \contentsline {section}{\numberline {2.6}Entwicklungsumgebung und Versionskontrolle}{13}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Entwicklungsumgebung}{13}{subsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.1.1}IntelliJ IDEA}{13}{subsubsection.2.6.1.1}%
+\contentsline {subsubsection}{\numberline {2.6.1.1}IntelliJ IDEA}{14}{subsubsection.2.6.1.1}%
 \contentsline {subsubsection}{\numberline {2.6.1.2}Visual Studio Code}{14}{subsubsection.2.6.1.2}%
 \contentsline {subsection}{\numberline {2.6.2}Versionskontrolle}{14}{subsection.2.6.2}%
 \contentsline {subsubsection}{\numberline {2.6.2.1}Git}{14}{subsubsection.2.6.2.1}%
-\contentsline {subsubsection}{\numberline {2.6.2.2}GitHub}{14}{subsubsection.2.6.2.2}%
-\contentsline {chapter}{\numberline {3}Implementierung}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Startseite}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Online-Shopping}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Bezahlprozess}{16}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Ergebnisse und Analyse}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{18}{chapter.5}%
-\contentsline {chapter}{Literaturverzeichnis}{19}{chapter*.6}%
-\contentsline {chapter}{Glossar}{21}{appendix.A}%
-\contentsline {chapter}{Selbstständigkeitserklärung}{22}{appendix.B}%
+\contentsline {subsubsection}{\numberline {2.6.2.2}GitHub}{15}{subsubsection.2.6.2.2}%
+\contentsline {chapter}{\numberline {3}Implementierung}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Startseite}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Online-Shopping}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Bezahlprozess}{17}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Ergebnisse und Analyse}{18}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{19}{chapter.5}%
+\contentsline {chapter}{Literaturverzeichnis}{20}{chapter*.6}%
+\contentsline {chapter}{Glossar}{22}{appendix.A}%
+\contentsline {chapter}{Selbstständigkeitserklärung}{23}{appendix.B}%

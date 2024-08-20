@@ -78,10 +78,20 @@
 \newblock \url{https://dev.mysql.com/doc/workbench/en/wb-intro.html}.
 \newblock Abgerufen am 14.08.2024.
 
-\bibitem[OT]{Okta:o.J}
+\bibitem[OTa]{OAuth2:o.J}
+{\sc OAuth2-Team}: {\em What is OAuth 2.0?}
+\newblock \url{https://auth0.com/intro-to-iam/what-is-oauth-2}.
+\newblock Abgerufen am 19. August 2024.
+
+\bibitem[OTb]{Okta:o.J}
 {\sc Okta-Team}: {\em What is Okta and what does Okta do?}
 \newblock
   \url{https://support.okta.com/help/s/article/what-is-okta?language=en_US}.
+\newblock Abgerufen am 19. August 2024.
+
+\bibitem[OTc]{OpenId:o.J}
+{\sc OpenId-Team}: {\em How OpenId Connect Works}.
+\newblock \url{https://openid.net/developers/how-connect-works/}.
 \newblock Abgerufen am 19. August 2024.
 
 \bibitem[RES24]{REST:2024}
