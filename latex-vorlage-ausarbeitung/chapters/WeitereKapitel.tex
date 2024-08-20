@@ -220,6 +220,51 @@ Das Framework bietet eine Reihe von Funktionen, darunter umfassende Unterstützu
 Zum Schutz der Endpunkte für Kundenbestellungen wurde Spring Security mit OAuth2-Authentifizierung implementiert, wobei JWT zur Gewährleistung eines sicheren Zugriffs verwendet wird. Die Einrichtung umfasste die Konfiguration von CORS zur Verwaltung von Herkunftsübergreifenden Anfragen und die Anpassung von Sicherheitseinstellungen wie die Deaktivierung des CSRF-Schutzes und die Handhabung der Inhaltsaushandlung. Dieser Ansatz gewährleistet robuste Sicherheit, während er verschiedene Inhaltstypen unterstützt und die gemeinsame Nutzung von Ressourcen über verschiedene Ursprünge hinweg effektiv handhabt.
 
 \subsection{Stripe API}
+In diesem Teil wird die Stripe-API näher beleuchtet, beginnend mit einem Überblick über ihre grundlegenden Funktionen und Hauptmerkmale. Anschließend wird die Integration der API in unsere Anwendung beschrieben, gefolgt von spezifischen Anwendungsfällen, die die Vielseitigkeit von Stripe in unserem Projekt veranschaulichen. Diese Analyse zeigt, wie Stripe eine nahtlose und sichere Zahlungsabwicklung ermöglicht.
+\subsubsection{Überblick}
+
+Die Stripe-API bietet ein umfassendes Paket von Tools für Entwickler zur Integration und Interaktion mit den Diensten von Stripe. Sie wurde nach REST-Prinzipien mit vorhersehbaren, ressourcenorientierten URLs entwickelt. Anfragen werden mit verschlüsseltem Form Körpern gesendet, und Antworten werden im JSON-Format zurückgegeben. Je nach verwendetem API-Schlüssel kann die Stripe-API entweder im Testmodus oder im Live-Modus betrieben werden. Verschiedene Stripe-Konten können je nach Version und benutzerdefinierten Funktionen unterschiedliche API-Funktionen aufweisen. Die API-Referenz enthält Codebeispiele für die Integration in verschiedenen Programmiersprachen\cite{Stripe-API:o.J}.
+
+\subsubsection{Hauptmerkmale der Stripe API}
+Zu den wichtigsten Funktionen der Stripe-API gehören:
+
+\begin{itemize}
+	\item Die API bearbeitet Anfragen einzeln, ohne Unterstützung für Massenaktualisierungen, pro Anfrage kann nur ein Objekt aktualisiert werden.
+	\item Die Funktionalität kann sich mit jeder neuen Version der API ändern, wenn Updates veröffentlicht werden.
+	\item Die Stripe-API unterstützt eine breite Palette von Zahlungsmethoden, darunter Karten, digitale Geldbörsen, Bankabbuchungen und -überweisungen sowie Bankumleitungen, zusammen mit Optionen wie „Sofort kaufen, später bezahlen“ und bargeldbasierten Gutscheinen.
+	\item Sie bietet Funktionen zur Umsatzoptimierung, einschließlich Tools für Authentifizierung, Autorisierung, Betrugsprävention, Streitfallmanagement und Abgleich.
+	\item Stripe bietet auch Berichts- und Analysetools wie Stripe Sigma für detaillierte Einblicke und das Stripe Dashboard für das Zahlungsmanagement\cite{Stripe-API:o.J}.
+\end{itemize}
+
+\subsubsection{Stripe API Integration für nahtlose Zahlungsabwicklung}
+
+\textbf{Integration:} \\
+
+
+In der Anwendung wurde die Stripe-API sowohl in das Frontend als auch in das Backend integriert, um eine sichere und effiziente Zahlungsabwicklung zu ermöglichen. Auf dem Frontend wurde die Stripe API Version „8.179“ in der Visual Studio Code Umgebung installiert. Der \texttt{stripePublishableKey} wurde eingebunden, um die Funktionalität von Stripe im Frontend zu aktivieren. Außerdem wurde die Stripe.js-Bibliothek durch Hinzufügen des folgenden Skripts eingebunden:
+
+\begin{lstlisting}[language=HTML, basicstyle=\ttfamily\small, frame=single, backgroundcolor=\color{lightgray}]
+	<script src="https://js.stripe.com/v3" async></script>
+\end{lstlisting}
+
+sodass die Anwendung direkt über den Browser mit der API von Stripe interagieren kann.
+
+Am Backend wurde der geheime Schlüssel von Stripe(stripe.key.secret) sicher in der Datei application.properties der Spring Boot-Anwendung gespeichert. Dieser Schlüssel ist für die sichere Handhabung sensibler Vorgänge wie die Erstellung von Zahlungsintentionen und die Verwaltung von Transaktionen unerlässlich. Die Payment Intent API wurde im Backend zur Abwicklung des Zahlungsprozesses verwendet, um sicherzustellen, dass die Transaktionen authentifiziert, autorisiert und effizient verarbeitet werden\cite{Stripe-Intents:o.J}. \\
+
+
+\noindent\textbf{Anwendungsfälle:} \\
+
+
+Die Stripe API spielt eine entscheidende Rolle in verschiedenen zahlungsbezogenen Szenarien innerhalb der Anwendung. Sie wird hauptsächlich verwendet für:
+\begin{itemize}
+	\item \textbf{Zahlungsabwicklung:} Die Stripe-API wird verwendet, um Zahlungen sicher zu verarbeiten. Dazu gehört das Erstellen von Zahlungsabsichten im Backend mit Java in Spring Boot, das den gesamten Zahlungslebenszyklus verwaltet, von der Zahlungsauslösung bis zur Bestätigung.
+	
+	\item \textbf{E-Mail-Bestätigung:} Nach einem erfolgreichen Kauf wird die Stripe-API so konfiguriert, dass sie Bestätigungs-E-Mails an die Benutzer sendet, um ihnen eine Aufzeichnung ihrer Transaktion zu liefern.
+	
+	\item \textbf{Frontend-Zahlungsabwicklung:} Das Frontend interagiert für die Zahlungsabwicklung mit Stripe und nutzt die Stripe.js-Bibliothek, um die Zahlungsinformationen sicher zu sammeln und mit Token zu versehen, bevor sie zur weiteren Verarbeitung an das Backend gesendet werden.
+\end{itemize}
+
+Diese umfassende Integration der Stripe-API sowohl in das Frontend als auch in das Backend stellt sicher, dass alle zahlungsrelevanten Vorgänge sicher, effizient und mit einer nahtlosen Benutzererfahrung abgewickelt werden. 
 
 \section{Datenbankstruktur}\index{Datenbankstruktur}
 In diesem Abschnitt wird die Datenbankstruktur der Webanwendung untersucht, um ein umfassendes Verständnis für die Organisation, den Zugriff und die Verwaltung der Daten zu vermitteln. Der Schwerpunkt liegt auf dem relationalen Datenbankmodell und den spezifischen Technologien und Frameworks, die zur Handhabung der Datenpersistenz und der Transaktionen verwendet werden. Dabei wird MySQL als das gewählte Datenbanksystem zusammen mit Spring Data JPA für eine nahtlose Dateninteraktion untersucht. In den folgenden Unterabschnitten werden diese Aspekte im Detail behandelt, wobei relationale Datenbanken, die Auswahl von MySQL, Datenpersistenz und Transaktionsmanagement sowie die Integration von MySQL mit Spring Boot behandelt werden.

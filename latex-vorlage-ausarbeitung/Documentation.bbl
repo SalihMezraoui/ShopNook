@@ -126,6 +126,17 @@
 \newblock \url{https://spring.io/projects/spring-security}.
 \newblock Abgerufen am 14. August 2024.
 
+\bibitem[ST Ja]{Stripe-API:o.J}
+{\sc Stripe-Team}: {\em Stripe Docs Overview}.
+\newblock \url{https://docs.stripe.com/get-started/} and
+  \url{https://docs.stripe.com/api}, o. J.
+\newblock Accessed on August 19, 2024.
+
+\bibitem[ST Jb]{Stripe-Intents:o.J}
+{\sc StripeApi-Team}: {\em Stripe Payment Intents}.
+\newblock \url{https://docs.stripe.com/api/payment_intents}, o. J.
+\newblock Accessed on August 19, 2024.
+
 \bibitem[Teaa]{git-scmr:o.J}
 {\sc Team, Git}: {\em Git About}.
 \newblock \url{https://git-scm.com/about}.
