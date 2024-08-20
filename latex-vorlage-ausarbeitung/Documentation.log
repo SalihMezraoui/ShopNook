@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  20 AUG 2024 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  20 AUG 2024 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -698,7 +698,7 @@ bibgerm.sty: babel.sty detected
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/logo-fb-informatik.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<images/logo-fb-informatik.pdf, id=184, 811.81792pt x 157.11497pt>
+<images/logo-fb-informatik.pdf, id=180, 811.81792pt x 157.11497pt>
 File: images/logo-fb-informatik.pdf Graphic file (type pdf)
 <use images/logo-fb-informatik.pdf>
 Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 89.
@@ -766,7 +766,7 @@ Kapitel 2.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/Components.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/Components.pdf, id=310, 845.07718pt x 597.55246pt>
+<images/Components.pdf, id=305, 845.07718pt x 597.55246pt>
 File: images/Components.pdf Graphic file (type pdf)
 <use images/Components.pdf>
 Package pdftex.def Info: images/Components.pdf  used on input line 59.
@@ -805,25 +805,31 @@ Overfull \hbox (6.34164pt too wide) in paragraph at lines 172--173
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[9] [10] [11] [12] [13]
-Overfull \hbox (6.0907pt too wide) in paragraph at lines 276--277
+[9] [10] [11] [12]
+Overfull \hbox (9.03099pt too wide) in paragraph at lines 247--248
+\OT1/cmr/m/n/12 und die M[]oglichkeit f[]ur je-de Ein-rich-tung, als Ope-nID Pr
+o-vi-der (OP) zu agieren[[]]. 
+ []
+
+[13] [14]
+Overfull \hbox (6.0907pt too wide) in paragraph at lines 280--281
 []\OT1/cmr/m/n/12 Zusammenarbeit an Pro-jek-ten oh-ne das Ri-si-ko, dass un-be-
 ab-sich-tig-te []Anderungen
  []
 
-) (./chapters/Bausteine.tex [14]
+) (./chapters/Bausteine.tex [15]
 Kapitel 3.
-) (./chapters/Beispiel.tex [15
+) (./chapters/Beispiel.tex [16
 
 
-] [16]
+] [17]
 Kapitel 4.
-) (./chapters/ZusammenfassungAusblick.tex [17
+) (./chapters/ZusammenfassungAusblick.tex [18
 
 
 ]
 Kapitel 5.
-) [18
+) [19
 
 
 ] (./Documentation.bbl
@@ -856,74 +862,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--44
 /cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / hibernate . org / orm /
  []
 
-[19
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+[]\OT1/cmr/m/sc/12 OAuth2-Team\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 What is OAuth 
+2.0?  []$\OT1/cmtt/m/n/12 https : / / auth0 . com /
+ []
+
+[20
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 88--91
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
 []\OT1/cmr/m/it/12 What is REST?  []$\OT1/cmtt/m/n/12 https : / / www . codecad
 emy . com / article /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
 []\OT1/cmr/m/sc/12 Shubel, Me-re-dith\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Ty-pe-s
 -cript\OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / thenewstack . io /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--102
+Underfull \hbox (badness 10000) in paragraph at lines 108--112
 []\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 JPA Que-ry Me-thods
 \OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 /https : / / docs . spring . io /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--102
+Underfull \hbox (badness 10000) in paragraph at lines 108--112
 \OT1/cmtt/m/n/12 spring-[]data / jpa / reference / jpa / query-[]methods . html
 /$[]\OT1/cmr/m/n/12 .  Ab-ge-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--108
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 \OT1/cmtt/m/n/12 jpa / docs / 1 . 6 . 0 . RELEASE / reference / html / jpa . re
 positories .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--113
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 []\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Spring Da-ta JPA\OT
 1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / www . ibm . com / topics /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
 []\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Spring Se-cu-ri-ty\
 OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / spring . io / projects /
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 125--129
+Underfull \hbox (badness 7740) in paragraph at lines 135--139
 []\OT1/cmr/m/sc/12 Team, GitHub\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 GitHub About\
 OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / docs . github . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--129
+Underfull \hbox (badness 10000) in paragraph at lines 135--139
 \OT1/cmtt/m/n/12 en / get-[]started / start-[]your-[]journey / about-[]github-[
 ]and-[]git #
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--144
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
 []\OT1/cmr/m/it/12 Wikipedia: In-te-r-ope-ra-bi-li-ty\OT1/cmr/m/n/12 .  []$\OT1
 /cmtt/m/n/12 https : / / en . wikipedia . org / wiki /
  []
 
 )
 No file Documentation.ind.
-[20]
+[21]
 \openout2 = `chapters/Glossar.aux'.
 
  (./chapters/Glossar.tex
@@ -941,7 +953,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--33
 
  []
 
-) [21
+) [22
 
 
 
@@ -953,7 +965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) [22
+) [23
 
 
 
@@ -962,13 +974,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 ] (./Documentation.aux (./chapters/Glossar.aux)
 (./chapters/Selbststaendigkeitserklaerung.aux))
 Package rerunfilecheck Info: File `Documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 5B0888ACAE47E5E2D5B895C5E413FA51;7095.
+(rerunfilecheck)             Checksum: 48986B41FD5F80BDB4E4FD85690EE85A;7003.
  ) 
 Here is how much of TeX's memory you used:
- 16788 strings out of 478268
- 268052 string characters out of 5846348
- 791855 words of memory out of 5000000
- 34578 multiletter control sequences out of 15000+600000
+ 16791 strings out of 478268
+ 268079 string characters out of 5846348
+ 791924 words of memory out of 5000000
+ 34579 multiletter control sequences out of 15000+600000
  478934 words of font info for 65 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  60i,9n,63p,1012b,1305s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -985,10 +997,10 @@ xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Documentation.pdf (28 pages, 629214 bytes).
+Output written on Documentation.pdf (29 pages, 632118 bytes).
 PDF statistics:
- 625 PDF objects out of 1000 (max. 8388607)
- 560 compressed objects within 6 object streams
- 144 named destinations out of 1000 (max. 500000)
- 371 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 634 PDF objects out of 1000 (max. 8388607)
+ 568 compressed objects within 6 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 363 words of extra memory for PDF output out of 10000 (max. 10000000)
 
