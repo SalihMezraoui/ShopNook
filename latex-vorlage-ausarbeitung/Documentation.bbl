@@ -25,11 +25,17 @@
 \newblock \url{https://www.baeldung.com/hibernate-entitymanager/}, 2024.
 \newblock Abgerufen am 14.08.2024.
 
-\bibitem[Bel23]{UML:2023}
+\bibitem[Bel23a]{UML:2023}
 {\sc Bell, Donald}: {\em {An introduction to the Unified Modeling Language}}.
 \newblock \url{https://developer.ibm.com/articles/an-introduction-to-uml/},
   2023.
 \newblock Abgerufen am 26.07.2024.
+
+\bibitem[Bel23b]{SSL/TLS:2023}
+{\sc Bell, Donald}: {\em {What is SSL/TLS: An In-Depth Guide}}.
+\newblock \url{https://www.ssl.com/article/what-is-ssl-tls-an-in-depth-guide/},
+  2023.
+\newblock Abgerufen am 19.08.2024.
 
 \bibitem[Hib]{Hibernate:o.J}
 {\sc Hibernate}: {\em {Hibernate}}.
@@ -62,10 +68,31 @@
 \newblock \url{https://www.jetbrains.com/idea/spring/}.
 \newblock Abgerufen am 14.08.2024.
 
+\bibitem[JT]{JWT:o.J}
+{\sc JWT-Team}: {\em Introduction to JSON Web Tokens}.
+\newblock \url{https://jwt.io/introduction}.
+\newblock Abgerufen am 19. August 2024.
+
 \bibitem[myS]{mySQL:o.J}
 {\sc mySQL}: {\em {MySQL Workbench Manual}}.
 \newblock \url{https://dev.mysql.com/doc/workbench/en/wb-intro.html}.
 \newblock Abgerufen am 14.08.2024.
+
+\bibitem[OTa]{OAuth2:o.J}
+{\sc OAuth2-Team}: {\em What is OAuth 2.0?}
+\newblock \url{https://auth0.com/intro-to-iam/what-is-oauth-2}.
+\newblock Abgerufen am 19. August 2024.
+
+\bibitem[OTb]{Okta:o.J}
+{\sc Okta-Team}: {\em What is Okta and what does Okta do?}
+\newblock
+  \url{https://support.okta.com/help/s/article/what-is-okta?language=en_US}.
+\newblock Abgerufen am 19. August 2024.
+
+\bibitem[OTc]{OpenId:o.J}
+{\sc OpenId-Team}: {\em How OpenId Connect Works}.
+\newblock \url{https://openid.net/developers/how-connect-works/}.
+\newblock Abgerufen am 19. August 2024.
 
 \bibitem[RES24]{REST:2024}
 {\em {What is REST?}}
@@ -98,12 +125,6 @@
 {\sc Spring}: {\em Spring Security}.
 \newblock \url{https://spring.io/projects/spring-security}.
 \newblock Abgerufen am 14. August 2024.
-
-\bibitem[SSL23]{SSL/TLS:2023}
-{\em {What is SSL/TLS: An In-Depth Guide}}.
-\newblock \url{https://www.ssl.com/article/what-is-ssl-tls-an-in-depth-guide/},
-  2023.
-\newblock Abgerufen am 19.08.2024.
 
 \bibitem[Teaa]{git-scmr:o.J}
 {\sc Team, Git}: {\em Git About}.

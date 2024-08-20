@@ -5,7 +5,7 @@ Hier werden über folgende Punkte diskutiert:
 \begin{itemize}
 	\item Die Entwicklungskonzeption, die wir während der Implementation der Anwendung benutzt haben, sowie die Tools, Technologien und Methodologien. 
 	\item Überblick über Spring Boot und seine wichtigste  Funktionalitäten, die auch in dem Projekt angewendet sein werden. 
-	\item Detaillierte Erklärung der Struktur und Design der Anwendung (Bsp: Analyse-/Entwurfsdiagram) 
+	\item Detaillierte Erklärung der Struktur und Design der Anwendung (Bsp: Anlyse-/Entwurfsdiagram) 
 	\item Datenbanken, UI-Design und unterschiedliche Komponenten des Systems. 
 	\item Wie Spring Boot die Entwicklung und Implementation der verschiedenen Module vereinfacht. 
 \end{itemize}
@@ -56,7 +56,7 @@ Komponenten sind die wichtigsten Bausteine für Angular-Anwendungen. Wie es in d
 
 \begin{figure} [h]
 	\centering
-	\includegraphics[scale=0.25]{images/Components.pdf}
+	\includegraphics[scale=0.30]{images/Components.pdf}
 	\caption{Beispielhafte Dateistruktur einer Angular-Anwendung mit verschiedenen Komponenten}
 	\label{a1}
 \end{figure}
@@ -133,31 +133,31 @@ Darüber hinaus ermöglicht die Konfiguration eine einfache Anpassung an untersc
 Durch die sorgfältige Konfiguration dieser SSL-Einstellungen stellen wir sicher, dass ShopNook den Industriestandards für Sicherheit entspricht.\newpage
 
 \begin{lstlisting}[language=, caption={Implementierung von HTTPS und SSL Konfiguration}\label{HTTPS-Config}]
-#####
-#
-# HTTPS configuration
-#
-#####
-#Define the web server's listening port for HTTPS traffic
-server.port=8443 
-
-#QA Demo Port
-#server.port=9898
-
-#Activate SSL support to secure the application with HTTPS
-server.ssl.enabled=true
-
-#Specify the key alias used within the keystore for SSL
-server.ssl.key-alias=shopnook
-
-#Keystore path
-server.ssl.key-store=classpath:shopnook-keystore.p12
-
-#Password to unlock the keystore and access the SSL keys
-server.ssl.key-store-password=secret
-
-#format of the keystore file
-server.ssl.key-store-type=PKCS12
+	#####
+	#
+	# HTTPS configuration
+	#
+	#####
+	#Define the web server's listening port for HTTPS traffic
+	server.port=8443 
+	
+	#QA Demo Port
+	#server.port=9898
+	
+	#Activate SSL support to secure the application with HTTPS
+	server.ssl.enabled=true
+	
+	#Specify the key alias used within the keystore for SSL
+	server.ssl.key-alias=shopnook
+	
+	#Keystore path
+	server.ssl.key-store=classpath:shopnook-keystore.p12
+	
+	#Password to unlock the keystore and access the SSL keys
+	server.ssl.key-store-password=secret
+	
+	#format of the keystore file
+	server.ssl.key-store-type=PKCS12
 \end{lstlisting}
 
 
@@ -219,6 +219,7 @@ Das Framework bietet eine Reihe von Funktionen, darunter umfassende Unterstützu
 
 Zum Schutz der Endpunkte für Kundenbestellungen wurde Spring Security mit OAuth2-Authentifizierung implementiert, wobei JWT zur Gewährleistung eines sicheren Zugriffs verwendet wird. Die Einrichtung umfasste die Konfiguration von CORS zur Verwaltung von Herkunftsübergreifenden Anfragen und die Anpassung von Sicherheitseinstellungen wie die Deaktivierung des CSRF-Schutzes und die Handhabung der Inhaltsaushandlung. Dieser Ansatz gewährleistet robuste Sicherheit, während er verschiedene Inhaltstypen unterstützt und die gemeinsame Nutzung von Ressourcen über verschiedene Ursprünge hinweg effektiv handhabt.
 
+\subsection{Stripe API}
 
 \section{Datenbankstruktur}\index{Datenbankstruktur}
 In diesem Abschnitt wird die Datenbankstruktur der Webanwendung untersucht, um ein umfassendes Verständnis für die Organisation, den Zugriff und die Verwaltung der Daten zu vermitteln. Der Schwerpunkt liegt auf dem relationalen Datenbankmodell und den spezifischen Technologien und Frameworks, die zur Handhabung der Datenpersistenz und der Transaktionen verwendet werden. Dabei wird MySQL als das gewählte Datenbanksystem zusammen mit Spring Data JPA für eine nahtlose Dateninteraktion untersucht. In den folgenden Unterabschnitten werden diese Aspekte im Detail behandelt, wobei relationale Datenbanken, die Auswahl von MySQL, Datenpersistenz und Transaktionsmanagement sowie die Integration von MySQL mit Spring Boot behandelt werden.
@@ -250,6 +251,32 @@ MySQL Workbench wurde zur Visualisierung des Datenbankschemas eingesetzt und erm
 In diesem Abschnitt wird erläutert, wie die Datenbank innerhalb der Spring Boot-Anwendung verbunden und konfiguriert wird.
 
 Die Datenbankverbindung wird in der Datei \texttt{application.properties} konfiguriert. Zu den wichtigsten Eigenschaften gehören die JDBC-URL, der Name der Treiberklasse und die Anmeldeinformationen, wie in \hyperref[Application.properties]{Listing~2.2} dargestellt.
+
+\section{Authentifizierungs- und Autorisierungsprotokolle}\index{Authentifizierungs- und Autorisierungsprotokolle}
+
+In der modernen digitalen Landschaft ist die Gewährleistung eines sicheren Zugriffs auf Ressourcen von entscheidender Bedeutung. In diesem Abschnitt werden die wichtigsten Protokolle und Standards zur Verwaltung der Benutzerauthentifizierung und -autorisierung untersucht, darunter JWT, OAuth2 und OpenID Connect.
+
+\subsection{Okta}
+Okta verbindet Benutzer mit jeder Anwendung über alle Geräte hinweg. Es ist ein Cloud-basierter Identitätsmanagement-Service, der mit verschiedenen lokalen Systemen kompatibel ist. Okta bietet der IT-Abteilung die Möglichkeit, den Zugriff auf Anwendungen und Geräte über eine sichere, zuverlässige und gut geprüfte Cloud-Plattform zu verwalten, mit einer tiefen Integration in lokale Systeme und Verzeichnisse.
+
+Okta bietet Funktionen wie Provisioning, Single Sign-On (SSO), Active Directory (AD) und LDAP-Integration, zentrales Nutzer-Deprovisioning, Multi-Faktor-Authentifizierung (MFA), mobiles Identitätsmanagement und anpassbare Sicherheitsrichtlinien. Diese Funktionen werden durch das Okta Integration Network (OIN) vereinheitlicht, das umfangreiche Integrationsoptionen bietet und SSO für alle Anwendungen ermöglicht, die Ihre Benutzer benötigen\cite{Okta:o.J}.
+
+\subsection{JWT}
+
+JWT ist ein offener Standard (RFC 7519) für die sichere Übertragung von Informationen in Form eines JSON-Objekts. Diese Informationen sind aufgrund der digitalen Unterzeichnung überprüfbar und vertrauenswürdig. JWTs können mit einem geheimen Schlüssel mit HMAC oder mit einem öffentlichen/privaten Schlüsselpaar mit RSA oder ECDSA signiert werden. Hier sind einige Situationen, in denen JSON-Web-Token von Vorteil sind:
+
+\begin{itemize}
+	\item \textbf{Autorisierung:}  JWTs werden in der Regel zur Authentifizierung verwendet. Nach der Anmeldung enthält jede Anfrage das JWT, das den Zugriff auf autorisierte Routen, Dienste und Ressourcen ermöglicht.
+	\item \textbf{Informationsaustausch:} Mit JWTs werden Informationen sicher zwischen Parteien übertragen. Signierte JWTs bestätigen die Identität des Absenders und stellen sicher, dass der Inhalt unverändert bleibt, da die Signatur sowohl aus der Kopfzeile als auch aus der Nutzlast abgeleitet wird\cite{JWT:o.J}.
+\end{itemize}
+
+\subsection{OAuth2}
+OAuth 2.0, kurz für „Open Authorization“, ist ein Standard, der es einer Website oder Anwendung ermöglicht, im Namen eines Benutzers auf Ressourcen anderer Webanwendungen zuzugreifen. Er löste 2012 OAuth 1.0 ab und hat sich seitdem zum Industriestandard für die Online-Autorisierung entwickelt. OAuth 2.0 erleichtert den autorisierten Zugriff und schränkt gleichzeitig die Aktionen ein, die eine Client-Anwendung für den Benutzer auf Ressourcen durchführen kann, ohne die Anmeldedaten des Benutzers preiszugeben\cite{OAuth2:o.J}.
+
+\subsection{OpenID Connect}
+OpenID Connect ist ein Authentifizierungsprotokoll, das auf dem OAuth 2.0 Framework (IETF RFC 6749 und 6750) aufbaut. Es rationalisiert die Überprüfung der Benutzeridentität, indem es die von einem Autorisierungsserver durchgeführte Authentifizierung nutzt und Benutzerprofilinformationen in einer RESTful und interoperablen Weise bereitstellt.
+
+OpenID Connect fördert ein Internet-Identitäts-Ökosystem durch einfache Integration, Sicherheits- und Datenschutzfunktionen, breite Client- und Gerätehilfe und die Möglichkeit für jede Einrichtung, als OpenID Provider (OP) zu agieren\cite{OpenId:o.J}.
 
 
 \section{Entwicklungsumgebung und Versionskontrolle}\index{Entwicklungsumgebung und Versionskontrolle}
