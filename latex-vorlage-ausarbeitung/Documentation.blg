@@ -115,45 +115,45 @@ Warning--to sort, need author or key in Java:2024
 Warning--to sort, need author or key in REST:2024
 Warning--to sort, need author or key in wiki:listing
 Warning--to sort, need author or key in HTTPS:2024
-You've used 29 entries,
+You've used 31 entries,
             2768 wiz_defined-function locations,
-            745 strings with 8503 characters,
-and the built_in function-call counts, 8170 in all, are:
-= -- 862
-> -- 176
-< -- 21
-+ -- 53
-- -- 42
-* -- 424
-:= -- 1161
-add.period$ -- 87
-call.type$ -- 29
-change.case$ -- 108
-chr.to.int$ -- 18
-cite$ -- 45
-duplicate$ -- 361
-empty$ -- 821
-format.name$ -- 80
-if$ -- 1884
-int.to.chr$ -- 12
+            757 strings with 8795 characters,
+and the built_in function-call counts, 8768 in all, are:
+= -- 926
+> -- 192
+< -- 23
++ -- 58
+- -- 46
+* -- 456
+:= -- 1253
+add.period$ -- 93
+call.type$ -- 31
+change.case$ -- 116
+chr.to.int$ -- 19
+cite$ -- 47
+duplicate$ -- 387
+empty$ -- 877
+format.name$ -- 86
+if$ -- 2020
+int.to.chr$ -- 13
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 148
-num.names$ -- 63
-pop$ -- 321
+newline$ -- 158
+num.names$ -- 69
+pop$ -- 337
 preamble$ -- 1
-purify$ -- 166
+purify$ -- 178
 quote$ -- 0
-skip$ -- 289
+skip$ -- 313
 stack$ -- 0
-substring$ -- 211
-swap$ -- 79
-text.length$ -- 21
+substring$ -- 225
+swap$ -- 85
+text.length$ -- 23
 text.prefix$ -- 17
 top$ -- 0
-type$ -- 232
+type$ -- 248
 warning$ -- 8
-while$ -- 42
-width$ -- 35
-write$ -- 353
+while$ -- 46
+width$ -- 38
+write$ -- 379
 (There were 17 error messages)

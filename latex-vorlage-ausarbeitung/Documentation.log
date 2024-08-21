@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  20 AUG 2024 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  20 AUG 2024 23:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,34 +511,61 @@ Package: bibgerm 2000/08/18 v0.1 Support for mixed language bibliographies
 ** idea and languages `german' and `USenglish' implemented by M. Wallmeier **
 ** Modified for LaTeX 2e and german.sty 2.5b by A. Scherer 1 Nov 1995 **
 ** Modified for ngerman.sty and babel.sty by H. Harders 21 August 2000 **)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count305
+\float@exts=\toks29
+\float@box=\box65
+\@float@everytoks=\toks30
+\@floatcapt=\box66
+)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count305
-\mult@box=\box65
+\c@tracingmulticols=\count306
+\mult@box=\box67
 \multicol@leftmargin=\dimen265
-\c@unbalance=\count306
-\c@collectmore=\count307
-\doublecol@number=\count308
-\multicoltolerance=\count309
-\multicolpretolerance=\count310
+\c@unbalance=\count307
+\c@collectmore=\count308
+\doublecol@number=\count309
+\multicoltolerance=\count310
+\multicolpretolerance=\count311
 \full@width=\dimen266
 \page@free=\dimen267
 \premulticols=\dimen268
 \postmulticols=\dimen269
 \multicolsep=\skip76
 \multicolbaselineskip=\skip77
-\partial@page=\box66
-\last@line=\box67
+\partial@page=\box68
+\last@line=\box69
 \maxbalancingoverflow=\dimen270
-\mult@rightbox=\box68
-\mult@grightbox=\box69
-\mult@firstbox=\box70
-\mult@gfirstbox=\box71
-\@tempa=\box72
-\@tempa=\box73
+\mult@rightbox=\box70
+\mult@grightbox=\box71
+\mult@firstbox=\box72
+\mult@gfirstbox=\box73
 \@tempa=\box74
 \@tempa=\box75
 \@tempa=\box76
@@ -573,15 +600,17 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box105
 \@tempa=\box106
 \@tempa=\box107
-\c@minrows=\count311
-\c@columnbadness=\count312
-\c@finalcolumnbadness=\count313
+\@tempa=\box108
+\@tempa=\box109
+\c@minrows=\count312
+\c@columnbadness=\count313
+\c@finalcolumnbadness=\count314
 \last@try=\dimen271
 \multicolovershoot=\dimen272
 \multicolundershoot=\dimen273
-\mult@nat@firstbox=\box108
-\colbreak@box=\box109
-\mc@col@check@num=\count314
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
+\mc@col@check@num=\count315
 )
 \@indexfile=\write3
 \openout3 = `Documentation.idx'.
@@ -590,31 +619,31 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 Writing index file Documentation.idx
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count315
-\l__pdf_internal_box=\box110
+\l__color_backend_stack_int=\count316
+\l__pdf_internal_box=\box112
 )
 (./Documentation.aux (./chapters/Glossar.aux)
 (./chapters/Selbststaendigkeitserklaerung.aux))
 \openout1 = `Documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -653,23 +682,24 @@ LaTeX Font Info:    ... okay on input line 69.
 Man spricht deutsch.
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
+\scratchcounter=\count317
 \scratchdimen=\dimen274
-\scratchbox=\box111
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count319
+\scratchbox=\box113
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count320
 \MPscratchDim=\dimen275
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks30
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks32
 )
-\c@lstlisting=\count322
+\c@lstlisting=\count323
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 78.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -680,11 +710,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count323
+\c@section@level=\count324
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 78.
+LaTeX Info: Redefining \pageref on input line 78.
+LaTeX Info: Redefining \nameref on input line 78.
  (./Documentation.out) (./Documentation.out)
 \@outlinefile=\write4
 \openout4 = `Documentation.out'.
@@ -698,10 +728,10 @@ bibgerm.sty: babel.sty detected
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/logo-fb-informatik.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<images/logo-fb-informatik.pdf, id=180, 811.81792pt x 157.11497pt>
+<images/logo-fb-informatik.pdf, id=209, 811.81792pt x 157.11497pt>
 File: images/logo-fb-informatik.pdf Graphic file (type pdf)
 <use images/logo-fb-informatik.pdf>
-Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 89.
+Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 98.
 (pdftex.def)             Requested size: 209.12683pt x 40.47253pt.
 [1
 
@@ -716,13 +746,18 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [2
+)
+Overfull \hbox (24.01259pt too wide) in paragraph at lines 3--6
+\OT1/cmr/m/n/12 Die Ar-beit be-fasst sich mit der Ent-wick-lung ei-ner E-Commer
+ce-Warenkorb-Anwendung,
+ []
+
+) [2
 
 
 
 
-]
-(./Documentation.toc [3
+] (./Documentation.toc [3
 
 
 ])
@@ -736,12 +771,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [5
 
 
-] (./Documentation.lot)
+]
+(./Documentation.lot)
 \tf@lot=\write7
 \openout7 = `Documentation.lot'.
 
-
-[6
+ [6
 
 
 ] (./chapters/EinleitungProblemstellung.tex
@@ -766,7 +801,7 @@ Kapitel 2.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/Components.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/Components.pdf, id=305, 845.07718pt x 597.55246pt>
+<images/Components.pdf, id=347, 845.07718pt x 597.55246pt>
 File: images/Components.pdf Graphic file (type pdf)
 <use images/Components.pdf>
 Package pdftex.def Info: images/Components.pdf  used on input line 59.
@@ -813,35 +848,113 @@ nd f[]ur die Ent-wick-lung von Microservices-
 [9] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
 Overfull \hbox (6.34164pt too wide) in paragraph at lines 203--204
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[10] [11] [12] [13]
-Overfull \hbox (9.03099pt too wide) in paragraph at lines 279--280
+[10]
+Overfull \hbox (3.31844pt too wide) in paragraph at lines 223--224
+\OT1/cmr/m/n/12 In die-sem Teil wird die Stripe-API n[]aher be-leuch-tet, be-gi
+n-nend mit ei-nem []Uberblick
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+[12] [13] [14] [15]
+Overfull \hbox (9.03099pt too wide) in paragraph at lines 324--325
 \OT1/cmr/m/n/12 und die M[]oglichkeit f[]ur je-de Ein-rich-tung, als Ope-nID Pr
 o-vi-der (OP) zu agieren[[]]. 
  []
 
-[14] [15]
-Overfull \hbox (6.0907pt too wide) in paragraph at lines 312--313
+[16]
+Overfull \hbox (6.0907pt too wide) in paragraph at lines 357--358
 []\OT1/cmr/m/n/12 Zusammenarbeit an Pro-jek-ten oh-ne das Ri-si-ko, dass un-be-
 ab-sich-tig-te []Anderungen
  []
 
-) (./chapters/Bausteine.tex [16]
+[17]) (./chapters/Bausteine.tex [18]
 Kapitel 3.
-) (./chapters/Beispiel.tex [17
+) (./chapters/Beispiel.tex [19
 
 
-] [18]
+] [20]
 Kapitel 4.
-) (./chapters/ZusammenfassungAusblick.tex [19
+<Images/Home-Page.png, id=554, 1795.70876pt x 1085.05376pt>
+File: Images/Home-Page.png Graphic file (type png)
+<use Images/Home-Page.png>
+Package pdftex.def Info: Images/Home-Page.png  used on input line 10.
+(pdftex.def)             Requested size: 376.42575pt x 227.4541pt.
+[21
 
 
 ]
+Overfull \hbox (3.31001pt too wide) in paragraph at lines 29--30
+[]\OT1/cmr/bx/n/12 Warenkorb-Symbol: \OT1/cmr/m/n/12 Die-ses Sym-bol be-fin-det
+ sich ne-ben der Login-Schaltfl[]ache
+ []
+
+[22 <./Images/Home-Page.png>]
+<Images/Cart-Details.png, id=564, 1464.47125pt x 727.71875pt>
+File: Images/Cart-Details.png Graphic file (type png)
+<use Images/Cart-Details.png>
+Package pdftex.def Info: Images/Cart-Details.png  used on input line 63.
+(pdftex.def)             Requested size: 376.42575pt x 187.04822pt.
+ [23 <./Images/Cart-Details.png>]
+<Images/Checkout_1.png, id=570, 962.59625pt x 866.23625pt>
+File: Images/Checkout_1.png Graphic file (type png)
+<use Images/Checkout_1.png>
+Package pdftex.def Info: Images/Checkout_1.png  used on input line 94.
+(pdftex.def)             Requested size: 376.42575pt x 338.7428pt.
+ [24])
+(./chapters/ZusammenfassungAusblick.tex [25 <./Images/Checkout_1.png>]
 Kapitel 5.
-) [20
+) [26
 
 
 ] (./Documentation.bbl
@@ -880,7 +993,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--85
 2.0?  []$\OT1/cmtt/m/n/12 https : / / auth0 . com /
  []
 
-[21
+[27
 
 
 
@@ -928,44 +1041,34 @@ OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / spring . io / projects /
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 135--139
+Underfull \hbox (badness 7740) in paragraph at lines 146--150
 []\OT1/cmr/m/sc/12 Team, GitHub\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 GitHub About\
 OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / docs . github . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--139
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
 \OT1/cmtt/m/n/12 en / get-[]started / start-[]your-[]journey / about-[]github-[
 ]and-[]git #
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--154
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
 []\OT1/cmr/m/it/12 Wikipedia: In-te-r-ope-ra-bi-li-ty\OT1/cmr/m/n/12 .  []$\OT1
 /cmtt/m/n/12 https : / / en . wikipedia . org / wiki /
  []
 
 )
 No file Documentation.ind.
-[22]
+[28]
 \openout2 = `chapters/Glossar.aux'.
 
  (./chapters/Glossar.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 3--29
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--33
-
- []
-
-) [23
+) [29
 
 
 
@@ -977,7 +1080,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) [24
+) [30
 
 
 
@@ -986,16 +1089,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 ] (./Documentation.aux (./chapters/Glossar.aux)
 (./chapters/Selbststaendigkeitserklaerung.aux))
 Package rerunfilecheck Info: File `Documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 195CC218C6DB342B8A52FDC3EBF4867E;7087.
+(rerunfilecheck)             Checksum: 08D88F2B5784BD97FFB985C0E88C85CC;7891.
  ) 
 Here is how much of TeX's memory you used:
- 16819 strings out of 478268
- 268505 string characters out of 5846348
- 798124 words of memory out of 5000000
- 34580 multiletter control sequences out of 15000+600000
- 478934 words of font info for 65 fonts, out of 8000000 for 9000
+ 17607 strings out of 478268
+ 279134 string characters out of 5846348
+ 811669 words of memory out of 5000000
+ 35321 multiletter control sequences out of 15000+600000
+ 479101 words of font info for 66 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 60i,9n,63p,1012b,1302s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,9n,63p,1303b,1434s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1007,12 +1110,13 @@ l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Documentation.pdf (30 pages, 638554 bytes).
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Documentation.pdf (36 pages, 1170176 bytes).
 PDF statistics:
- 670 PDF objects out of 1000 (max. 8388607)
- 602 compressed objects within 7 object streams
- 173 named destinations out of 1000 (max. 500000)
- 363 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 767 PDF objects out of 1000 (max. 8388607)
+ 685 compressed objects within 7 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 434 words of extra memory for PDF output out of 10000 (max. 10000000)
 
