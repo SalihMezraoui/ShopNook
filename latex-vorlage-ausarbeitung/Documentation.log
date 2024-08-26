@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  20 AUG 2024 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  23 AUG 2024 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -728,7 +728,7 @@ bibgerm.sty: babel.sty detected
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/logo-fb-informatik.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<images/logo-fb-informatik.pdf, id=209, 811.81792pt x 157.11497pt>
+<images/logo-fb-informatik.pdf, id=221, 811.81792pt x 157.11497pt>
 File: images/logo-fb-informatik.pdf Graphic file (type pdf)
 <use images/logo-fb-informatik.pdf>
 Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 98.
@@ -786,13 +786,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 
-      [1
+l.25 \subsection{Nicht-funktionale Anforderungen}
+                                                  [1
 
 
 
 
-]) (./chapters/WeitereKapitel.tex [2]
+])
+(./chapters/WeitereKapitel.tex [2]
 Kapitel 2.
 [3
 
@@ -801,7 +802,7 @@ Kapitel 2.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/Components.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/Components.pdf, id=347, 845.07718pt x 597.55246pt>
+<images/Components.pdf, id=374, 845.07718pt x 597.55246pt>
 File: images/Components.pdf Graphic file (type pdf)
 <use images/Components.pdf>
 Package pdftex.def Info: images/Components.pdf  used on input line 59.
@@ -925,7 +926,7 @@ Kapitel 3.
 
 ] [20]
 Kapitel 4.
-<Images/Home-Page.png, id=554, 1795.70876pt x 1085.05376pt>
+<Images/Home-Page.png, id=581, 1795.70876pt x 1085.05376pt>
 File: Images/Home-Page.png Graphic file (type png)
 <use Images/Home-Page.png>
 Package pdftex.def Info: Images/Home-Page.png  used on input line 10.
@@ -940,21 +941,60 @@ Overfull \hbox (3.31001pt too wide) in paragraph at lines 29--30
  []
 
 [22 <./Images/Home-Page.png>]
-<Images/Cart-Details.png, id=564, 1464.47125pt x 727.71875pt>
+<Images/Cart-Details.png, id=591, 1464.47125pt x 727.71875pt>
 File: Images/Cart-Details.png Graphic file (type png)
 <use Images/Cart-Details.png>
 Package pdftex.def Info: Images/Cart-Details.png  used on input line 63.
 (pdftex.def)             Requested size: 376.42575pt x 187.04822pt.
  [23 <./Images/Cart-Details.png>]
-<Images/Checkout_1.png, id=570, 962.59625pt x 866.23625pt>
+<Images/Checkout_1.png, id=597, 962.59625pt x 866.23625pt>
 File: Images/Checkout_1.png Graphic file (type png)
 <use Images/Checkout_1.png>
 Package pdftex.def Info: Images/Checkout_1.png  used on input line 94.
 (pdftex.def)             Requested size: 376.42575pt x 338.7428pt.
- [24])
-(./chapters/ZusammenfassungAusblick.tex [25 <./Images/Checkout_1.png>]
+ [24]
+<Images/Checkout_2.png, id=602, 963.6pt x 908.39375pt>
+File: Images/Checkout_2.png Graphic file (type png)
+<use Images/Checkout_2.png>
+Package pdftex.def Info: Images/Checkout_2.png  used on input line 109.
+(pdftex.def)             Requested size: 376.42575pt x 354.8543pt.
+ [25 <./Images/Checkout_1.png>]
+<Images/Purchase.png, id=610, 779.91376pt x 316.18124pt>
+File: Images/Purchase.png Graphic file (type png)
+<use Images/Purchase.png>
+Package pdftex.def Info: Images/Purchase.png  used on input line 118.
+(pdftex.def)             Requested size: 376.42575pt x 152.60474pt.
+ [26 <./Images/Checkout_2.png>]
+<Images/Login.png, id=616, 364.36125pt x 456.70625pt>
+File: Images/Login.png Graphic file (type png)
+<use Images/Login.png>
+Package pdftex.def Info: Images/Login.png  used on input line 129.
+(pdftex.def)             Requested size: 250.95476pt x 314.5562pt.
+ [27 <./Images/Purchase.png> <./Images/Login.png>]
+<Images/Login-bar.png, id=623, 752.8125pt x 68.255pt>
+File: Images/Login-bar.png Graphic file (type png)
+<use Images/Login-bar.png>
+Package pdftex.def Info: Images/Login-bar.png  used on input line 141.
+(pdftex.def)             Requested size: 376.42575pt x 34.13052pt.
+<Images/Orders-History.png, id=624, 1529.715pt x 556.0775pt>
+File: Images/Orders-History.png Graphic file (type png)
+<use Images/Orders-History.png>
+Package pdftex.def Info: Images/Orders-History.png  used on input line 153.
+(pdftex.def)             Requested size: 376.42575pt x 136.83836pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+<Images/Member.png, id=625, 1601.985pt x 943.525pt>
+File: Images/Member.png Graphic file (type png)
+<use Images/Member.png>
+Package pdftex.def Info: Images/Member.png  used on input line 166.
+(pdftex.def)             Requested size: 376.42575pt x 221.6996pt.
+[28 <./Images/Login-bar.png> <./Images/Orders-History.png>])
+(./chapters/ZusammenfassungAusblick.tex [29 <./Images/Member.png>]
 Kapitel 5.
-) [26
+) [30
 
 
 ] (./Documentation.bbl
@@ -993,7 +1033,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--85
 2.0?  []$\OT1/cmtt/m/n/12 https : / / auth0 . com /
  []
 
-[27
+[31
 
 
 
@@ -1060,7 +1100,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--165
 
 )
 No file Documentation.ind.
-[28]
+[32]
 \openout2 = `chapters/Glossar.aux'.
 
  (./chapters/Glossar.tex
@@ -1068,7 +1108,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--29
 
  []
 
-) [29
+) [33
 
 
 
@@ -1080,7 +1120,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) [30
+) [34
 
 
 
@@ -1089,13 +1129,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 ] (./Documentation.aux (./chapters/Glossar.aux)
 (./chapters/Selbststaendigkeitserklaerung.aux))
 Package rerunfilecheck Info: File `Documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 08D88F2B5784BD97FFB985C0E88C85CC;7891.
+(rerunfilecheck)             Checksum: 3AB93920D9BF4DC1E460EB403DA24BA0;8246.
  ) 
 Here is how much of TeX's memory you used:
- 17607 strings out of 478268
- 279134 string characters out of 5846348
- 811669 words of memory out of 5000000
- 35321 multiletter control sequences out of 15000+600000
+ 17671 strings out of 478268
+ 280441 string characters out of 5846348
+ 811953 words of memory out of 5000000
+ 35366 multiletter control sequences out of 15000+600000
  479101 words of font info for 66 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  60i,9n,63p,1303b,1434s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1113,10 +1153,10 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive
 /2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Documentation.pdf (36 pages, 1170176 bytes).
+Output written on Documentation.pdf (40 pages, 2194837 bytes).
 PDF statistics:
- 767 PDF objects out of 1000 (max. 8388607)
- 685 compressed objects within 7 object streams
- 196 named destinations out of 1000 (max. 500000)
- 434 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 829 PDF objects out of 1000 (max. 8388607)
+ 730 compressed objects within 8 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 488 words of extra memory for PDF output out of 10000 (max. 10000000)
 
