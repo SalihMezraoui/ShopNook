@@ -9,61 +9,68 @@
 \contentsline {chapter}{\numberline {2}Methodologie und Systementwurf }{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Entwurf und Konzeption}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}UML}{3}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Klassendiagramm}{4}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Use-Case Diagramme}{4}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Front-End Technologien}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}HTML/CSS}{4}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Typescript}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.1.2}Klassendiagramm}{3}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Use-Case Diagramme}{5}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Front-End Technologien}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}HTML/CSS}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Typescript}{5}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Angular}{5}{subsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Komponentenbasierte Architektur}{5}{subsubsection.2.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.2.3.2}Single Page Application (SPA)}{6}{subsubsection.2.2.3.2}%
-\contentsline {section}{\numberline {2.3}Back-End Technologien}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Java}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}REST-API}{6}{subsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.2.1}Einführung in REST}{7}{subsubsection.2.3.2.1}%
-\contentsline {subsection}{\numberline {2.3.3}HTTPS und SSL/TLS}{7}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Spring Boot}{9}{subsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}Warum wurde Spring Boot ausgewählt ?}{9}{subsubsection.2.3.4.1}%
-\contentsline {subsubsection}{\numberline {2.3.4.2}Wie funktionniert Spring Boot ?}{10}{subsubsection.2.3.4.2}%
-\contentsline {subsubsection}{\numberline {2.3.4.3}Spring Security}{11}{subsubsection.2.3.4.3}%
-\contentsline {subsection}{\numberline {2.3.5}Stripe API}{11}{subsection.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.5.1}Überblick}{11}{subsubsection.2.3.5.1}%
-\contentsline {subsubsection}{\numberline {2.3.5.2}Hauptmerkmale der Stripe API}{12}{subsubsection.2.3.5.2}%
-\contentsline {subsubsection}{\numberline {2.3.5.3}Stripe API Integration für nahtlose Zahlungsabwicklung}{12}{subsubsection.2.3.5.3}%
-\contentsline {section}{\numberline {2.4}Datenbankstruktur}{13}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Übersicht über relationale Datenbanken und Auswahl von MySQL}{13}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Datenbankschemaentwurf mit Spring Data JPA}{14}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Datenpersistenz und Transaktionen}{14}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}MySQL-Workbench und SQL}{14}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Datenbankverbindung und -konfiguration in Spring Boot}{15}{subsection.2.4.5}%
-\contentsline {section}{\numberline {2.5}Authentifizierungs- und Autorisierungsprotokolle}{15}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Okta}{15}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}JWT}{15}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}OAuth2}{16}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}OpenID Connect}{16}{subsection.2.5.4}%
-\contentsline {section}{\numberline {2.6}Entwicklungsumgebung und Versionskontrolle}{16}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Entwicklungsumgebung}{16}{subsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.1.1}IntelliJ IDEA}{16}{subsubsection.2.6.1.1}%
-\contentsline {subsubsection}{\numberline {2.6.1.2}Visual Studio Code}{17}{subsubsection.2.6.1.2}%
-\contentsline {subsection}{\numberline {2.6.2}Versionskontrolle}{17}{subsection.2.6.2}%
-\contentsline {subsubsection}{\numberline {2.6.2.1}Git}{17}{subsubsection.2.6.2.1}%
-\contentsline {subsubsection}{\numberline {2.6.2.2}GitHub}{17}{subsubsection.2.6.2.2}%
-\contentsline {chapter}{\numberline {3}Implementierung}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Startseite}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Online-Shopping}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Bezahlprozess}{20}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Ergebnisse und Analyse}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Startseite}{21}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Linke Seite}{22}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Header}{22}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Hauptinhalt}{22}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Fußzeile}{23}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Warenkorb-Details}{23}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Checkout-Seite}{24}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Login}{27}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Auftragsverlauf}{28}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Mitgliederseite}{28}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{30}{chapter.5}%
-\contentsline {chapter}{Literaturverzeichnis}{31}{chapter*.15}%
-\contentsline {chapter}{Glossar}{33}{appendix.A}%
-\contentsline {chapter}{Selbstständigkeitserklärung}{34}{appendix.B}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Komponentenbasierte Architektur}{6}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Single Page Application (SPA)}{7}{subsubsection.2.2.3.2}%
+\contentsline {section}{\numberline {2.3}Back-End Technologien}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Java}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}REST-API}{7}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Einführung in REST}{8}{subsubsection.2.3.2.1}%
+\contentsline {subsection}{\numberline {2.3.3}HTTPS und SSL/TLS}{8}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Spring Boot}{10}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}Warum wurde Spring Boot ausgewählt ?}{10}{subsubsection.2.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.4.2}Wie funktionniert Spring Boot ?}{11}{subsubsection.2.3.4.2}%
+\contentsline {subsubsection}{\numberline {2.3.4.3}Spring Security}{12}{subsubsection.2.3.4.3}%
+\contentsline {subsection}{\numberline {2.3.5}Stripe API}{12}{subsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.5.1}Überblick}{12}{subsubsection.2.3.5.1}%
+\contentsline {subsubsection}{\numberline {2.3.5.2}Hauptmerkmale der Stripe API}{13}{subsubsection.2.3.5.2}%
+\contentsline {subsubsection}{\numberline {2.3.5.3}Stripe API Integration für nahtlose Zahlungsabwicklung}{13}{subsubsection.2.3.5.3}%
+\contentsline {section}{\numberline {2.4}Datenbankstruktur}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Übersicht über relationale Datenbanken und Auswahl von MySQL}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Datenbankschemaentwurf mit Spring Data JPA}{15}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Datenpersistenz und Transaktionen}{15}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}MySQL-Workbench und SQL}{15}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Datenbankverbindung und -konfiguration in Spring Boot}{16}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Authentifizierungs- und Autorisierungsprotokolle}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Okta}{16}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}JWT}{16}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}OAuth2}{17}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}OpenID Connect}{17}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Entwicklungsumgebung und Versionskontrolle}{17}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Entwicklungsumgebung}{17}{subsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.1.1}IntelliJ IDEA}{17}{subsubsection.2.6.1.1}%
+\contentsline {subsubsection}{\numberline {2.6.1.2}Visual Studio Code}{18}{subsubsection.2.6.1.2}%
+\contentsline {subsection}{\numberline {2.6.2}Versionskontrolle}{18}{subsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.2.1}Git}{18}{subsubsection.2.6.2.1}%
+\contentsline {subsubsection}{\numberline {2.6.2.2}GitHub}{18}{subsubsection.2.6.2.2}%
+\contentsline {chapter}{\numberline {3}Implementierung}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Startseite}{20}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}header}{20}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Menu}{22}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Online-Shopping}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Darstellung von Produkten auf der Produktseite}{23}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Auswahl und Hinzufügen von Produkten zum Warenkorb}{23}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Warenkorbverwaltung}{24}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Paginierung und Suchfunktionalität}{24}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Bezahlprozess}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Struktur des Checkout-Formulars}{26}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Ergebnisse und Analyse}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Startseite}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Linke Seite}{28}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Header}{28}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Hauptinhalt}{28}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Fußzeile}{29}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Warenkorb-Details}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Checkout-Seite}{30}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Login}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Auftragsverlauf}{34}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Mitgliederseite}{34}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{36}{chapter.5}%
+\contentsline {chapter}{Literaturverzeichnis}{37}{chapter*.15}%
+\contentsline {chapter}{Glossar}{39}{appendix.A}%
+\contentsline {chapter}{Selbstständigkeitserklärung}{40}{appendix.B}%
