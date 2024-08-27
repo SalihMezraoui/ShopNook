@@ -23,6 +23,38 @@ Die Unified Modeling Language (UML) ist ein wesentliches Werkzeug im Bereich Ent
 
 \subsection{Klassendiagramm}\index{Klassendiagramm}
 
+In diesem Abschnitt stellen wir das Klassendiagramm für die Anwendung vor. Das Diagramm (siehe \ref{fig:class_diagram}) veranschaulicht die wichtigsten beteiligten Klassen, ihre Attribute und die Beziehungen zwischen ihnen.
+Das Klassendiagramm dient der Darstellung der Struktur des eCommerce-Systems. Es umfasst die folgenden Klassen:
+
+\begin{itemize}
+	\item \textbf{Customer}
+	\item \textbf{Order}
+	\item \textbf{OrderItem}
+	\item \textbf{Address}
+	\item \textbf{ProductCategory}
+	\item \textbf{Product}
+	\item \textbf{State}
+	\item \textbf{Country}
+\end{itemize}
+
+Die Beziehungen zwischen diesen Klassen sind wie folgt:
+
+\begin{itemize}
+	\item Ein \textbf{Kunde} kann mehrere \textbf{Bestellungen} aufgeben.
+	\item Eine \textbf{Bestellung} kann mehrere \textbf{Bestellpositionen} enthalten.
+	\item Jede \textbf{Bestellposition} ist einem \textbf{Produkt} zugeordnet.
+	\item Eine \textbf{Bestellung} hat eine \textbf{Lieferadresse} und eine \textbf{Rechnungsadresse}.
+	\item Ein \textbf{Produkt} gehört zu einer \textbf{Produktkategorie}.
+	\item Ein \textbf{Bundesstaat} gehört zu einem \textbf{Land}.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{images/ClassDiagram.png}
+	\caption{Klassendiagram für die Ecommerce Anwendung ShopNook}
+	\label{fig:class_diagram}
+\end{figure}
+
 \subsection{Use-Case Diagramme}\index{Use-Case Diagramme}
 
 
