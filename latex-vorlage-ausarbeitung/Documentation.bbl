@@ -37,6 +37,12 @@
   2023.
 \newblock Abgerufen am 19.08.2024.
 
+\bibitem[Cor21]{Sequenzdiagramm:2021}
+{\sc Corporation, IBM}: {\em Sequenzdiagramme}.
+\newblock
+  \url{https://www.ibm.com/docs/de/radfws/9.6.1?topic=diagrams-sequence}, 2021.
+\newblock abgerufen am 28.08.2024.
+
 \bibitem[Hib]{Hibernate:o.J}
 {\sc Hibernate}: {\em {Hibernate}}.
 \newblock \url{https://hibernate.org/orm/what-is-an-orm/}.
