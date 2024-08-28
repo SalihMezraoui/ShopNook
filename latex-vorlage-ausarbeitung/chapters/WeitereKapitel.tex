@@ -64,7 +64,7 @@ Dieses Kapitel befasst sich mit Front-End-Technologien wie HTML, CSS, Typescript
 
 \subsection{HTML/CSS}\index{HTML/CSS}
 
-HTML\footnote{HyperText Markup Language} and CSS\footnote{Cascading Style Sheets} sind die grundlegenden Technologien zur Erstellung und Gestaltung von Webseiten. HTML liefert die Struktur und den Inhalt einer Webseite, während CSS für die visuelle Darstellung, Layout, Farben und Schriftarten, verwendet wird. Sie ermöglichen es optisch ansprechende und gut strukturierte Webseiten zu erstellen \cite{HTML/CSS:2024}.
+HTML and CSS sind die grundlegenden Technologien zur Erstellung und Gestaltung von Webseiten. HTML liefert die Struktur und den Inhalt einer Webseite, während CSS für die visuelle Darstellung, Layout, Farben und Schriftarten, verwendet wird. Sie ermöglichen es optisch ansprechende und gut strukturierte Webseiten zu erstellen \cite{HTML/CSS:2024}.
 
 \subsection{Typescript}\index{Typescript}
 
@@ -78,7 +78,7 @@ Durch die Wahl von TypeScript für das ShopNook-Projekt wurde es sichergestellt,
 
 \subsection{Angular}\index{Angular}
 
-Angular\footnote{https://angular.io} ist ein Open-Source-Framework für Webanwendungen, das von Google entwickelt und gepflegt wird. Es wird für die Erstellung dynamischer, einseitiger Anwendungen (SPAs)\footnote{Single Page Application} mit TypeScript und HTML verwendet. Das Framework bietet eine robuste Plattform für die Entwicklung komplexer Anwendungen, indem es einen umfassenden Satz von Tools und Funktionen wie Datenbindung, Dependency Injection und eine modulare Architektur bietet \cite{Angular:2024}.\\
+Angular\footnote{https://angular.io} ist ein Open-Source-Framework für Webanwendungen, das von Google entwickelt und gepflegt wird. Es wird für die Erstellung dynamischer, einseitiger Anwendungen (SPAs) mit TypeScript und HTML verwendet. Das Framework bietet eine robuste Plattform für die Entwicklung komplexer Anwendungen, indem es einen umfassenden Satz von Tools und Funktionen wie Datenbindung, Dependency Injection und eine modulare Architektur bietet \cite{Angular:2024}.\\
 Eine der Hauptstärken von Angular ist seine komponentenbasierte Struktur, die es Entwicklern ermöglicht, wiederverwendbare UI-Komponenten zu erstellen, die die Wartbarkeit und Skalierbarkeit verbessern. Darüber hinaus bietet Angular leistungsstarke Funktionen wie reaktive Programmierung mit RxJS\footnote{https://rxjs.dev}, Zustandsverwaltung und ein reichhaltiges Ökosystem von Bibliotheken, was es zu einer idealen Wahl für Anwendungen auf Unternehmensebene macht.
 
 \subsubsection{Komponentenbasierte Architektur}
@@ -126,7 +126,7 @@ Java ist eine weit verbreitete Programmiersprache, die für ihre Plattformunabh�
 
 \subsection{REST-API}\index{REST-API}
 
-REST\footnote{Representational State Transfer} ist ein Architekturstil für die Entwicklung vernetzter Anwendungen. Er basiert auf einem zustandslosen, Client-Server- und cachefähigen Kommunikationsprotokoll, und in fast allen Fällen wird das HTTP-Protokoll verwendet. REST-APIs sind so konzipiert, dass sie einfach, leichtgewichtig und skalierbar sind, was sie zu einer beliebten Wahl für Webdienste macht \cite{REST:2024}.
+REST ist ein Architekturstil für die Entwicklung vernetzter Anwendungen. Er basiert auf einem zustandslosen, Client-Server- und cachefähigen Kommunikationsprotokoll, und in fast allen Fällen wird das HTTP-Protokoll verwendet. REST-APIs sind so konzipiert, dass sie einfach, leichtgewichtig und skalierbar sind, was sie zu einer beliebten Wahl für Webdienste macht \cite{REST:2024}.
 
 \subsubsection{Einführung in REST}
 Angelehnt an \cite{REST:2024} bieten REST-APIs eine Möglichkeit, über HTTP auf die Funktionalität und Daten einer Anwendung zuzugreifen. Sie folgen den Prinzipien von REST, die auf Ressourcen und deren Repräsentationen basieren. Jede Ressource wird durch eine eindeutige URI identifiziert und kann durch standardisierte HTTP-Methoden manipuliert werden:
@@ -158,13 +158,14 @@ SSL/TLS sind allerdings Verschlüsselungsprotokolle, die eine sichere Kommunikat
 	\item \textbf{Server-Authentifizierung:} Diese Protokolle überprüfen auch die Identität des Servers und stellen sicher, dass die Clients mit einem legitimen Server und nicht mit einem Betrüger kommunizieren.
 	\item \textbf{Datenintegrität:} Sie bieten auch Datenintegrität, indem es sicherstellt, dass die Daten während der Übertragung nicht manipuliert wurden.
 \end{itemize}
-In der Anwendung wurde eine HTTPS Konfiguration (siehe \ref{HTTPS-Config}) erstellt, um eine sichere Kommunikation zwischen Clients und dem Server zu gewährleisten. Dazu wurde der Server so eingestellt, dass er auf Port 8443 auf HTTPS-Datenverkehr wartet. Der Konfigurationsprozess beinhaltete die Aktivierung der SSL-Unterstützung, die für die Verschlüsselung der über das Netzwerk ausgetauschten Daten unerlässlich ist.\\
-Wir haben eine Keystore-Datei im PKCS12-Format \textbf{(shopnook-keystore.p12)} verwendet, in der die für die Verschlüsselung erforderlichen SSL/TLS-Zertifikate sicher gespeichert sind. Der Keystore ist durch ein Passwort geschützt \textbf{(server.ssl.key-store-password=secret)}, so dass der Zugriff auf die kryptografischen Schlüssel nur autorisierten Prozessen vorbehalten ist.\\
+In der Anwendung wurde eine HTTPS Konfiguration (siehe \ref{HTTPS-Config}) erstellt, um eine sichere Kommunikation zwischen Clients und dem Server zu gewährleisten. Dazu wurde der Server so eingestellt, dass er auf Port 8443 auf HTTPS-Datenverkehr wartet.\\
+Der Konfigurationsprozess beinhaltete die Aktivierung der SSL-Unterstützung, die für die Verschlüsselung der über das Netzwerk ausgetauschten Daten unerlässlich ist.\\
+Eine Keystore-Datei im PKCS12-Format \verb*|shopnook-keystore.p12| wurde verwendet, in der die für die Verschlüsselung erforderlichen SSL/TLS-Zertifikate sicher gespeichert sind. Der Keystore ist durch ein Passwort geschützt \textbf{(server.ssl.key-store-password=secret)}, so dass der Zugriff auf die kryptografischen Schlüssel nur autorisierten Prozessen vorbehalten ist. \\ 
 Innerhalb des Schlüsselspeichers wird das Zertifikat durch den Alias \textbf{shopnook} identifiziert, auf den in der Konfiguration verwiesen wird, um die SSL-Vorgänge des Servers mit dem richtigen Zertifikat zu verknüpfen. Diese Einrichtung stellt sicher, dass alle zwischen dem Client und dem Server übertragenen Daten verschlüsselt werden, was einen robusten Schutz gegen Abhör- und Man-in-the-Middle-Angriffe bietet.\\
 Darüber hinaus ermöglicht die Konfiguration eine einfache Anpassung an unterschiedliche Umgebungen. So kann beispielsweise der Port der Anwendung je nach Einsatzumgebung geändert werden, indem die Eigenschaft \textbf{server.port} angepasst wird. Für die QA-Demo-Umgebung ist der Port auf \textbf{9898} eingestellt, der durch Umschalten der Kommentarzeilen aktiviert werden kann.\\
 Durch die sorgfältige Konfiguration dieser SSL-Einstellungen stellen wir sicher, dass ShopNook den Industriestandards für Sicherheit entspricht.\newpage
 
-\begin{lstlisting}[language=, caption={Implementierung von HTTPS und SSL Konfiguration}\label{HTTPS-Config}]
+\begin{lstlisting}[language=, label=HTTPS-Config, caption={Implementierung von HTTPS und SSL Konfiguration}, ]
 	#####
 	#
 	# HTTPS configuration
@@ -198,16 +199,16 @@ Durch die Implementierung von HTTPS mit SSL/TLS hält sich ShopNook an die Indus
 
 \subsection{Spring Boot}\index{Spring Boot}
 
-Spring Boot ist ein Framework, das auf dem Spring Framework aufbaut und speziell entwickelt wurde, um schnelle, effiziente und skalierbare Anwendungen zu erstellen. Es bietet eine Vielzahl von Features, die den Entwicklungsprozess beschleunigen und vereinfachen, insbesondere für Java-basierte Webanwendungen und Microservices.
+Spring Boot ist ein Framework, das auf dem Spring Framework aufbaut und speziell entwickelt wurde, um schnelle, effiziente und skalierbare Anwendungen zu erstellen. Es bietet eine Vielzahl von Features, die den Entwicklungsprozess beschleunigen und vereinfachen, insbesondere für Java-basierte Webanwendungen und Microservices \cite{Spring-Framework:o.J}.
 
 \subsubsection{Warum wurde Spring Boot ausgewählt ?}
-Spring Boot wurde aufgrund der breiten Unterstützung in der Entwicklergemeinde ausgewählt. Hier sind einige der Hauptgründe:
+Spring Boot wurde im Rahmen dieses Projekts aufgrund der breiten Unterstützung in der Entwicklergemeinde ausgewählt. Hier sind einige der Hauptgründe:
 \begin{itemize}
 	\item \textbf{Produktivität:} Das Framework ermöglicht es auf das Schreiben von Geschäftslogik zu konzentrieren, anstatt sich um die Konfiguration von Technologien zu kümmern.
 	\item \textbf{Microservices:} Es eignet sich hervorragend für die Entwicklung von Microservices-Architekturen, indem es Server wie Tomcat bietet, sodass die Anwendungen ohne externen Server laufen können.
 	\item \textbf{Integration:} Es lässt sich nahtlos in andere Spring-Projekte und eine Vielzahl von Datenbanken integrieren.
 \end{itemize}
-Das Framework bietet auch viele Funktionalitäten, die es von anderen abheben, es hat viele weitere Vorteile, die hier genannt werden:
+Das Framework bietet auch viele Funktionalitäten, die es von anderen abheben. Es hat viele weitere Vorteile, die hier genannt werden:
 
 \begin{itemize}
 	\item \textbf{Auto-Konfiguration:} Die Autokonfigurationsfunktion von Spring Boot konfiguriert Ihre Anwendung automatisch anhand der Abhängigkeiten, die Sie dem Projekt hinzugefügt haben. Dadurch wird die Notwendigkeit einer manuellen Konfiguration minimiert und die Entwicklung beschleunigt.
