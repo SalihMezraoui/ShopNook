@@ -84,8 +84,8 @@ I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
 --line 755 of file literatur.bib
 I was expecting a `,' or a `}'---line 755 of file literatur.bib
- :   year         = o. 
- :                     J
+ :  year         = o. 
+ :                    J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
 --line 771 of file literatur.bib
@@ -111,6 +111,12 @@ I was expecting a `,' or a `}'---line 819 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
+Warning--string name "o." is undefined
+--line 835 of file literatur.bib
+I was expecting a `,' or a `}'---line 835 of file literatur.bib
+ :   year         = o. 
+ :                     J
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in HTML/CSS:2024
 Warning--to sort, need author or key in Angular:2024
 Warning--to sort, need author or key in Angular2:2024
@@ -119,45 +125,45 @@ Warning--to sort, need author or key in Java:2024
 Warning--to sort, need author or key in REST:2024
 Warning--to sort, need author or key in wiki:listing
 Warning--to sort, need author or key in HTTPS:2024
-You've used 31 entries,
+You've used 32 entries,
             2768 wiz_defined-function locations,
-            757 strings with 8795 characters,
-and the built_in function-call counts, 8768 in all, are:
-= -- 926
-> -- 192
-< -- 23
-+ -- 58
-- -- 46
-* -- 456
-:= -- 1253
-add.period$ -- 93
-call.type$ -- 31
-change.case$ -- 116
+            762 strings with 8928 characters,
+and the built_in function-call counts, 9064 in all, are:
+= -- 957
+> -- 200
+< -- 24
++ -- 61
+- -- 48
+* -- 471
+:= -- 1296
+add.period$ -- 96
+call.type$ -- 32
+change.case$ -- 120
 chr.to.int$ -- 19
-cite$ -- 47
-duplicate$ -- 387
-empty$ -- 877
-format.name$ -- 86
-if$ -- 2020
-int.to.chr$ -- 13
+cite$ -- 48
+duplicate$ -- 400
+empty$ -- 905
+format.name$ -- 90
+if$ -- 2087
+int.to.chr$ -- 14
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 158
-num.names$ -- 69
-pop$ -- 337
+newline$ -- 163
+num.names$ -- 72
+pop$ -- 350
 preamble$ -- 1
-purify$ -- 178
+purify$ -- 184
 quote$ -- 0
-skip$ -- 313
+skip$ -- 322
 stack$ -- 0
-substring$ -- 225
-swap$ -- 85
-text.length$ -- 23
-text.prefix$ -- 17
+substring$ -- 232
+swap$ -- 88
+text.length$ -- 24
+text.prefix$ -- 18
 top$ -- 0
-type$ -- 248
+type$ -- 256
 warning$ -- 8
-while$ -- 46
-width$ -- 38
-write$ -- 379
-(There were 17 error messages)
+while$ -- 48
+width$ -- 39
+write$ -- 391
+(There were 18 error messages)

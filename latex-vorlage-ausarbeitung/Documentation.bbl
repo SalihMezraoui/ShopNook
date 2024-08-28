@@ -121,7 +121,12 @@
 \newblock \url{https://www.ibm.com/topics/relational-databases/}.
 \newblock Abgerufen am 14.08.2024.
 
-\bibitem[Sprd]{Spring-Security:o.J}
+\bibitem[Sprd]{Spring-Framework:o.J}
+{\sc Spring}: {\em Spring Framework}.
+\newblock \url{https://spring.io/projects/spring-framework}.
+\newblock Abgerufen am 28. August 2024.
+
+\bibitem[Spre]{Spring-Security:o.J}
 {\sc Spring}: {\em Spring Security}.
 \newblock \url{https://spring.io/projects/spring-security}.
 \newblock Abgerufen am 14. August 2024.

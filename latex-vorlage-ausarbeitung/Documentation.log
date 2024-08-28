@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.22)  27 AUG 2024 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.22)  28 AUG 2024 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -769,7 +769,7 @@ bibgerm.sty: babel.sty detected
 
 pdfTeX warning: pdflatex.exe (file ./images/logo-fb-informatik.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/logo-fb-informatik.pdf, id=247, 811.81792pt x 157.11497pt>
+<images/logo-fb-informatik.pdf, id=251, 811.81792pt x 157.11497pt>
 File: images/logo-fb-informatik.pdf Graphic file (type pdf)
 <use images/logo-fb-informatik.pdf>
 Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 98.
@@ -833,7 +833,7 @@ Kapitel 2.
 
 
 ]
-<images/ClassDiagram.png, id=382, 703.87968pt x 506.6428pt>
+<images/ClassDiagram.png, id=387, 703.87968pt x 506.6428pt>
 File: images/ClassDiagram.png Graphic file (type png)
 <use images/ClassDiagram.png>
 Package pdftex.def Info: images/ClassDiagram.png  used on input line 53.
@@ -859,29 +859,17 @@ Overfull \hbox (21.38344pt too wide) in paragraph at lines 125--126
 ver-sei-ti-ge Lo-gik zu gew[]ahrleisten. 
  []
 
-[7] [8]
-Overfull \hbox (18.3682pt too wide) in paragraph at lines 161--165
-\OT1/cmr/m/n/12 war-tet. Der Kon-fi-gu-ra-ti-ons-pro-zess bein-hal-te-te die Ak
--ti-vie-rung der SSL-Unterst[]utzung,
- []
-
-
-Overfull \hbox (12.0067pt too wide) in paragraph at lines 161--165
-\OT1/cmr/m/n/12 cher ge-spei-chert sind. Der Key-sto-re ist durch ein Pass-wort
- gesch[]utzt \OT1/cmr/bx/n/12 (server.ssl.key-
- []
-
-[9]
+[7] [8] [9]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 167.
+nput line 168.
 
-Overfull \hbox (19.30536pt too wide) in paragraph at lines 206--207
+Overfull \hbox (19.30536pt too wide) in paragraph at lines 207--208
 []\OT1/cmr/bx/n/12 Produktivit[]at: \OT1/cmr/m/n/12 Das Fra-me-work erm[]oglich
 t es auf das Schrei-ben von Gesch[]aftslogik
  []
 
 
-Overfull \hbox (18.08316pt too wide) in paragraph at lines 207--208
+Overfull \hbox (18.08316pt too wide) in paragraph at lines 208--209
 []\OT1/cmr/bx/n/12 Microservices: \OT1/cmr/m/n/12 Es eig-net sich her-vor-ra-ge
 nd f[]ur die Ent-wick-lung von Microservices-
  []
@@ -891,45 +879,45 @@ nd f[]ur die Ent-wick-lung von Microservices-
 File: lstlang1.sty 2024/03/11 1.10a listings language file
 )
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Overfull \hbox (6.34164pt too wide) in paragraph at lines 235--236
+Overfull \hbox (6.34164pt too wide) in paragraph at lines 236--237
 [][][][][][][][][][][][][][][][][][] 
  []
 
 [11]
-Overfull \hbox (3.31844pt too wide) in paragraph at lines 255--256
+Overfull \hbox (3.31844pt too wide) in paragraph at lines 256--257
 \OT1/cmr/m/n/12 In die-sem Teil wird die Stripe-API n[]aher be-leuch-tet, be-gi
 n-nend mit ei-nem []Uberblick
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
@@ -939,23 +927,23 @@ File: lstlang1.sty 2024/03/11 1.10a listings language file
 (C:\Users\Imad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 [13] [14] [15] [16]
-Overfull \hbox (9.03099pt too wide) in paragraph at lines 356--357
+Overfull \hbox (9.03099pt too wide) in paragraph at lines 357--358
 \OT1/cmr/m/n/12 und die M[]oglichkeit f[]ur je-de Ein-rich-tung, als Ope-nID Pr
 o-vi-der (OP) zu agieren[[]]. 
  []
 
 [17]
-Overfull \hbox (6.0907pt too wide) in paragraph at lines 389--390
+Overfull \hbox (6.0907pt too wide) in paragraph at lines 390--391
 []\OT1/cmr/m/n/12 Zusammenarbeit an Pro-jek-ten oh-ne das Ri-si-ko, dass un-be-
 ab-sich-tig-te []Anderungen
  []
@@ -978,20 +966,373 @@ Overfull \hbox (11.5593pt too wide) in paragraph at lines 222--224
 /12 product-list-grid.component.html
  []
 
+[25] [26] [27]
 
-Overfull \hbox (18.07652pt too wide) in paragraph at lines 227--228
-\OT1/cmr/m/n/12 In die-sem Ab-schnitt wird der Im-ple-men-tie-rungs-pro-zess de
-s Be-zahl-vor-gangs (Checkout-
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 288.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 300.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 304.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Package xcolor Warning: Incompatible color definition on input line 307.
+
+
+Overfull \hbox (6.34164pt too wide) in paragraph at lines 310--312
+[][][][][][][][][][][][][][][] 
  []
 
-[25]) (chapters/Beispiel.tex [26]
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 314.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 319.
+
+
+Package xcolor Warning: Incompatible color definition on input line 322.
+
+
+Package xcolor Warning: Incompatible color definition on input line 322.
+
+
+Package xcolor Warning: Incompatible color definition on input line 322.
+
+
+Package xcolor Warning: Incompatible color definition on input line 322.
+
+
+Package xcolor Warning: Incompatible color definition on input line 322.
+
+
+Package xcolor Warning: Incompatible color definition on input line 322.
+
+
+Package xcolor Warning: Incompatible color definition on input line 322.
+
+
+Package xcolor Warning: Incompatible color definition on input line 322.
+
+
+Overfull \hbox (6.34164pt too wide) in paragraph at lines 327--328
+[][][][][][][][][][][][][][][][] 
+ []
+
+) (chapters/Beispiel.tex [28]
 Kapitel 4.
-<Images/Home-Page.png, id=768, 1795.70876pt x 1085.05376pt>
+<Images/Home-Page.png, id=857, 1795.70876pt x 1085.05376pt>
 File: Images/Home-Page.png Graphic file (type png)
 <use Images/Home-Page.png>
 Package pdftex.def Info: Images/Home-Page.png  used on input line 10.
 (pdftex.def)             Requested size: 376.42575pt x 227.4541pt.
-[27
+[29
 
 
 ]
@@ -1000,43 +1341,43 @@ Overfull \hbox (3.31001pt too wide) in paragraph at lines 29--30
  sich ne-ben der Login-Schaltfl[]ache
  []
 
-[28 <./Images/Home-Page.png>]
-<Images/Cart-Details.png, id=778, 1464.47125pt x 727.71875pt>
+[30 <./Images/Home-Page.png>]
+<Images/Cart-Details.png, id=867, 1464.47125pt x 727.71875pt>
 File: Images/Cart-Details.png Graphic file (type png)
 <use Images/Cart-Details.png>
 Package pdftex.def Info: Images/Cart-Details.png  used on input line 63.
 (pdftex.def)             Requested size: 376.42575pt x 187.04822pt.
- [29 <./Images/Cart-Details.png>]
-<Images/Checkout_1.png, id=784, 962.59625pt x 866.23625pt>
+ [31 <./Images/Cart-Details.png>]
+<Images/Checkout_1.png, id=873, 962.59625pt x 866.23625pt>
 File: Images/Checkout_1.png Graphic file (type png)
 <use Images/Checkout_1.png>
 Package pdftex.def Info: Images/Checkout_1.png  used on input line 94.
 (pdftex.def)             Requested size: 376.42575pt x 338.7428pt.
- [30]
-<Images/Checkout_2.png, id=789, 963.6pt x 908.39375pt>
+ [32]
+<Images/Checkout_2.png, id=879, 963.6pt x 908.39375pt>
 File: Images/Checkout_2.png Graphic file (type png)
 <use Images/Checkout_2.png>
 Package pdftex.def Info: Images/Checkout_2.png  used on input line 109.
 (pdftex.def)             Requested size: 376.42575pt x 354.8543pt.
- [31 <./Images/Checkout_1.png>]
-<Images/Purchase.png, id=795, 779.91376pt x 316.18124pt>
+ [33 <./Images/Checkout_1.png>]
+<Images/Purchase.png, id=885, 779.91376pt x 316.18124pt>
 File: Images/Purchase.png Graphic file (type png)
 <use Images/Purchase.png>
 Package pdftex.def Info: Images/Purchase.png  used on input line 118.
 (pdftex.def)             Requested size: 376.42575pt x 152.60474pt.
- [32 <./Images/Checkout_2.png>]
-<Images/Login.png, id=802, 364.36125pt x 456.70625pt>
+ [34 <./Images/Checkout_2.png>]
+<Images/Login.png, id=891, 364.36125pt x 456.70625pt>
 File: Images/Login.png Graphic file (type png)
 <use Images/Login.png>
 Package pdftex.def Info: Images/Login.png  used on input line 129.
 (pdftex.def)             Requested size: 250.95476pt x 314.5562pt.
- [33 <./Images/Purchase.png> <./Images/Login.png>]
-<Images/Login-bar.png, id=809, 752.8125pt x 68.255pt>
+ [35 <./Images/Purchase.png> <./Images/Login.png>]
+<Images/Login-bar.png, id=898, 752.8125pt x 68.255pt>
 File: Images/Login-bar.png Graphic file (type png)
 <use Images/Login-bar.png>
 Package pdftex.def Info: Images/Login-bar.png  used on input line 141.
 (pdftex.def)             Requested size: 376.42575pt x 34.13052pt.
-<Images/Orders-History.png, id=810, 1529.715pt x 556.0775pt>
+<Images/Orders-History.png, id=899, 1529.715pt x 556.0775pt>
 File: Images/Orders-History.png Graphic file (type png)
 <use Images/Orders-History.png>
 Package pdftex.def Info: Images/Orders-History.png  used on input line 153.
@@ -1046,13 +1387,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-<Images/Member.png, id=811, 1601.985pt x 943.525pt>
+<Images/Member.png, id=900, 1601.985pt x 943.525pt>
 File: Images/Member.png Graphic file (type png)
 <use Images/Member.png>
 Package pdftex.def Info: Images/Member.png  used on input line 166.
 (pdftex.def)             Requested size: 376.42575pt x 221.6996pt.
-[34 <./Images/Login-bar.png> <./Images/Orders-History.png>])
-(chapters/ZusammenfassungAusblick.tex [35 <./Images/Member.png>]
+[36 <./Images/Login-bar.png> <./Images/Orders-History.png>])
+(chapters/ZusammenfassungAusblick.tex [37 <./Images/Member.png>]
 Kapitel 5.
 
 Overfull \hbox (9.52522pt too wide) in paragraph at lines 3--4
@@ -1066,7 +1407,7 @@ Overfull \hbox (16.13087pt too wide) in paragraph at lines 7--8
  er-for-der-te sorgf[]altige
  []
 
-) [36
+) [38
 
 
 ] (Documentation.bbl
@@ -1105,7 +1446,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--85
 2.0?  []$\OT1/cmtt/m/n/12 https : / / auth0 . com /
  []
 
-[37
+[39
 
 
 
@@ -1148,39 +1489,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 125--128
+[]\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Spring Fra-me-work\
+OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / spring . io / projects /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
 []\OT1/cmr/m/sc/12 Spring\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 Spring Se-cu-ri-ty\
 OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / spring . io / projects /
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 146--150
+Underfull \hbox (badness 7740) in paragraph at lines 151--155
 []\OT1/cmr/m/sc/12 Team, GitHub\OT1/cmr/m/n/12 : \OT1/cmr/m/it/12 GitHub About\
 OT1/cmr/m/n/12 .  []$\OT1/cmtt/m/n/12 https : / / docs . github . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
 \OT1/cmtt/m/n/12 en / get-[]started / start-[]your-[]journey / about-[]github-[
 ]and-[]git #
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--165
+Underfull \hbox (badness 10000) in paragraph at lines 167--170
 []\OT1/cmr/m/it/12 Wikipedia: In-te-r-ope-ra-bi-li-ty\OT1/cmr/m/n/12 .  []$\OT1
 /cmtt/m/n/12 https : / / en . wikipedia . org / wiki /
  []
 
 )
 No file Documentation.ind.
-[38]
+[40]
 \openout2 = `chapters/Glossar.aux'.
 
  (chapters/Glossar.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--29
+Underfull \hbox (badness 10000) in paragraph at lines 3--30
 
  []
 
-) [39
+) [41
 
 
 
@@ -1192,7 +1539,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) [40
+) [42
 
 
 
@@ -1205,13 +1552,13 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
 Package rerunfilecheck Info: File `Documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 24C95954DC4807F0DBF0A4CC2111C52A;9681.
+(rerunfilecheck)             Checksum: E8FD0570DEB9659964CCBF75D07F7B63;9657.
  ) 
 Here is how much of TeX's memory you used:
- 18370 strings out of 474369
- 294359 string characters out of 5740986
- 1987754 words of memory out of 5000000
- 40124 multiletter control sequences out of 15000+600000
+ 18544 strings out of 474369
+ 296994 string characters out of 5740986
+ 2002754 words of memory out of 5000000
+ 40219 multiletter control sequences out of 15000+600000
  568208 words of font info for 75 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  63i,9n,67p,1305b,1437s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1231,9 +1578,9 @@ Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C
 .pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmtt9.pfb><C:/Users/Imad/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/symbols/msam10.pfb>
-Output written on Documentation.pdf (45 pages, 2388326 bytes).
+Output written on Documentation.pdf (47 pages, 2407619 bytes).
 PDF statistics:
- 1042 PDF objects out of 1200 (max. 8388607)
- 342 named destinations out of 1000 (max. 500000)
- 549 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1149 PDF objects out of 1200 (max. 8388607)
+ 421 named destinations out of 1000 (max. 500000)
+ 557 words of extra memory for PDF output out of 10000 (max. 10000000)
 
