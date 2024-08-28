@@ -5,7 +5,7 @@ Hier werden über folgende Punkte diskutiert:
 \begin{itemize}
 	\item Die Entwicklungskonzeption, die wir während der Implementation der Anwendung benutzt haben, sowie die Tools, Technologien und Methodologien. 
 	\item Überblick über Spring Boot und seine wichtigste  Funktionalitäten, die auch in dem Projekt angewendet sein werden. 
-	\item Detaillierte Erklärung der Struktur und Design der Anwendung (Bsp: Anlyse-/Entwurfsdiagram) 
+	\item Detaillierte Erklärung der Struktur und Design der Anwendung (Klassendiagramm, Sequenzdiagramm) 
 	\item Datenbanken, UI-Design und unterschiedliche Komponenten des Systems. 
 	\item Wie Spring Boot die Entwicklung und Implementation der verschiedenen Module vereinfacht. 
 \end{itemize}
@@ -51,12 +51,23 @@ Die Beziehungen zwischen diesen Klassen sind wie folgt:
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{images/ClassDiagram.png}
-	\caption{Klassendiagram für die Ecommerce Anwendung ShopNook}
+	\caption{Klassendiagramm für die E-commerce Anwendung ShopNook}
 	\label{fig:class_diagram}
 \end{figure}
 
-\subsection{Use-Case Diagramme}\index{Use-Case Diagramme}
+\subsection{Sequenzdiagramm}
 
+Ein Sequenzdiagramm ist eine Art von UML-Diagramm, das den Austausch von Nachrichten zwischen verschiedenen Objekten in einem System im zeitlichen Verlauf darstellt. Es zeigt, wie die verschiedenen Komponenten eines Systems miteinander interagieren, um eine bestimmte Funktion oder einen bestimmten Prozess auszuführen. Sequenzdiagramme sind besonders nützlich, um die Kommunikation und die Reihenfolge der Nachrichten in einem Prozess zu visualisieren. Sie helfen dabei, die Dynamik eines Systems zu verstehen und die Interaktion zwischen den Systemkomponenten zu analysieren \cite{Sequenzdiagramm:2021}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{images/SequenceDiagram.jpg}
+	\caption{Sequenzdiagramm der Anwendung ShopNook mit OAuth 2.0-Autorisierung}
+	\label{fig:Sequence-Diagram} 
+\end{figure}
+
+In dem vorliegenden Sequenzdiagramm \ref{fig:Sequence-Diagram} wird der Ablauf einer Autorisierungsanfrage gezeigt. Es stellt dar, wie ein Benutzer über eine Client-Anwendung mit einem Autorisierungsserver (Okta) und einem Ressourcenserver interagiert, um Zugriff auf geschützte Ressourcen zu erhalten. \\
+Das Diagramm zeigt die verschiedenen Schritte, wie die Anmeldung des Benutzers, die Überprüfung der Anmeldeinformationen durch den Autorisierungsserver, die Ausgabe eines Tokens und die anschließende Validierung dieses Tokens durch den Ressourcenserver, bevor dem Benutzer der Zugang zu den gewünschten Ressourcen gewährt wird.
 
 \section{Front-End Technologien}\index{Front-End Technologien}
 
@@ -100,8 +111,8 @@ Komponenten sind die wichtigsten Bausteine für Angular-Anwendungen. Wie es in d
 	\item Einer Datei mit Prüfvorschriften \texttt{<component-name>.component.spec.ts}
 \end{itemize}
 
-
 Dieser modulare Ansatz bringt mit sich mehrere Vorteile wie Wiederverwendbarkeit und Wartbarkeit.
+\newpage
 
 \subsubsection{Single Page Application (SPA)}
 
@@ -204,8 +215,8 @@ Spring Boot ist ein Framework, das auf dem Spring Framework aufbaut und speziell
 \subsubsection{Warum wurde Spring Boot ausgewählt ?}
 Spring Boot wurde im Rahmen dieses Projekts aufgrund der breiten Unterstützung in der Entwicklergemeinde ausgewählt. Hier sind einige der Hauptgründe:
 \begin{itemize}
-	\item \textbf{Produktivität:} Das Framework ermöglicht es auf das Schreiben von Geschäftslogik zu konzentrieren, anstatt sich um die Konfiguration von Technologien zu kümmern.
-	\item \textbf{Microservices:} Es eignet sich hervorragend für die Entwicklung von Microservices-Architekturen, indem es Server wie Tomcat bietet, sodass die Anwendungen ohne externen Server laufen können.
+	\item \textbf{Produktivität:} Das Framework ermöglicht es auf das Schreiben von Programmlogik zu konzentrieren, anstatt sich um die Konfiguration von Technologien zu kümmern.
+	\item \textbf{Microservices:} Es eignet sich hervorragend für die Entwicklung der Architekturen von Microservices, indem es Server wie Tomcat bietet, sodass die Anwendungen ohne externen Server laufen können.
 	\item \textbf{Integration:} Es lässt sich nahtlos in andere Spring-Projekte und eine Vielzahl von Datenbanken integrieren.
 \end{itemize}
 Das Framework bietet auch viele Funktionalitäten, die es von anderen abheben. Es hat viele weitere Vorteile, die hier genannt werden:
