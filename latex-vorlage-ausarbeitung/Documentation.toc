@@ -73,5 +73,5 @@
 \contentsline {subsection}{\numberline {4.4.2}Mitgliederseite}{37}{subsection.4.4.2}%
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{39}{chapter.5}%
 \contentsline {chapter}{Literaturverzeichnis}{40}{chapter*.16}%
-\contentsline {chapter}{Glossar}{42}{appendix.A}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{42}{appendix.A}%
 \contentsline {chapter}{Selbstständigkeitserklärung}{43}{appendix.B}%
