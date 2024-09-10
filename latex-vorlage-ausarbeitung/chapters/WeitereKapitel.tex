@@ -255,11 +255,9 @@ spring.data.rest.base-path=/api
 
 \subsubsection{Spring Security}
 
-Spring Security ist ein robustes und anpassungsfähiges Framework, das für die Authentifizierung und Zugriffskontrolle entwickelt wurde und sich zum Standard für die Absicherung von mit Spring erstellten Anwendungen entwickelt hat.
+Spring Security ist ein umfassendes und hochgradig anpassbares Framework, das speziell für die Verwaltung der Authentifizierung und Autorisierung in Java-Anwendungen entwickelt wurde. Seine Architektur ermöglicht es Entwicklern, Sicherheitsmaßnahmen zu implementieren, die auf die einzigartigen Anforderungen ihrer Anwendungen zugeschnitten sind, sodass es eine bevorzugte Wahl für Enterprise-Level-Lösungen. Das Framework bietet nicht nur wiederverwendbare Module für die Authentifizierung und Autorisierung, sondern umfasst auch Standardschutzmaßnahmen gegen gängige Web-Schwachstellen wie Cross-Site Request Forgery (CSRF) und verschiedene Exploit-Schutzmaßnahmen \cite{Spring-Security:2020}.
 
-Spring Security ist ein Framework, das sowohl die Authentifizierung als auch die Autorisierung von Java-Anwendungen übernimmt. Seine Stärke liegt in der Flexibilität, die es erlaubt, es leicht zu erweitern, um spezifische Anforderungen zu erfüllen.
-
-Das Framework bietet eine Reihe von Funktionen, darunter umfassende Unterstützung für Authentifizierung und Autorisierung, Schutz vor verschiedenen Angriffen wie Session Fixation, Clickjacking und Cross-Site Request Forgery, Integration mit der Servlet API und optionale Kompatibilität mit Spring Web MVC \cite{Spring-Security:o.J}.
+Die Stärke von Spring Security liegt in seiner Flexibilität, die eine nahtlose Integration in ein breites Spektrum von Anwendungsfällen ermöglicht. Entwickler können die Funktionen leicht erweitern, um spezifische Sicherheitsanforderungen zu erfüllen, was in den dynamischen Anwendungsumgebungen von heute entscheidend ist. Dieses Anpassungspotenzial birgt jedoch auch Risiken, da unsachgemäße Konfigurationen zu erheblichen Sicherheitsschwachstellen führen können \cite{Spring-Security:2020}.
 
 Zum Schutz der Endpunkte für Kundenbestellungen wurde Spring Security mit OAuth2-Authentifizierung implementiert, wobei JWT zur Gewährleistung eines sicheren Zugriffs verwendet wird. Die Einrichtung umfasste die Konfiguration von CORS zur Verwaltung von Herkunftsübergreifenden Anfragen und die Anpassung von Sicherheitseinstellungen wie die Deaktivierung des CSRF-Schutzes und die Handhabung der Inhaltsaushandlung. Dieser Ansatz gewährleistet robuste Sicherheit, während er verschiedene Inhaltstypen unterstützt und die gemeinsame Nutzung von Ressourcen über verschiedene Ursprünge hinweg effektiv handhabt.
 
@@ -267,7 +265,7 @@ Zum Schutz der Endpunkte für Kundenbestellungen wurde Spring Security mit OAuth
 In diesem Teil wird die Stripe-API näher beleuchtet, beginnend mit einem Überblick über ihre grundlegenden Funktionen und Hauptmerkmale. Anschließend wird die Integration der API in unsere Anwendung beschrieben, gefolgt von spezifischen Anwendungsfällen, die die Vielseitigkeit von Stripe in unserem Projekt veranschaulichen. Diese Analyse zeigt, wie Stripe eine nahtlose und sichere Zahlungsabwicklung ermöglicht.
 \subsubsection{Überblick}
 
-Die Stripe-API bietet ein umfassendes Paket von Tools für Entwickler zur Integration und Interaktion mit den Diensten von Stripe. Sie wurde nach REST-Prinzipien mit vorhersehbaren, ressourcenorientierten URLs entwickelt. Anfragen werden mit verschlüsseltem Form Körpern gesendet, und Antworten werden im JSON-Format zurückgegeben. Je nach verwendetem API-Schlüssel kann die Stripe-API entweder im Testmodus oder im Live-Modus betrieben werden. Verschiedene Stripe-Konten können je nach Version und benutzerdefinierten Funktionen unterschiedliche API-Funktionen aufweisen. Die API-Referenz enthält Codebeispiele für die Integration in verschiedenen Programmiersprachen\cite{Stripe-API:o.J}.
+Die Stripe-API bietet ein umfassendes Paket von Tools für Entwickler zur Integration und Interaktion mit den Diensten von Stripe. Sie wurde nach REST-Prinzipien mit vorhersehbaren, ressourcenorientierten URLs entwickelt. Anfragen werden mit verschlüsseltem Form Körpern gesendet, und Antworten werden im JSON-Format zurückgegeben. Je nach verwendetem API-Schlüssel kann die Stripe-API entweder im Testmodus oder im Live-Modus betrieben werden. Verschiedene Stripe-Konten können je nach Version und benutzerdefinierten Funktionen unterschiedliche API-Funktionen aufweisen. Die API-Referenz enthält Codebeispiele für die Integration in verschiedenen Programmiersprachen \cite{Stripe-API:o.J}.
 
 \subsubsection{Hauptmerkmale der Stripe API}
 Zu den wichtigsten Funktionen der Stripe-API gehören:
@@ -277,7 +275,7 @@ Zu den wichtigsten Funktionen der Stripe-API gehören:
 	\item Die Funktionalität kann sich mit jeder neuen Version der API ändern, wenn Updates veröffentlicht werden.
 	\item Die Stripe-API unterstützt eine breite Palette von Zahlungsmethoden, darunter Karten, digitale Geldbörsen, Bankabbuchungen und -überweisungen sowie Bankumleitungen, zusammen mit Optionen wie „Sofort kaufen, später bezahlen“ und bargeldbasierten Gutscheinen.
 	\item Sie bietet Funktionen zur Umsatzoptimierung, einschließlich Tools für Authentifizierung, Autorisierung, Betrugsprävention, Streitfallmanagement und Abgleich.
-	\item Stripe bietet auch Berichts- und Analysetools wie Stripe Sigma für detaillierte Einblicke und das Stripe Dashboard für das Zahlungsmanagement\cite{Stripe-API:o.J}.
+	\item Stripe bietet auch Berichts- und Analysetools wie Stripe Sigma für detaillierte Einblicke und das Stripe Dashboard für das Zahlungsmanagement \cite{Stripe-API:o.J}.
 \end{itemize}
 
 \subsubsection{Stripe API Integration für nahtlose Zahlungsabwicklung}
@@ -293,7 +291,7 @@ In der Anwendung wurde die Stripe-API sowohl in das Frontend als auch in das Bac
 
 sodass die Anwendung direkt über den Browser mit der API von Stripe interagieren kann.
 
-Am Backend wurde der geheime Schlüssel von Stripe(stripe.key.secret) sicher in der Datei application.properties der Spring Boot-Anwendung gespeichert. Dieser Schlüssel ist für die sichere Handhabung sensibler Vorgänge wie die Erstellung von Zahlungsintentionen und die Verwaltung von Transaktionen unerlässlich. Die Payment Intent API wurde im Backend zur Abwicklung des Zahlungsprozesses verwendet, um sicherzustellen, dass die Transaktionen authentifiziert, autorisiert und effizient verarbeitet werden\cite{Stripe-Intents:o.J}. \\
+Am Backend wurde der geheime Schlüssel von Stripe(stripe.key.secret) sicher in der Datei application.properties der Spring Boot-Anwendung gespeichert. Dieser Schlüssel ist für die sichere Handhabung sensibler Vorgänge wie die Erstellung von Zahlungsintentionen und die Verwaltung von Transaktionen unerlässlich. Die Payment Intent API wurde im Backend zur Abwicklung des Zahlungsprozesses verwendet, um sicherzustellen, dass die Transaktionen authentifiziert, autorisiert und effizient verarbeitet werden \cite{Stripe-Intents:o.J}. \\
 
 
 \noindent\textbf{Anwendungsfälle:} \\
@@ -348,7 +346,7 @@ In der modernen digitalen Landschaft ist die Gewährleistung eines sicheren Zugr
 \subsection{Okta}
 Okta verbindet Benutzer mit jeder Anwendung über alle Geräte hinweg. Es ist ein Cloud-basierter Identitätsmanagement-Service, der mit verschiedenen lokalen Systemen kompatibel ist. Okta bietet der IT-Abteilung die Möglichkeit, den Zugriff auf Anwendungen und Geräte über eine sichere, zuverlässige und gut geprüfte Cloud-Plattform zu verwalten, mit einer tiefen Integration in lokale Systeme und Verzeichnisse.
 
-Okta bietet Funktionen wie Provisioning, Single Sign-On (SSO), Active Directory (AD) und LDAP-Integration, zentrales Nutzer-Deprovisioning, Multi-Faktor-Authentifizierung (MFA), mobiles Identitätsmanagement und anpassbare Sicherheitsrichtlinien. Diese Funktionen werden durch das Okta Integration Network (OIN) vereinheitlicht, das umfangreiche Integrationsoptionen bietet und SSO für alle Anwendungen ermöglicht, die Ihre Benutzer benötigen\cite{Okta:o.J}.
+Okta bietet Funktionen wie Provisioning, Single Sign-On (SSO), Active Directory (AD) und LDAP-Integration, zentrales Nutzer-Deprovisioning, Multi-Faktor-Authentifizierung (MFA), mobiles Identitätsmanagement und anpassbare Sicherheitsrichtlinien. Diese Funktionen werden durch das Okta Integration Network (OIN) vereinheitlicht, das umfangreiche Integrationsoptionen bietet und SSO für alle Anwendungen ermöglicht, die Ihre Benutzer benötigen \cite{Okta:o.J}.
 
 \subsection{JWT}
 
@@ -356,16 +354,18 @@ JWT ist ein offener Standard (RFC 7519) für die sichere Übertragung von Inform
 
 \begin{itemize}
 	\item \textbf{Autorisierung:}  JWTs werden in der Regel zur Authentifizierung verwendet. Nach der Anmeldung enthält jede Anfrage das JWT, das den Zugriff auf autorisierte Routen, Dienste und Ressourcen ermöglicht.
-	\item \textbf{Informationsaustausch:} Mit JWTs werden Informationen sicher zwischen Parteien übertragen. Signierte JWTs bestätigen die Identität des Absenders und stellen sicher, dass der Inhalt unverändert bleibt, da die Signatur sowohl aus der Kopfzeile als auch aus der Nutzlast abgeleitet wird\cite{JWT:o.J}.
+	\item \textbf{Informationsaustausch:} Mit JWTs werden Informationen sicher zwischen Parteien übertragen. Signierte JWTs bestätigen die Identität des Absenders und stellen sicher, dass der Inhalt unverändert bleibt, da die Signatur sowohl aus der Kopfzeile als auch aus der Nutzlast abgeleitet wird \cite{JWT:o.J}.
 \end{itemize}
 
 \subsection{OAuth2}
-OAuth 2.0, kurz für „Open Authorization“, ist ein Standard, der es einer Website oder Anwendung ermöglicht, im Namen eines Benutzers auf Ressourcen anderer Webanwendungen zuzugreifen. Er löste 2012 OAuth 1.0 ab und hat sich seitdem zum Industriestandard für die Online-Autorisierung entwickelt. OAuth 2.0 erleichtert den autorisierten Zugriff und schränkt gleichzeitig die Aktionen ein, die eine Client-Anwendung für den Benutzer auf Ressourcen durchführen kann, ohne die Anmeldedaten des Benutzers preiszugeben\cite{OAuth2:o.J}.
+OAuth 2.0 ist ein offener Sicherheitsstandard, der es Nutzern ermöglicht, Anwendungen von Drittanbietern begrenzten Zugriff auf ihre Ressourcen zu gewähren, ohne ihre Anmeldedaten weiterzugeben. Dieser Rahmen ermöglicht es Anwendungen, Aktionen im Namen von Nutzern durchzuführen und gleichzeitig sicherzustellen, dass sensible Informationen sicher bleiben. Das Protokoll funktioniert über einen Autorisierungsfluss, der den Erhalt eines Zugriffstokens beinhaltet, den die Client-Anwendung für den Zugriff auf geschützte Ressourcen verwendet. Dieser Prozess erhöht die Sicherheit, indem er die direkte Weitergabe von Benutzeranmeldeinformationen verhindert und das Risiko eines unbefugten Zugriffs minimiert \cite{OAuth2:2023}.
+
+OAuth 2.0 ist jedoch nicht unproblematisch. Sicherheitsbedrohungen wie Phishing-Angriffe, CSRF und Token-Diebstahl können Benutzerdaten gefährden, wenn sie nicht richtig angegangen werden \cite{OAuth2:2023}.
 
 \subsection{OpenID Connect}
 OpenID Connect ist ein Authentifizierungsprotokoll, das auf dem OAuth 2.0 Framework (IETF RFC 6749 und 6750) aufbaut. Es rationalisiert die Überprüfung der Benutzeridentität, indem es die von einem Autorisierungsserver durchgeführte Authentifizierung nutzt und Benutzerprofilinformationen in einer RESTful und interoperablen Weise bereitstellt.
 
-OpenID Connect fördert ein Internet-Identitäts-Ökosystem durch einfache Integration, Sicherheits- und Datenschutzfunktionen, breite Client- und Gerätehilfe und die Möglichkeit für jede Einrichtung, als OpenID Provider (OP) zu agieren\cite{OpenId:o.J}.
+OpenID Connect fördert ein Internet-Identitäts-Ökosystem durch einfache Integration, Sicherheits- und Datenschutzfunktionen, breite Client- und Gerätehilfe und die Möglichkeit für jede Einrichtung, als OpenID Provider (OP) zu agieren \cite{OpenId:o.J}.
 
 
 \section{Entwicklungsumgebung und Versionskontrolle}\index{Entwicklungsumgebung und Versionskontrolle}
@@ -382,7 +382,7 @@ IntelliJ IDEA ist bekannt für seinen leistungsstarken Code-Editor, der sich dur
 
  Visual Studio Code ist ein vielseitiger und effizienter Quellcode-Editor, der mit Windows, macOS und Linux kompatibel ist. Er bietet native Unterstützung für JavaScript, TypeScript und Node.js und verfügt über eine breite Palette von Erweiterungen für weitere Sprachen und Plattformen \cite{visual-studio:o.J}.
 
-Da die Front-End-Entwicklung Angular, ein auf TypeScript basierendes Framework, nutzt, wurde Visual Studio Code als Entwicklungsumgebung gewählt. Die starke native Unterstützung für TypeScript erleichtert die effiziente und optimierte Projektentwicklung und macht zusätzliche Erweiterungen überflüssig. \cite{visualstudio-angular:o.J}.
+Da die Front-End-Entwicklung Angular, ein auf TypeScript basierendes Framework, nutzt, wurde Visual Studio Code als Entwicklungsumgebung gewählt. Die starke native Unterstützung für TypeScript erleichtert die effiziente und optimierte Projektentwicklung und macht zusätzliche Erweiterungen überflüssig \cite{visualstudio-angular:o.J}.
 
 \subsection{Versionskontrolle}
 In diesem Unterabschnitt werden die im Projekt eingesetzten Versionskontrollsysteme beschrieben, wobei der Schwerpunkt auf Git und GitHub liegt. Es wird erläutert, wie diese Tools die Codeverwaltung, die Zusammenarbeit und die Verfolgung von Änderungen während des gesamten Entwicklungsprozesses erleichtert haben.
@@ -398,7 +398,7 @@ GitHub ist eine cloudbasierte Plattform zum Speichern, Freigeben und gemeinsamen
 	\item Projekte zu präsentieren oder zu verbreiten.
 	\item Verfolgen und Verwalten von Codeänderungen im Laufe der Zeit.
 	\item Andere einladen, den Code zu überprüfen und Verbesserungen vorzuschlagen.
-	\item Zusammenarbeit an Projekten ohne das Risiko, dass unbeabsichtigte Änderungen die Arbeit der anderen beeinträchtigen, bis die Änderungen integriert werden können.  \cite{github:o.J}.
+	\item Zusammenarbeit an Projekten ohne das Risiko, dass unbeabsichtigte Änderungen die Arbeit der anderen beeinträchtigen, bis die Änderungen integriert werden können  \cite{github:o.J}.
 \end{itemize} 
 
 
