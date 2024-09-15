@@ -117,7 +117,7 @@ export class CartService {
   {
     // get the index of the product in the array
 
-    const index = this.cartItems.findIndex( cartItem => cartItem.id === cartItem.id);
+    const index = this.cartItems.findIndex( tempCartItem => tempCartItem.id === cartItem.id);
 
     // once found removing it from the array
     if(index > -1)

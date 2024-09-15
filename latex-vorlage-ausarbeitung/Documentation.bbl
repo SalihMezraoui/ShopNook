@@ -1,4 +1,5 @@
-\begin{thebibliography}{HTM24}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{IRM{\etalchar{+}}20}
 
 \bibitem[Ang24a]{Angular:2024}
 {\em {Angular - Landing Page}}.
@@ -37,6 +38,10 @@
   2023.
 \newblock Abgerufen am 19.08.2024.
 
+\bibitem[Car23]{OAuth2:2023}
+{\sc Carlier, Bertrand}: {\em An Introduction to OAuth2.0}.
+\newblock IDPro Body of Knowledge, 1, 10 2023.
+
 \bibitem[Cor21]{Sequenzdiagramm:2021}
 {\sc Corporation, IBM}: {\em Sequenzdiagramme}.
 \newblock
@@ -64,6 +69,13 @@
 \newblock \url{https://www.ibm.com/topics/relational-databases/}.
 \newblock Abgerufen am 14.08.2024.
 
+\bibitem[IRM{\etalchar{+}}20]{Spring-Security:2020}
+{\sc Islam, Mazharul}, {\sc Sazzadur Rahaman}, {\sc Na~Meng}, {\sc Behnaz
+  Hassanshahi}, {\sc Padmanabhan Krishnan}, {\sc Danfeng} \btxandlong{}\ {\sc
+  Yao}: {\em Coding Practices and Recommendations of Spring Security for
+  Enterprise Applications}.
+\newblock 07 2020.
+
 \bibitem[Jav24]{Java:2024}
 {\em {What is Java technology and why do I need it?}}
 \newblock \url{https://www.java.com/en/download/help/whatis_java.html}, 2024.
@@ -84,18 +96,13 @@
 \newblock \url{https://dev.mysql.com/doc/workbench/en/wb-intro.html}.
 \newblock Abgerufen am 14.08.2024.
 
-\bibitem[OTa]{OAuth2:o.J}
-{\sc OAuth2-Team}: {\em What is OAuth 2.0?}
-\newblock \url{https://auth0.com/intro-to-iam/what-is-oauth-2}.
-\newblock Abgerufen am 19. August 2024.
-
-\bibitem[OTb]{Okta:o.J}
+\bibitem[OTa]{Okta:o.J}
 {\sc Okta-Team}: {\em What is Okta and what does Okta do?}
 \newblock
   \url{https://support.okta.com/help/s/article/what-is-okta?language=en_US}.
 \newblock Abgerufen am 19. August 2024.
 
-\bibitem[OTc]{OpenId:o.J}
+\bibitem[OTb]{OpenId:o.J}
 {\sc OpenId-Team}: {\em How OpenId Connect Works}.
 \newblock \url{https://openid.net/developers/how-connect-works/}.
 \newblock Abgerufen am 19. August 2024.
@@ -131,11 +138,6 @@
 {\sc Spring}: {\em Spring Framework}.
 \newblock \url{https://spring.io/projects/spring-framework}.
 \newblock Abgerufen am 28. August 2024.
-
-\bibitem[Spre]{Spring-Security:o.J}
-{\sc Spring}: {\em Spring Security}.
-\newblock \url{https://spring.io/projects/spring-security}.
-\newblock Abgerufen am 14. August 2024.
 
 \bibitem[ST Ja]{Stripe-API:o.J}
 {\sc Stripe-Team}: {\em Stripe Docs Overview}.

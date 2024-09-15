@@ -42,12 +42,12 @@
 \contentsline {subsection}{\numberline {2.5.3}OAuth2}{18}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.5.4}OpenID Connect}{18}{subsection.2.5.4}%
 \contentsline {section}{\numberline {2.6}Entwicklungsumgebung und Versionskontrolle}{18}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Entwicklungsumgebung}{18}{subsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.1.1}IntelliJ IDEA}{18}{subsubsection.2.6.1.1}%
+\contentsline {subsection}{\numberline {2.6.1}Entwicklungsumgebung}{19}{subsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.1.1}IntelliJ IDEA}{19}{subsubsection.2.6.1.1}%
 \contentsline {subsubsection}{\numberline {2.6.1.2}Visual Studio Code}{19}{subsubsection.2.6.1.2}%
 \contentsline {subsection}{\numberline {2.6.2}Versionskontrolle}{19}{subsection.2.6.2}%
 \contentsline {subsubsection}{\numberline {2.6.2.1}Git}{19}{subsubsection.2.6.2.1}%
-\contentsline {subsubsection}{\numberline {2.6.2.2}GitHub}{19}{subsubsection.2.6.2.2}%
+\contentsline {subsubsection}{\numberline {2.6.2.2}GitHub}{20}{subsubsection.2.6.2.2}%
 \contentsline {chapter}{\numberline {3}Implementierung}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Startseite}{21}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}header}{21}{subsection.3.1.1}%
@@ -73,5 +73,5 @@
 \contentsline {subsection}{\numberline {4.4.2}Mitgliederseite}{37}{subsection.4.4.2}%
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{39}{chapter.5}%
 \contentsline {chapter}{Literaturverzeichnis}{40}{chapter*.16}%
-\contentsline {chapter}{Glossar}{42}{appendix.A}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{42}{appendix.A}%
 \contentsline {chapter}{Selbstständigkeitserklärung}{43}{appendix.B}%
