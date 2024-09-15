@@ -57,8 +57,8 @@ Die Beziehungen zwischen diesen Klassen sind wie folgt:
 
 \subsection{Sequenzdiagramm}
 
-Ein Sequenzdiagramm ist eine Art von UML-Diagramm, das den Austausch von Nachrichten zwischen verschiedenen Objekten in einem System im zeitlichen Verlauf darstellt. Es zeigt, wie die verschiedenen Komponenten eines Systems miteinander interagieren, um eine bestimmte Funktion oder einen bestimmten Prozess auszuführen. Sequenzdiagramme sind besonders nützlich, um die Kommunikation und die Reihenfolge der Nachrichten in einem Prozess zu visualisieren. Sie helfen dabei, die Dynamik eines Systems zu verstehen und die Interaktion zwischen den Systemkomponenten zu analysieren \cite{Sequenzdiagramm:2021}.
-
+Ein Sequenzdiagramm ist eine Art von UML-Diagramm, das den Austausch von Nachrichten zwischen verschiedenen Objekten in einem System im zeitlichen Verlauf darstellt. Es zeigt, wie die verschiedenen Komponenten eines Systems miteinander interagieren, um eine bestimmte Funktion oder einen bestimmten Prozess auszuführen \cite{Sequenzdiagramm:2021}.
+Sequenzdiagramme sind besonders nützlich, um die Kommunikation und die Reihenfolge der Nachrichten in einem Prozess zu visualisieren. Sie eignen sich auch besonders gut für objektorientierte Software, da sie den Kontrollfluss bei Objektinteraktionen darstellen \cite[S.28]{swain2010test}. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{images/SequenceDiagram.jpg}
@@ -99,7 +99,7 @@ Komponenten sind die wichtigsten Bausteine für Angular-Anwendungen. Wie es in d
 
 \begin{figure} [h]
 	\centering
-	\includegraphics[scale=0.30]{images/Components.pdf}
+	\includegraphics[scale=1]{images/Components.png}
 	\caption{Beispielhafte Dateistruktur einer Angular-Anwendung mit verschiedenen Komponenten}
 	\label{a1}
 \end{figure}
@@ -112,35 +112,30 @@ Komponenten sind die wichtigsten Bausteine für Angular-Anwendungen. Wie es in d
 \end{itemize}
 
 Dieser modulare Ansatz bringt mit sich mehrere Vorteile wie Wiederverwendbarkeit und Wartbarkeit.
-\newpage
 
 \subsubsection{Single Page Application (SPA)}
 
-Angular eignet sich besonders gut für die Erstellung von Single Page Applications (SPAs). In einer SPA lädt die gesamte Anwendung eine einzige HTML-Seite und aktualisiert den Inhalt dynamisch, wenn der Benutzer mit der Anwendung interagiert, ohne dass eine komplette Seite neu geladen werden muss \cite{Angular3:2024}. \\
-Dieser Ansatz bietet mehrere Vorteile:
+Angular eignet sich besonders gut für die Erstellung von Single Page Applications. In einer SPA werden Abschnitte der Benutzeroberfläche anhand von Aktionen der Benutzer dargestellt. Nur der benötigte Abschnitt wird aktualisiert, anstatt eine völlig neue Seite neu zu erstellen. Bei einer herkömmlichen Webanwendung erfolgt bei einer Benutzeraktion eine Neuzeichnung der gesamten Anwendung, wodurch ein „Flash“ auf der Seite entsteht. Anstatt dem Benutzer eine leere weiße Seite zu zeigen, wenn die Ladezeit mehrere Sekunden dauert, kann die SPA zum Beispiel eine Ladeanimation anzeigen und die anderen Inhalte zum Durchblättern verfügbar halten \cite[S.11]{schmiedehausen2018single}.
+Dieser Ansatz bietet laut \cite{Angular3:2024} mehrere Vorteile:
 \begin{itemize}
 	\item \textbf{Verbesserte Benutzerfreundlichkeit:} SPAs bieten eine reibungslosere und schnellere Benutzererfahrung, da nur die notwendigen Teile der Seite aktualisiert werden, anstatt die gesamte Seite neu zu laden.
 	\item \textbf{Geringere Serverlast:} Sie entlasten den Server, da weniger Ganzseitenanfragen gestellt werden, was zu einer effizienteren Nutzung der Serverressourcen führt.
 \end{itemize}
 
-Durch die Nutzung der komponentenbasierten Architektur und der SPA-Funktionen von Angular kann die Anwendung ShopNook eine nahtlose und reaktionsschnelle Benutzererfahrung bieten, die für die Kundenbindung und -zufriedenheit entscheidend ist.
-
-
-%\subsubsection{Document Object Model (DOM)}
 \section{Back-End Technologien}\index{Back-End Technologien}
 
 In diesem Kapitel werden Back-End-Technologien untersucht, wobei der Schwerpunkt auf Spring Boot liegt, um robuste, skalierbare und sichere serverseitige Logik und APIs für unsere E-Commerce-Anwendung zu erstellen.
 
 \subsection{Java}\index{Java}
 
-Java ist eine weit verbreitete Programmiersprache, die für ihre Plattformunabhängigkeit, Stabilität und umfassende Bibliotheken bekannt ist. Aufgrund ihrer Vielseitigkeit und Leistung wird Java häufig für die Entwicklung von Back-End-Anwendungen verwendet \cite{Java:2024}. In der E-Commerce-Anwendung (ShopNook) wird Java genutzt, um eine robuste und skalierbare serverseitige Logik zu gewährleisten.
+Java ist eine weit verbreitete Programmiersprache, die für ihre Plattformunabhängigkeit, Stabilität und umfassende Bibliotheken bekannt ist. Aufgrund ihrer Vielseitigkeit und Leistung wird Java häufig für die Entwicklung von Back-End-Anwendungen verwendet. In der E-Commerce-Anwendung (ShopNook) wird Java genutzt, um eine robuste und skalierbare serverseitige Logik zu gewährleisten  \cite{Java:2024}.
 
 \subsection{REST-API}\index{REST-API}
 
 REST ist ein Architekturstil für die Entwicklung vernetzter Anwendungen. Er basiert auf einem zustandslosen, Client-Server- und cachefähigen Kommunikationsprotokoll, und in fast allen Fällen wird das HTTP-Protokoll verwendet. REST-APIs sind so konzipiert, dass sie einfach, leichtgewichtig und skalierbar sind, was sie zu einer beliebten Wahl für Webdienste macht \cite{REST:2024}.
 
 \subsubsection{Einführung in REST}
-Angelehnt an \cite{REST:2024} bieten REST-APIs eine Möglichkeit, über HTTP auf die Funktionalität und Daten einer Anwendung zuzugreifen. Sie folgen den Prinzipien von REST, die auf Ressourcen und deren Repräsentationen basieren. Jede Ressource wird durch eine eindeutige URI identifiziert und kann durch standardisierte HTTP-Methoden manipuliert werden:
+Angelehnt an \cite{REST:2024} bieten REST-APIs eine Möglichkeit, über HTTP auf die Funktionalität und Daten einer Anwendung zuzugreifen. Sie folgen den Prinzipien von REST, die auf Ressourcen und deren Repräsentationen basieren. Jede Ressource wird durch eine eindeutige URI identifiziert und kann laut \cite[S.4]{Kornienko_2021} durch standardisierte HTTP-Methoden manipuliert werden:
 \begin{itemize}
 	\item GET: Abrufen von Ressourcen
 	\item POST: Erstellen neuer Ressourcen
@@ -161,7 +156,7 @@ Um die Sicherheit von REST-APIs in der ShopNook-Plattform weiter zu gewährleist
 
 \subsection{HTTPS und SSL/TLS}
 
-HTTPS ist die sichere Version von HTTP, dem Protokoll, über das die Daten zwischen dem Browser des Kunden und der Website, mit der er verbunden ist, gesendet werden. Das „S“ am Ende von HTTPS steht für „Secure“, was bedeutet, dass die gesamte Kommunikation zwischen dem Kunden und dem Server verschlüsselt ist \cite{HTTPS:2024}.\\
+HTTPS ist die sichere Version von HTTP, dem Protokoll, über das die Daten zwischen dem Browser des Kunden und der Website, mit der er verbunden ist, gesendet werden. Das „S“ am Ende von HTTPS steht für „Secure“, das bedeutet, dass die gesamte Kommunikation zwischen dem Kunden und dem Server verschlüsselt ist \cite{HTTPS:2024}.\\
 SSL/TLS sind allerdings Verschlüsselungsprotokolle, die eine sichere Kommunikation über ein Computernetz ermöglichen. SSL war das ursprüngliche Protokoll, aber es wurde zugunsten von TLS, das sicherer und effizienter ist, veraltet \cite{SSL/TLS:2023}. Diese Protokolle bieten mehrere wichtige Sicherheitsfunktionen, die im Folgenden näher erläutert werden:
 
 \begin{itemize}
@@ -174,7 +169,7 @@ Der Konfigurationsprozess beinhaltete die Aktivierung der SSL-Unterstützung, di
 Eine Keystore-Datei im PKCS12-Format \verb*|shopnook-keystore.p12| wurde verwendet, in der die für die Verschlüsselung erforderlichen SSL/TLS-Zertifikate sicher gespeichert sind. Der Keystore ist durch ein Passwort geschützt \textbf{(server.ssl.key-store-password=secret)}, so dass der Zugriff auf die kryptografischen Schlüssel nur autorisierten Prozessen vorbehalten ist. \\ 
 Innerhalb des Schlüsselspeichers wird das Zertifikat durch den Alias \textbf{shopnook} identifiziert, auf den in der Konfiguration verwiesen wird, um die SSL-Vorgänge des Servers mit dem richtigen Zertifikat zu verknüpfen. Diese Einrichtung stellt sicher, dass alle zwischen dem Client und dem Server übertragenen Daten verschlüsselt werden, was einen robusten Schutz gegen Abhör- und Man-in-the-Middle-Angriffe bietet.\\
 Darüber hinaus ermöglicht die Konfiguration eine einfache Anpassung an unterschiedliche Umgebungen. So kann beispielsweise der Port der Anwendung je nach Einsatzumgebung geändert werden, indem die Eigenschaft \textbf{server.port} angepasst wird. Für die QA-Demo-Umgebung ist der Port auf \textbf{9898} eingestellt, der durch Umschalten der Kommentarzeilen aktiviert werden kann.\\
-Durch die sorgfältige Konfiguration dieser SSL-Einstellungen stellen wir sicher, dass ShopNook den Industriestandards für Sicherheit entspricht.\newpage
+Durch die sorgfältige Konfiguration dieser SSL-Einstellungen stellen wir sicher, dass ShopNook den Industriestandards für Sicherheit entspricht.
 
 \begin{lstlisting}[language=, label=HTTPS-Config, caption={Implementierung von HTTPS und SSL Konfiguration}, ]
 	#####
@@ -337,7 +332,7 @@ MySQL Workbench wurde zur Visualisierung des Datenbankschemas eingesetzt und erm
 \subsection{Datenbankverbindung und -konfiguration in Spring Boot}
 In diesem Abschnitt wird erläutert, wie die Datenbank innerhalb der Spring Boot-Anwendung verbunden und konfiguriert wird.
 
-Die Datenbankverbindung wird in der Datei \texttt{application.properties} konfiguriert. Zu den wichtigsten Eigenschaften gehören die JDBC-URL, der Name der Treiberklasse und die Anmeldeinformationen, wie in \hyperref[Application.properties]{Listing~2.2} dargestellt.
+Die Datenbankverbindung wird in der Datei \texttt{application.properties} konfiguriert. Zu den wichtigsten Eigenschaften gehören die JDBC-URL, der Name der Treiberklasse und die Anmeldeinformationen, wie es in \hyperref[Application.properties]{Listing~2.2} dargestellt wurde.
 
 \section{Authentifizierungs- und Autorisierungsprotokolle}\index{Authentifizierungs- und Autorisierungsprotokolle}
 
