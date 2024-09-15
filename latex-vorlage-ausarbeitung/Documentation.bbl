@@ -12,8 +12,10 @@
 \newblock Abgerufen am 18.08.2024.
 
 \bibitem[Ang24c]{Angular3:2024}
-{\em {Routing in single-page applications}}.
-\newblock \url{https://angular.dev/guide/routing/router-tutorial}, 2024.
+{\em {Angular Single Page Applications (SPA): What are the Benefits?}}
+\newblock
+  \url{https://blog.angular-university.io/why-a-single-page-application-what-are-the-benefits-what-is-a-spa/},
+  2024.
 \newblock Abgerufen am 18.08.2024.
 
 \bibitem[Bae]{Baeldung:o.J}
@@ -91,6 +93,12 @@
 \newblock \url{https://jwt.io/introduction}.
 \newblock Abgerufen am 19. August 2024.
 
+\bibitem[KMM21]{Kornienko_2021}
+{\sc Kornienko, D~V}, {\sc S~V Mishina} \btxandlong{}\ {\sc M~O Melnikov}: {\em
+  The Single Page Application architecture when developing secure Web
+  services}.
+\newblock Journal of Physics: Conference Series, 2091(1), 2021.
+
 \bibitem[myS]{mySQL:o.J}
 {\sc mySQL}: {\em {MySQL Workbench Manual}}.
 \newblock \url{https://dev.mysql.com/doc/workbench/en/wb-intro.html}.
@@ -112,10 +120,21 @@
 \newblock \url{https://www.codecademy.com/article/what-is-rest}, 2024.
 \newblock Abgerufen am 18.08.2024.
 
+\bibitem[Sch18]{schmiedehausen2018single}
+{\sc Schmiedehausen, Kim}: {\em Single page application architecture with
+  angular}.
+\newblock 2018.
+
 \bibitem[Shu22]{Typescript:2024}
 {\sc Shubel, Meredith}: {\em {Typescript}}.
 \newblock \url{https://thenewstack.io/what-is-typescript/}, 2022.
 \newblock Abgerufen am 18.08.2024.
+
+\bibitem[SMM10]{swain2010test}
+{\sc Swain, Santosh~Kumar}, {\sc Durga~Prasad Mohapatra} \btxandlong{}\ {\sc
+  Rajib Mall}: {\em Test case generation based on use case and sequence
+  diagram}.
+\newblock International Journal of Software Engineering, 3(2):21--52, 2010.
 
 \bibitem[Spra]{Docs-Spring-JPA-QueryMethods:o.J}
 {\sc Spring}: {\em {JPA Query Methods}}.
