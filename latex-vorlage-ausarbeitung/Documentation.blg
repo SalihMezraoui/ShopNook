@@ -1,115 +1,111 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Documentation.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: geralpha.bst
-Reallocating 'name_of_file' (item size: 1) to 10 items.
-Reallocating 'name_of_file' (item size: 1) to 36 items.
 A level-1 auxiliary file: chapters/Abkürzungsverzeichnis.aux
-Reallocating 'name_of_file' (item size: 1) to 43 items.
 A level-1 auxiliary file: chapters/Selbststaendigkeitserklaerung.aux
 Database file #1: literatur.bib
 Warning--string name "o." is undefined
---line 595 of file literatur.bib
-I was expecting a `,' or a `}'---line 595 of file literatur.bib
+--line 298 of file literatur.bib
+I was expecting a `,' or a `}'---line 298 of file literatur.bib
  :  year    = o. 
  :               J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 611 of file literatur.bib
-I was expecting a `,' or a `}'---line 611 of file literatur.bib
+--line 306 of file literatur.bib
+I was expecting a `,' or a `}'---line 306 of file literatur.bib
  :  year    = o. 
  :               J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 629 of file literatur.bib
-I was expecting a `,' or a `}'---line 629 of file literatur.bib
+--line 315 of file literatur.bib
+I was expecting a `,' or a `}'---line 315 of file literatur.bib
  :  year    = o. 
  :               J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 645 of file literatur.bib
-I was expecting a `,' or a `}'---line 645 of file literatur.bib
+--line 323 of file literatur.bib
+I was expecting a `,' or a `}'---line 323 of file literatur.bib
  :  year    = o. 
  :               J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 661 of file literatur.bib
-I was expecting a `,' or a `}'---line 661 of file literatur.bib
+--line 331 of file literatur.bib
+I was expecting a `,' or a `}'---line 331 of file literatur.bib
  :  year    = o. 
  :               J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 693 of file literatur.bib
-I was expecting a `,' or a `}'---line 693 of file literatur.bib
+--line 347 of file literatur.bib
+I was expecting a `,' or a `}'---line 347 of file literatur.bib
  :  year    = o. 
  :               J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 709 of file literatur.bib
-I was expecting a `,' or a `}'---line 709 of file literatur.bib
+--line 355 of file literatur.bib
+I was expecting a `,' or a `}'---line 355 of file literatur.bib
  :  year    = o. 
  :               J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 727 of file literatur.bib
-I was expecting a `,' or a `}'---line 727 of file literatur.bib
+--line 364 of file literatur.bib
+I was expecting a `,' or a `}'---line 364 of file literatur.bib
  :  year    = o. 
  :               J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 743 of file literatur.bib
-I was expecting a `,' or a `}'---line 743 of file literatur.bib
+--line 372 of file literatur.bib
+I was expecting a `,' or a `}'---line 372 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 759 of file literatur.bib
-I was expecting a `,' or a `}'---line 759 of file literatur.bib
+--line 380 of file literatur.bib
+I was expecting a `,' or a `}'---line 380 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 775 of file literatur.bib
-I was expecting a `,' or a `}'---line 775 of file literatur.bib
+--line 388 of file literatur.bib
+I was expecting a `,' or a `}'---line 388 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 791 of file literatur.bib
-I was expecting a `,' or a `}'---line 791 of file literatur.bib
+--line 396 of file literatur.bib
+I was expecting a `,' or a `}'---line 396 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 807 of file literatur.bib
-I was expecting a `,' or a `}'---line 807 of file literatur.bib
+--line 404 of file literatur.bib
+I was expecting a `,' or a `}'---line 404 of file literatur.bib
  :  year         = o. 
  :                    J
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 823 of file literatur.bib
+I was expecting a `,' or a `}'---line 412 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 857 of file literatur.bib
-I was expecting a `,' or a `}'---line 857 of file literatur.bib
+--line 429 of file literatur.bib
+I was expecting a `,' or a `}'---line 429 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 873 of file literatur.bib
-I was expecting a `,' or a `}'---line 873 of file literatur.bib
+--line 437 of file literatur.bib
+I was expecting a `,' or a `}'---line 437 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 889 of file literatur.bib
+I was expecting a `,' or a `}'---line 445 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
 Warning--string name "o." is undefined
---line 927 of file literatur.bib
-I was expecting a `,' or a `}'---line 927 of file literatur.bib
+--line 464 of file literatur.bib
+I was expecting a `,' or a `}'---line 464 of file literatur.bib
  :   year         = o. 
  :                     J
 I'm skipping whatever remains of this entry
