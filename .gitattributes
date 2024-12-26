@@ -1,3 +1,0 @@
-
-# Optionally, exclude LaTeX files if not relevant
-*.tex linguist-detectable=false
