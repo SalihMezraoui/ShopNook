@@ -1,14 +1,3 @@
-# Override language for .ts files (TypeScript)
-*.ts linguist-language=TypeScript
-
-# Override language for .java files (Java)
-*.java linguist-language=Java
-
-# Override language for .html files (HTML)
-*.html linguist-language=HTML
-
-# Override language for .css files (CSS)
-*.css linguist-language=CSS
 
 # Optionally, exclude LaTeX files if not relevant
 *.tex linguist-detectable=false
