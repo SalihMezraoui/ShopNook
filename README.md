@@ -26,7 +26,7 @@
   - **Git** for version control, hosted on **GitHub** for collaboration and code sharing.
 
 ## Demo
-For a detailed demonstration of the application, including screenshots and an analysis of the results, please refer to the **Documentation.pdf** located in the **latex-vorlage-ausarbeitung** folder of this repository. The documentation includes visual aids in the section **"Ergebnisse und Analyse"** for a deeper understanding of the application’s functionality and user interface.
+For a detailed demonstration of the application, including screenshots and an analysis of the results, please refer to the **Documentation.pdf** located in the **01-ausarbeitung** folder of this repository. The documentation includes visual aids in the section **"Ergebnisse und Analyse"** for a deeper understanding of the application’s functionality and user interface.
 
 ## Acknowledgments
 - Special thanks to **Prof. Dr. Andreas Lux** for his guidance and support throughout the project.
