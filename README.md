@@ -1,5 +1,7 @@
 # ShopNook: E-Commerce Web Application with Angular and Spring Boot
 
+This project was developed as part of the **Teamprojekt** module, where I received a grade of **1.7**.
+
 ## Overview
 **ShopNook** is a user-friendly e-commerce shopping cart application developed using **Spring Boot** for the backend and **Angular** for the frontend. Customers can browse products, add items to their shopping cart, and securely complete their transactions. The application integrates a **MySQL** database for managing user data, product inventory, and order history, while **Stripe API** ensures secure payment processing. The application also includes advanced security features with **JWT-based authentication**, **OAuth2**, **OpenID Connect**, and **Okta** for user authentication and authorization.
 
